@@ -1,17 +1,17 @@
 package com.generation.models;
 
-public class Decoraciones {
+public class Decoracion {
 	private Integer id;
 	private String nombre;
 	private String descripcion;
 	private Integer stock;
 	private Integer precio;
 	
-	public Decoraciones() {
+	public Decoracion() {
 		super();
 	}
 
-	public Decoraciones(Integer id, String nombre, String descripcion, Integer stock, Integer precio) {
+	public Decoracion(Integer id, String nombre, String descripcion, Integer stock, Integer precio) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -58,6 +58,12 @@ public class Decoraciones {
 
 	public void setPrecio(Integer precio) {
 		this.precio = precio;
+	}
+
+	@Override
+	public String toString() {
+		return "Decoracion [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", stock=" + stock
+				+ ", precio=" + precio + "]";
 	}
 
 	

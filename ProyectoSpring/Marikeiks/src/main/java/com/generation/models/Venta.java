@@ -102,6 +102,14 @@ public class Venta {
 	public void setDespacho_retiros_id(Integer despacho_retiros_id) {
 		this.despacho_retiros_id = despacho_retiros_id;
 	}
+
+	@Override
+	public String toString() {
+		return "Venta [id=" + id + ", fecha_emision=" + fecha_emision + ", fecha_entrega=" + fecha_entrega
+				+ ", subtotal=" + subtotal + ", comentario=" + comentario + ", iva_subtotal=" + iva_subtotal
+				+ ", cliente_id=" + cliente_id + ", estado_ventas_id=" + estado_ventas_id + ", despacho_retiros_id="
+				+ despacho_retiros_id + "]";
+	}
 	
 	
 	

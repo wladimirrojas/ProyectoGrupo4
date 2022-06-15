@@ -40,6 +40,11 @@ public class Estado_venta {
 	public void setComentario(String comentario) {
 		this.comentario = comentario;
 	}
+
+	@Override
+	public String toString() {
+		return "Estado_venta [id=" + id + ", nombre=" + nombre + ", comentario=" + comentario + "]";
+	}
 	
 	
 	

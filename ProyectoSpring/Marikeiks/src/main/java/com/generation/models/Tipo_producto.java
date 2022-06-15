@@ -1,16 +1,16 @@
 package com.generation.models;
 
-public class Tipo_Producto {
+public class Tipo_producto {
 
     private Integer id;
     private String nombre;
     private Integer porcion_cantidad;
     private Integer sabores_id;
 
-    public Tipo_Producto() {
+    public Tipo_producto() {
     }
 
-    public Tipo_Producto(Integer id, String nombre, Integer porcion_cantidad, Integer sabores_id) {
+    public Tipo_producto(Integer id, String nombre, Integer porcion_cantidad, Integer sabores_id) {
         this.id = id;
         this.nombre = nombre;
         this.porcion_cantidad = porcion_cantidad;
