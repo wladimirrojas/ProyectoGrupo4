@@ -1,3 +1,5 @@
+use marikeiks;
+
 DROP TABLE IF EXISTS sabores;
 DROP TABLE IF EXISTS tipo_productos;
 DROP TABLE IF EXISTS decoraciones;
