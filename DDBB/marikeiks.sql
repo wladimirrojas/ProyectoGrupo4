@@ -56,9 +56,6 @@ CREATE TABLE ventas (
 id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
 fecha_emision DATE,
 fecha_entrega DATE,
-subtotal INTEGER,
-comentario VARCHAR(100),
-iva_subtotal INTEGER,
 cliente_id INTEGER,
 estado_ventas_id INTEGER,
 despacho_retiros_id INTEGER);
@@ -66,7 +63,7 @@ despacho_retiros_id INTEGER);
 CREATE TABLE estado_ventas (
 id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
 nombre VARCHAR(20),
-comentario VARCHAR(100));
+comentario VARCHAR(150));
 
 CREATE TABLE ventas_productos (
 productos_id INTEGER,
@@ -75,6 +72,7 @@ cantidad INTEGER,
 precio_total INTEGER,
 descuento INTEGER,
 iva_total INTEGER,
+comentario VARCHAR(150),
 PRIMARY KEY (productos_id,ventas_id));
 
 ALTER TABLE tipo_productos ADD CONSTRAINT tipo_productos_sabores_id_sabores_id FOREIGN KEY (sabores_id) REFERENCES sabores(id);
