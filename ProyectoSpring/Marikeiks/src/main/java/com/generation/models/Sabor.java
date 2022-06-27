@@ -1,9 +1,24 @@
 package com.generation.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+@Entity
+@Table(name = "sabores")
+
 public class Sabor {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotNull()
     private String nombre;
+
     private String descripcion;
     private Boolean disponible;
     private Integer stock;
@@ -11,19 +26,18 @@ public class Sabor {
     public Sabor() {
     }
 
-    public Sabor(Integer id, String nombre, String descripcion, Boolean disponible, Integer stock) {
-        this.id = id;
+    public Sabor(@NotNull String nombre, String descripcion, Boolean disponible, Integer stock) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.disponible = disponible;
         this.stock = stock;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
