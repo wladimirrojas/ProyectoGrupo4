@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MarikeiksApplication<grupo4marikeiks>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.generation.MarikeiksApplication",
+            "projectName": "grupo4marikeiks",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
