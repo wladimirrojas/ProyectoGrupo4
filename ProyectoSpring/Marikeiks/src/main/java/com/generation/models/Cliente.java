@@ -1,22 +1,42 @@
 package com.generation.models;
 
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Table;
+
+
+@Entity
+@Table (name="clientes")
 public class Cliente {
 
-	
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String nombre;
 	private String apellido;
 	private String correo;
 	private String direccion;
 	private String telefono;
 	
+	
+	//Atributos opcionales que sirven para la gestión de la base de datos.
+	@Column(updatable=false)
+	private Date createdAt;
+	private Date updatedAt;
+	
 	public Cliente() {
 		
 	}
 	
-	public Cliente(Integer id, String nombre, String apellido, String correo, String direccion, String telefono) {
+	public Cliente(String nombre, String apellido, String correo, String direccion, String telefono) {
 		super();
-		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.correo = correo;
@@ -24,11 +44,11 @@ public class Cliente {
 		this.telefono = telefono;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -77,6 +97,18 @@ public class Cliente {
 		return "Cliente [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo
 				+ ", direccion=" + direccion + ", telefono=" + telefono + "]";
 	}
+	
+	//Insertar en la base de datos las fechas correspondiente a la creación y edición del cliente.
+	@PrePersist
+    protected void onCreate(){
+        this.createdAt = new Date();
+    }
+    @PreUpdate
+    protected void onUpdate(){
+        this.updatedAt = new Date();
+    }
+
+	
 	
 
 	}
