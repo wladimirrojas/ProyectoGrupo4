@@ -1,27 +1,42 @@
 package com.generation.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+@Entity
+@Table(name = "tipo_productos")
+
 public class Tipo_producto {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotNull
     private String nombre;
+
     private Integer porcion_cantidad;
+
     private Integer sabores_id;
 
     public Tipo_producto() {
     }
 
-    public Tipo_producto(Integer id, String nombre, Integer porcion_cantidad, Integer sabores_id) {
-        this.id = id;
+    public Tipo_producto(String nombre, Integer porcion_cantidad, @NotNull Integer sabores_id) {
         this.nombre = nombre;
         this.porcion_cantidad = porcion_cantidad;
         this.sabores_id = sabores_id;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
