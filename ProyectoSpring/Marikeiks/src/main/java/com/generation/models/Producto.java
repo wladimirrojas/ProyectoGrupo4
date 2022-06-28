@@ -1,8 +1,24 @@
 package com.generation.models;
 
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Table;
+
+/*Entidad, nombre de tabla, y tipos de atributos*/
+@Entity
+@Table(name = "productos")
 public class Producto {
 
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String descripcion;
 	private Integer stock;
 	private Integer precio;
@@ -10,11 +26,16 @@ public class Producto {
 	private Integer tipo_producto_id;
 	private Integer decoraciones_id;
 
+	/*columna extra de creación y actualización*/
+	@Column(updatable = false)
+	private Date createdAt;
+	private Date updatedAt;
+
 	public Producto() {
 		super();
 	}
 
-	public Producto(Integer id, String descripcion, Integer stock, Integer precio, Integer vegano,
+	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
 			Integer tipo_producto_id, Integer decoraciones_id) {
 		super();
 		this.id = id;
@@ -26,11 +47,11 @@ public class Producto {
 		this.decoraciones_id = decoraciones_id;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -82,10 +103,13 @@ public class Producto {
 		this.decoraciones_id = decoraciones_id;
 	}
 
-	@Override
-	public String toString() {
-		return "Producto [id=" + id + ", descripcion=" + descripcion + ", stock=" + stock + ", precio=" + precio
-				+ ", vegano=" + vegano + ", tipo_producto_id=" + tipo_producto_id + ", decoraciones_id="
-				+ decoraciones_id + "]";
+	@PrePersist
+	protected void onCreate() {
+		this.createdAt = new Date();
+	}
+
+	@PreUpdate
+	protected void onUpdate() {
+		this.updatedAt = new Date();
 	}
 }
