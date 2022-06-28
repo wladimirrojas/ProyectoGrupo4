@@ -52,7 +52,7 @@
 			
 			<br>
 			
-			<button type="submit" class="btn btn-outline-primary" >Guardar Licencia</button>
+			<button type="submit" class="btn btn-outline-primary" >Guardar Producto</button>
 			</form:form>
 <!-- private Long id;
 	private String descripcion;
