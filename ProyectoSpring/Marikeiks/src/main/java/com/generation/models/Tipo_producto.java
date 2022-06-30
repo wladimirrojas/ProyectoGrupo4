@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -33,6 +35,11 @@ public class Tipo_producto {
 	// Tipo_producto envía a Producto
 	@OneToMany(mappedBy = "tipo_producto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Producto> productos;
+
+	//Recibe la foranea de sabores
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "sabores_id")
+	private Sabor sabor;
 
 	@Column(updatable = false) // permite no actualizar desde el sistema
 	private Date createdAt;
