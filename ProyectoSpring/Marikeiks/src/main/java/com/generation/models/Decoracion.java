@@ -1,30 +1,59 @@
 package com.generation.models;
 
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "decoraciones")
 public class Decoracion {
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String nombre;
 	private String descripcion;
 	private Integer stock;
 	private Integer precio;
-	
+
+	// Decoracion envía a Producto
+	@OneToMany(mappedBy = "decoracion", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Producto> productos;
+
+	@Column(updatable = false) // permite no actualizar desde el sistema
+	private Date createdAt;
+	private Date updatedAt;
+
 	public Decoracion() {
 		super();
 	}
 
-	public Decoracion(Integer id, String nombre, String descripcion, Integer stock, Integer precio) {
+	public Decoracion(Long id, String nombre, String descripcion, Integer stock, Integer precio,
+			List<Producto> productos) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.stock = stock;
 		this.precio = precio;
+		this.productos = productos;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -60,12 +89,22 @@ public class Decoracion {
 		this.precio = precio;
 	}
 
-	@Override
-	public String toString() {
-		return "Decoracion [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", stock=" + stock
-				+ ", precio=" + precio + "]";
+	public List<Producto> getProductos() {
+		return productos;
 	}
 
-	
-	
+	public void setProductos(List<Producto> productos) {
+		this.productos = productos;
+	}
+
+	@PrePersist
+	protected void onCreate() {
+		this.createdAt = new Date();
+	}
+
+	@PreUpdate
+	protected void onUpdate() {
+		this.updatedAt = new Date();
+	}
+
 }

@@ -1,12 +1,18 @@
 package com.generation.models;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
@@ -23,10 +29,21 @@ public class Producto {
 	private Integer stock;
 	private Integer precio;
 	private Integer vegano;
-	private Integer tipo_producto_id;
-	private Integer decoraciones_id;
 
-	/*columna extra de creación y actualización*/
+	// Producto envia a Ventas_producto
+	@OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Ventas_producto> ventas_productos;
+
+	// recibe desde tipo_producto
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "tipo_producto_id")
+	private Tipo_producto tipo_producto;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "decoracion_id")
+	private Decoracion decoracion;
+
+	/* columna extra de creación y actualización */
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
@@ -36,15 +53,16 @@ public class Producto {
 	}
 
 	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
-			Integer tipo_producto_id, Integer decoraciones_id) {
+			List<Ventas_producto> ventas_productos, Tipo_producto tipo_producto, Decoracion decoracion) {
 		super();
 		this.id = id;
 		this.descripcion = descripcion;
 		this.stock = stock;
 		this.precio = precio;
 		this.vegano = vegano;
-		this.tipo_producto_id = tipo_producto_id;
-		this.decoraciones_id = decoraciones_id;
+		this.ventas_productos = ventas_productos;
+		this.tipo_producto = tipo_producto;
+		this.decoracion = decoracion;
 	}
 
 	public Long getId() {
@@ -87,20 +105,28 @@ public class Producto {
 		this.vegano = vegano;
 	}
 
-	public Integer getTipo_producto_id() {
-		return tipo_producto_id;
+	public List<Ventas_producto> getVentas_productos() {
+		return ventas_productos;
 	}
 
-	public void setTipo_producto_id(Integer tipo_producto_id) {
-		this.tipo_producto_id = tipo_producto_id;
+	public void setVentas_productos(List<Ventas_producto> ventas_productos) {
+		this.ventas_productos = ventas_productos;
 	}
 
-	public Integer getDecoraciones_id() {
-		return decoraciones_id;
+	public Tipo_producto getTipo_producto() {
+		return tipo_producto;
 	}
 
-	public void setDecoraciones_id(Integer decoraciones_id) {
-		this.decoraciones_id = decoraciones_id;
+	public void setTipo_producto(Tipo_producto tipo_producto) {
+		this.tipo_producto = tipo_producto;
+	}
+
+	public Decoracion getDecoracion() {
+		return decoracion;
+	}
+
+	public void setDecoracion(Decoracion decoracion) {
+		this.decoracion = decoracion;
 	}
 
 	@PrePersist
