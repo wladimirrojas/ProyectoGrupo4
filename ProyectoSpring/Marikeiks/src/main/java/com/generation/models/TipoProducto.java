@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tipo_productos")
 
-public class Tipo_producto {
+public class TipoProducto {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,10 +45,10 @@ public class Tipo_producto {
 	private Date createdAt;
 	private Date updatedAt;
 
-	public Tipo_producto() {
+	public TipoProducto() {
 	}
 
-	public Tipo_producto(Long id, String nombre, Integer porcion_cantidad, Integer sabores_id,
+	public TipoProducto(Long id, String nombre, Integer porcion_cantidad, Integer sabores_id,
 			List<Producto> productos) {
 		super();
 		this.id = id;

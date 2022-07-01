@@ -29,7 +29,7 @@ public class Sabor {
     private Integer stock;
 
     @OneToMany(mappedBy = "sabor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<Tipo_producto> tipo_productos;
+	private List<TipoProducto> tipoProductos;
 
     public Sabor() {
     }

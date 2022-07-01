@@ -37,7 +37,7 @@ public class Producto {
 	// recibe desde tipo_producto
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "tipo_producto_id")
-	private Tipo_producto tipo_producto;
+	private TipoProducto tipo_producto;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "decoracion_id")
@@ -53,7 +53,7 @@ public class Producto {
 	}
 
 	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
-			List<Ventas_producto> ventas_productos, Tipo_producto tipo_producto, Decoracion decoracion) {
+			List<Ventas_producto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion) {
 		super();
 		this.id = id;
 		this.descripcion = descripcion;
@@ -113,11 +113,11 @@ public class Producto {
 		this.ventas_productos = ventas_productos;
 	}
 
-	public Tipo_producto getTipo_producto() {
+	public TipoProducto getTipo_producto() {
 		return tipo_producto;
 	}
 
-	public void setTipo_producto(Tipo_producto tipo_producto) {
+	public void setTipo_producto(TipoProducto tipo_producto) {
 		this.tipo_producto = tipo_producto;
 	}
 
