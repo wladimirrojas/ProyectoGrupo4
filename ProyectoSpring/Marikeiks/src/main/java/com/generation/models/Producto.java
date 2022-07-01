@@ -32,7 +32,7 @@ public class Producto {
 
 	// Producto envia a Ventas_producto
 	@OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<Ventas_producto> ventas_productos;
+	private List<VentaProducto> ventas_productos;
 
 	// recibe desde tipo_producto
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -53,7 +53,11 @@ public class Producto {
 	}
 
 	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
+<<<<<<< HEAD
 			List<Ventas_producto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion) {
+=======
+			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion) {
+>>>>>>> main
 		super();
 		this.id = id;
 		this.descripcion = descripcion;
@@ -105,11 +109,11 @@ public class Producto {
 		this.vegano = vegano;
 	}
 
-	public List<Ventas_producto> getVentas_productos() {
+	public List<VentaProducto> getVentas_productos() {
 		return ventas_productos;
 	}
 
-	public void setVentas_productos(List<Ventas_producto> ventas_productos) {
+	public void setVentas_productos(List<VentaProducto> ventas_productos) {
 		this.ventas_productos = ventas_productos;
 	}
 
