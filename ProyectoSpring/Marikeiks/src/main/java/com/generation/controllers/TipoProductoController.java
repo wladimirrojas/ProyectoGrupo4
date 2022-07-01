@@ -34,7 +34,7 @@ public class TipoProductoController {
     public String guardarTipo_producto(@Valid @ModelAttribute("tipoProducto") TipoProducto tipoProducto){
 
         tipoProductoService.saveTipoProducto(tipoProducto);
-        return "redirect:/tipo_producto";
+        return "redirect:/tipoProducto";
     }
 
 

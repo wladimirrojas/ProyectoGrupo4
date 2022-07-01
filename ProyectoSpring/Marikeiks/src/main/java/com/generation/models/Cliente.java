@@ -15,9 +15,8 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
-
 @Entity
-@Table (name="clientes")
+@Table(name = "clientes")
 public class Cliente {
 
 	@Id
@@ -29,20 +28,19 @@ public class Cliente {
 	private String direccion;
 	private String telefono;
 
-	//Relacion con cliente y ventas
-	@OneToMany
-	(mappedBy="cliente",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
-	 private List<Venta> ventas;
-	
-	//Atributos opcionales que sirven para la gestión de la base de datos.
-	@Column(updatable=false)
+	// Relacion con cliente y ventas
+	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Venta> ventas;
+
+	// Atributos opcionales que sirven para la gestión de la base de datos.
+	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
-	
+
 	public Cliente() {
-		
+
 	}
-	
+
 	public Cliente(String nombre, String apellido, String correo, String direccion, String telefono) {
 		super();
 		this.nombre = nombre;
@@ -100,25 +98,30 @@ public class Cliente {
 		this.telefono = telefono;
 	}
 
+	public List<Venta> getVentas() {
+		return ventas;
+	}
+
+	public void setVentas(List<Venta> ventas) {
+		this.ventas = ventas;
+	}
+
 	@Override
 	public String toString() {
 		return "Cliente [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo
 				+ ", direccion=" + direccion + ", telefono=" + telefono + "]";
 	}
-	
-	//Insertar en la base de datos las fechas correspondiente a la creación y edición del cliente.
+
+	// Insertar en la base de datos las fechas correspondiente a la creación y
+	// edición del cliente.
 	@PrePersist
-    protected void onCreate(){
-        this.createdAt = new Date();
-    }
-    @PreUpdate
-    protected void onUpdate(){
-        this.updatedAt = new Date();
-    }
-
-	
-	
-
+	protected void onCreate() {
+		this.createdAt = new Date();
 	}
-	
-	
+
+	@PreUpdate
+	protected void onUpdate() {
+		this.updatedAt = new Date();
+	}
+
+}

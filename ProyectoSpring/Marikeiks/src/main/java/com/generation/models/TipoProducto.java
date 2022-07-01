@@ -30,13 +30,13 @@ public class TipoProducto {
 
 	private Integer porcion_cantidad;
 
-	private Integer sabores_id;
+	// private Integer sabores_id;
 
 	// Tipo_producto envía a Producto
 	@OneToMany(mappedBy = "tipo_producto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Producto> productos;
 
-	//Recibe la foranea de sabores
+	// Recibe la foranea de sabores
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "sabores_id")
 	private Sabor sabor;
@@ -48,13 +48,12 @@ public class TipoProducto {
 	public TipoProducto() {
 	}
 
-	public TipoProducto(Long id, String nombre, Integer porcion_cantidad, Integer sabores_id,
+	public TipoProducto(Long id, String nombre, Integer porcion_cantidad,
 			List<Producto> productos) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.porcion_cantidad = porcion_cantidad;
-		this.sabores_id = sabores_id;
 		this.productos = productos;
 	}
 
@@ -80,14 +79,6 @@ public class TipoProducto {
 
 	public void setPorcion_cantidad(Integer porcion_cantidad) {
 		this.porcion_cantidad = porcion_cantidad;
-	}
-
-	public Integer getSabores_id() {
-		return sabores_id;
-	}
-
-	public void setSabores_id(Integer sabores_id) {
-		this.sabores_id = sabores_id;
 	}
 
 	public List<Producto> getProductos() {
