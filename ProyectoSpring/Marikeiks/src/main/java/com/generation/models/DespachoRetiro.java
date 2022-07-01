@@ -16,7 +16,7 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="despachos_retiros")
+@Table(name="despacho_retiros")
 public class DespachoRetiro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +24,7 @@ public class DespachoRetiro {
     private String estado;
     
     //One To Many con VENTAS
-    @OneToMany(mappedBy ="despachos_retiros",cascade=CascadeType.ALL ,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy ="despachoRetiro",cascade=CascadeType.ALL ,fetch=FetchType.LAZY)
 	private List<Venta> ventas;
 	
 	

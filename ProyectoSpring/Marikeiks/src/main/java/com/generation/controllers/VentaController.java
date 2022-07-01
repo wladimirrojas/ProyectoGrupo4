@@ -12,13 +12,13 @@ import com.generation.models.Venta;
 import com.generation.services.VentaService;
 
 @Controller
-@RequestMapping
+@RequestMapping("/venta")
 public class VentaController {
 	@Autowired
 	VentaService ventaService;
 	
 	//Ruta inicio 
-	@RequestMapping("/venta")
+	@RequestMapping("")
 	public String venta(@ModelAttribute ("Venta") Venta venta) {
 	return "Venta.jsp";
 	}
@@ -37,7 +37,7 @@ public class VentaController {
 		model.addAttribute("listaVentas", listaVenta);
 		
 		//devolver a la página de inicio estados de ventas
-		return "redirect:/Venta";
+		return "redirect:/venta";
 		
 	}
 	

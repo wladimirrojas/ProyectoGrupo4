@@ -27,7 +27,7 @@ public class EstadoVenta {
 	
 	//Relacion estado de venta y ventas
 	@OneToMany
-	(mappedBy="estado_venta",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+	(mappedBy="estadoVenta",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	private List<Venta> ventas;
 	
 	
