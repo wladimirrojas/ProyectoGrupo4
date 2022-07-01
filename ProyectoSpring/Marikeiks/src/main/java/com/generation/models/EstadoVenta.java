@@ -16,7 +16,7 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
-@Table (name="estadosVentas")
+@Table (name="estados_ventas")
 public class EstadoVenta {
 
 	@Id
