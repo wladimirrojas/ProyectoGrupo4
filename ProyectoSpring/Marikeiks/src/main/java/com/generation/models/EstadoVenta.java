@@ -16,7 +16,7 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
-@Table (name="estadosVentas")
+@Table (name="estados_ventas")
 public class EstadoVenta {
 
 	@Id
@@ -27,8 +27,8 @@ public class EstadoVenta {
 	
 	//Relacion estado de venta y ventas
 	@OneToMany
-	(mappedBy="estadoVenta",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
-	 private List<Venta> ventas;
+	(mappedBy="estado_venta",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+	private List<Venta> ventas;
 	
 	
 	//Atributos opcionales que sirven para la gestión de la base de datos.
