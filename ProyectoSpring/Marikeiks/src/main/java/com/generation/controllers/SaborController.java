@@ -28,7 +28,6 @@ public class SaborController {
         List<Sabor> listaSabores = saborService.findAll();
         model.addAttribute("listaSabores", listaSabores);
 
-
         return "sabor.jsp";
     }
     @RequestMapping("/guardar")

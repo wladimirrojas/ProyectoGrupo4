@@ -27,9 +27,7 @@
                         <!-- Aqui añadir relacion 1 a muchos -->
                         <button type="submit" class="btn btn-outline-primary">Guardar tipo de producto</button>
                     </form:form>
-
                     <br>
-
                     <table class="table">
                         <thead>
                             <tr>
@@ -45,16 +43,15 @@
                                     <td>${tipo_producto.nombre}</td>
                                     <td>${tipo_producto.porcion_cantidad}</td>
                                     <!--
-                                    <td><a class="btn btn-warning" href="/licencia/editar/${licencia.id}"
-                                            role="button">Editar</a></td>
-                                    <td><a class="btn btn-danger" href="/licencia/eliminar/${licencia.id}"
-                                            role="button">Eliminar</a></td>
-                                    -->
+                        <td><a class="btn btn-warning" href="/licencia/editar/${licencia.id}"
+                                role="button">Editar</a></td>
+                        <td><a class="btn btn-danger" href="/licencia/eliminar/${licencia.id}"
+                                role="button">Eliminar</a></td>
+                        -->
                                 </tr>
                             </c:forEach>
                         </tbody>
                     </table>
-
                 </div>
             </body>
 
