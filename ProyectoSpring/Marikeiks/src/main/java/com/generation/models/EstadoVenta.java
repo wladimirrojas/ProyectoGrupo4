@@ -1,12 +1,16 @@
 package com.generation.models;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
@@ -20,6 +24,12 @@ public class EstadoVenta {
 	private Long id;
 	private String nombre;
 	private String comentario;
+	
+	//Relacion estado de venta y ventas
+	@OneToMany
+	(mappedBy="estadoVenta",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+	 private List<Venta> ventas;
+	
 	
 	//Atributos opcionales que sirven para la gestión de la base de datos.
 		@Column(updatable=false)
