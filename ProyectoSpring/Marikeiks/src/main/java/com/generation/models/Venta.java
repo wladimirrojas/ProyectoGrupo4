@@ -2,8 +2,23 @@ package com.generation.models;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Table;
+@Entity
+@Table (name="ventas")
 public class Venta {
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private Date fecha_emision;
 	private Date fecha_entrega;
 	private Integer subtotal;
@@ -13,11 +28,28 @@ public class Venta {
 	private Integer estado_ventas_id;
 	private Integer despacho_retiros_id;
 	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="cliente_id")
+	private Cliente cliente;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="estado_ventas_id")
+	private EstadoVenta estadoVenta;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="despacho_retiros_id")
+	private DespachoRetiro despachoRetiro;
+
+
+	@Column(updatable = false) // permite no actualizar desde el sistema
+	private Date createdAt;
+	private Date updatedAt;
+	
 	public Venta() {
 		super();
 	}
 
-	public Venta(Integer id, Date fecha_emision, Date fecha_entrega, Integer subtotal, String comentario,
+	public Venta(Long id, Date fecha_emision, Date fecha_entrega, Integer subtotal, String comentario,
 			Integer iva_subtotal, Integer cliente_id, Integer estado_ventas_id, Integer despacho_retiros_id) {
 		super();
 		this.id = id;
@@ -31,11 +63,11 @@ public class Venta {
 		this.despacho_retiros_id = despacho_retiros_id;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -103,12 +135,14 @@ public class Venta {
 		this.despacho_retiros_id = despacho_retiros_id;
 	}
 
-	@Override
-	public String toString() {
-		return "Venta [id=" + id + ", fecha_emision=" + fecha_emision + ", fecha_entrega=" + fecha_entrega
-				+ ", subtotal=" + subtotal + ", comentario=" + comentario + ", iva_subtotal=" + iva_subtotal
-				+ ", cliente_id=" + cliente_id + ", estado_ventas_id=" + estado_ventas_id + ", despacho_retiros_id="
-				+ despacho_retiros_id + "]";
+	@PrePersist
+	protected void onCreate() {
+		this.createdAt = new Date();
+	}
+
+	@PreUpdate
+	protected void onUpdate() {
+		this.updatedAt = new Date();
 	}
 	
 	
