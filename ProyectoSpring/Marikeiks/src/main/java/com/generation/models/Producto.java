@@ -53,11 +53,7 @@ public class Producto {
 	}
 
 	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
-<<<<<<< HEAD
-			List<Ventas_producto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion) {
-=======
 			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion) {
->>>>>>> main
 		super();
 		this.id = id;
 		this.descripcion = descripcion;
