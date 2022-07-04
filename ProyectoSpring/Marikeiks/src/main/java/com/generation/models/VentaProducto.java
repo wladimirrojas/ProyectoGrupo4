@@ -18,13 +18,15 @@ import javax.persistence.Table;
 @Table(name = "ventas_productos")
 public class VentaProducto {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
+	@Id	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "producto_id")
 	private Producto producto;
+		
+	@Id
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "venta_id")
+	private Venta venta;
 
 	private Integer ventas_id;
 	private Integer cantidad;
@@ -39,12 +41,12 @@ public class VentaProducto {
 	public VentaProducto() {
 		super();
 	}
-
-	public VentaProducto(Long id, Producto producto, Integer ventas_id, Integer cantidad, Integer subtotal,
+	
+	public VentaProducto(Producto producto, Venta venta, Integer ventas_id, Integer cantidad, Integer subtotal,
 			Integer descuento, Integer iva_total) {
 		super();
-		this.id = id;
 		this.producto = producto;
+		this.venta = venta;
 		this.ventas_id = ventas_id;
 		this.cantidad = cantidad;
 		this.subtotal = subtotal;
@@ -52,12 +54,20 @@ public class VentaProducto {
 		this.iva_total = iva_total;
 	}
 
-	public Long getId() {
-		return id;
+	public Venta getVenta() {
+		return venta;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setVenta(Venta venta) {
+		this.venta = venta;
+	}
+
+	public Integer getSubtotal() {
+		return subtotal;
+	}
+
+	public void setSubtotal(Integer subtotal) {
+		this.subtotal = subtotal;
 	}
 
 	public Producto getProducto() {
