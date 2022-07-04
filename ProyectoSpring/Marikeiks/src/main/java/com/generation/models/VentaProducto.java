@@ -17,13 +17,17 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "ventas_productos")
 public class VentaProducto {
-
-	@Id	
+	
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "producto_id")
 	private Producto producto;
 		
-	@Id
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "venta_id")
 	private Venta venta;

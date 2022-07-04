@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.generation.models.Producto;
 import com.generation.models.Sabor;
+import com.generation.models.Venta;
 import com.generation.services.ProductoService;
 import com.generation.services.SaborService;
 
@@ -29,6 +30,8 @@ public class ApiRestController {
 
 	@RequestMapping("/sabores")
 	public List<Sabor> obtenerSabores() {
+
 		return saborService.findAll();
+
 	}
 }
