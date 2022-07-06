@@ -49,7 +49,7 @@ public class ApiRestController {
 	return listaClientes; 
 	}
 	
-	@RequestMapping("/estadoVenta")
+	@RequestMapping("/estadosVentas")
 	public List<EstadoVenta> obtenerEstadoVenta () {
 	List<EstadoVenta> listaEstadosVentas = estadoVentaService.findAll();
 	return listaEstadosVentas; 
