@@ -1,5 +1,7 @@
 package com.generation.api;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.generation.models.Producto;
 import com.generation.models.Sabor;
-import com.generation.models.Venta;
 import com.generation.services.ProductoService;
 import com.generation.services.SaborService;
 
@@ -32,6 +33,18 @@ public class ApiRestController {
 	public List<Sabor> obtenerSabores() {
 
 		return saborService.findAll();
+	}
+	
+	@RequestMapping("/baseDatos")
+	public List<List<Object>> obtenerTodo() {
+		
+		List<List<Object>> listaTotal = new ArrayList<>();
+		List<Producto> listaProductos = productoService.findAll();
+		List<Sabor> listaSabores = saborService.findAll();
+		
+		listaTotal.addAll((Collection<? extends List<Object>>) listaProductos);
+		listaTotal.addAll((Collection<? extends List<Object>>) listaSabores);
 
+		return listaTotal;
 	}
 }
