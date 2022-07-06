@@ -33,7 +33,7 @@ public class TipoProducto {
 	// private Integer sabores_id;
 
 	// Tipo_producto envía a Producto
-	@OneToMany(mappedBy = "tipo_producto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "tipoProducto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Producto> productos;
 
 	// Recibe la foranea de sabores
