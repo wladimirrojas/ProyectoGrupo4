@@ -1,7 +1,5 @@
 package com.generation.api;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,18 +31,5 @@ public class ApiRestController {
 	public List<Sabor> obtenerSabores() {
 
 		return saborService.findAll();
-	}
-	
-	@RequestMapping("/baseDatos")
-	public List<List<Object>> obtenerTodo() {
-		
-		List<List<Object>> listaTotal = new ArrayList<>();
-		List<Producto> listaProductos = productoService.findAll();
-		List<Sabor> listaSabores = saborService.findAll();
-		
-		listaTotal.addAll((Collection<? extends List<Object>>) listaProductos);
-		listaTotal.addAll((Collection<? extends List<Object>>) listaSabores);
-
-		return listaTotal;
 	}
 }
