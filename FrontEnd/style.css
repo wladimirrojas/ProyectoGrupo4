@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 2px;
+    margin: 2px;
+    margin-left: 5%;
+}
+
+.container {
+    margin: 5px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+}
+
+.contenido {
+    background-color: red;
+    height: 1000px;
+    width: 100%;
+}
+
+footer {
+    background-color: green;
+}
+
+img {
+    width: 50%;
+}
