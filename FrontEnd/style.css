@@ -3,16 +3,12 @@
     padding: 0px;
 }
 
-body {
-    padding: 2px;
-    margin: 2px;
-    margin-left: 5%;
-}
+body {}
 
 .container {
-    margin: 5px;
     border-radius: 10px;
     background-color: aqua;
+    width: 100%;
 }
 
 header {
