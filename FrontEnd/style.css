@@ -30,3 +30,49 @@ footer {
 img {
     width: 50%;
 }
+
+.Emenu-movil {
+    position: fixed;
+    top: 0;
+    max-width: 500px;
+    width: 30%;
+}
+
+#Emenu{
+    top: 0;
+    max-width: 500px;
+    width: 20%;
+
+}
+#bg-carrito {
+    background: linear-gradient(180deg,#BE9DDF 0%,rgba(247,119,185,0) 50.52%,#BE9DDF 100%);
+    border-radius: 30px;
+    position: relative;
+}
+
+#carrito-icono{
+
+}
+
+#emenu{
+
+
+}
+
+#tabla-carrito{
+    width: 50%;
+}
+
+#producto-carrito{
+    display: inline-flex;
+    height: 50%;
+    width: 50%;
+}
+
+#fecha-nose-carrito{
+
+}
+
+.p-carrito{
+    display: inline;
+}
