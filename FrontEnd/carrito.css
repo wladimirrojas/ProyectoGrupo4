@@ -60,7 +60,7 @@ header {
     background-color: green;
 }
 
-/* Carrito */
+/* Carrito unico para el header deslizante */
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
@@ -70,4 +70,9 @@ header {
     background: linear-gradient(180deg, #BE9DDF 0%, rgba(247, 119, 185, 0) 50.52%, #BE9DDF 100%);
     border-radius: 30px;
     position: relative;
+}
+
+.piePag{
+    padding: 10px;
+    padding-top: 10%;
 }
