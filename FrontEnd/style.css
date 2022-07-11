@@ -3,13 +3,14 @@
     padding: 0px;
 }
 
-body {}
+#divTortas {
+    width: 50%;
+}
 
 .container {
     border-radius: 10px;
-    background-color: aqua;
-    width: 100%;
 }
+
 
 /* header {
     height: 50px;
@@ -20,11 +21,10 @@ body {}
 .contenido {
     background-color: red;
     height: 1000px;
-    width: 100%;
+    width: 50%;
 }
 
-<<<<<<< HEAD
-img {
+.imagenTorta {
     width: 50%;
 }
 
@@ -47,10 +47,6 @@ img {
     position: relative;
 }
 
-#carrito-icono {}
-
-#emenu {}
-
 #tabla-carrito {
     width: 50%;
 }
@@ -60,8 +56,6 @@ img {
     height: 50%;
     width: 50%;
 }
-
-#fecha-nose-carrito {}
 
 .p-carrito {
     display: inline;
@@ -73,8 +67,4 @@ img {
 
 #piesito {
     margin-left: 30px;
-=======
-footer {
-    background-color: green;
->>>>>>> df1bf7754707bcdfb386ee454e129c77e655a4e9
 }
