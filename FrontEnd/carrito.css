@@ -71,3 +71,8 @@ header {
     border-radius: 30px;
     position: relative;
 }
+
+.piePag{
+    padding: 10px;
+    padding-top: 10%;
+}
