@@ -13,16 +13,13 @@ public class ClienteService {
 
 	@Autowired
 	ClienteRepository clienteRepository;
-	
+
 	public void saveCliente(Cliente cliente) {
 		clienteRepository.save(cliente);
-		
+
 	}
 
 	public List<Cliente> findAll() {
 		return clienteRepository.findAll();
 	}
-
-	
-	
 }

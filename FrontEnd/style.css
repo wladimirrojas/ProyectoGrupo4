@@ -23,10 +23,6 @@ header {
     width: 100%;
 }
 
-footer {
-    background-color: green;
-}
-
 img {
     width: 50%;
 }
@@ -38,41 +34,42 @@ img {
     width: 30%;
 }
 
-#Emenu{
+#Emenu {
     top: 0;
     max-width: 500px;
     width: 20%;
-
 }
+
 #bg-carrito {
-    background: linear-gradient(180deg,#BE9DDF 0%,rgba(247,119,185,0) 50.52%,#BE9DDF 100%);
+    background: linear-gradient(180deg, #BE9DDF 0%, rgba(247, 119, 185, 0) 50.52%, #BE9DDF 100%);
     border-radius: 30px;
     position: relative;
 }
 
-#carrito-icono{
+#carrito-icono {}
 
-}
+#emenu {}
 
-#emenu{
-
-
-}
-
-#tabla-carrito{
+#tabla-carrito {
     width: 50%;
 }
 
-#producto-carrito{
+#producto-carrito {
     display: inline-flex;
     height: 50%;
     width: 50%;
 }
 
-#fecha-nose-carrito{
+#fecha-nose-carrito {}
 
+.p-carrito {
+    display: inline;
 }
 
-.p-carrito{
-    display: inline;
+.list-unstyled {
+    color: darkgoldenrod !important;
+}
+
+#piesito {
+    margin-left: 30px;
 }
