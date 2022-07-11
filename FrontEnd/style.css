@@ -46,21 +46,16 @@ body {}
     width: 100%;
 }
 
-/* header {
+header {
     height: 50px;
     width: 100%;
     background-color: orange;
-} */
+}
 
 .contenido {
     background-color: red;
     height: 1000px;
     width: 100%;
-}
-
-<<<<<<< HEAD
-img {
-    width: 50%;
 }
 
 .Emenu-movil {
@@ -111,9 +106,19 @@ img {
 
 #piesito {
     margin-left: 30px;
-=======
-footer {
+}
+#footer {
     background-color: green;
+<<<<<<< HEAD
 >>>>>>> df1bf7754707bcdfb386ee454e129c77e655a4e9
+}
+>>>>>>> main
+=======
+}
+
+/* Carrito */
+.img-fluid{ 
+    max-width: 30%; 
+    height: auto;
 }
 >>>>>>> main
