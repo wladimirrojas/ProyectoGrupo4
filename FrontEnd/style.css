@@ -11,11 +11,11 @@ body {}
     width: 100%;
 }
 
-header {
+/* header {
     height: 50px;
     width: 100%;
     background-color: orange;
-}
+} */
 
 .contenido {
     background-color: red;
@@ -23,6 +23,7 @@ header {
     width: 100%;
 }
 
+<<<<<<< HEAD
 img {
     width: 50%;
 }
@@ -72,4 +73,8 @@ img {
 
 #piesito {
     margin-left: 30px;
+=======
+footer {
+    background-color: green;
+>>>>>>> df1bf7754707bcdfb386ee454e129c77e655a4e9
 }
