@@ -60,7 +60,7 @@ header {
     background-color: green;
 }
 
-/* Carrito */
+/* Carrito unico para el header deslizante */
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
