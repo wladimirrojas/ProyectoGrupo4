@@ -7,18 +7,15 @@ body {}
 
 .container {
     border-radius: 10px;
-    background-color: aqua;
     width: 100%;
 }
 
 header {
     height: 50px;
     width: 100%;
-    background-color: orange;
 }
 
 .contenido {
-    background-color: red;
     height: 1000px;
     width: 100%;
 }
@@ -35,16 +32,6 @@ header {
     max-width: 500px;
     width: 20%;
 }
-
-#bg-carrito {
-    background: linear-gradient(180deg, #BE9DDF 0%, rgba(247, 119, 185, 0) 50.52%, #BE9DDF 100%);
-    border-radius: 30px;
-    position: relative;
-}
-
-#carrito-icono {}
-
-#emenu {}
 
 #tabla-carrito {
     width: 50%;
@@ -77,4 +64,15 @@ header {
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
+}
+
+#bg-carrito {
+    background: linear-gradient(180deg, #BE9DDF 0%, rgba(247, 119, 185, 0) 50.52%, #BE9DDF 100%);
+    border-radius: 30px;
+    position: relative;
+}
+
+.piePag{
+    padding: 10px;
+    padding-top: 10%;
 }
