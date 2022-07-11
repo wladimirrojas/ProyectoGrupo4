@@ -4,15 +4,20 @@
     padding: 0px;
 }
 
-body {}
+#divTortas {
+    width: 50%;
+}
 
 .container {
     border-radius: 10px;
-    background-color: aqua;
-    width: 100%;
 }
 
+<<<<<<< HEAD
+
+/* header {
+=======
 header {
+>>>>>>> main
     height: 50px;
     width: 100%;
     background-color: orange;
@@ -21,9 +26,16 @@ header {
 .contenido {
     background-color: red;
     height: 1000px;
-    width: 100%;
+    width: 50%;
 }
 
+<<<<<<< HEAD
+.imagenTorta {
+    width: 50%;
+}
+
+=======
+>>>>>>> main
 .Emenu-movil {
     position: fixed;
     top: 0;
@@ -43,10 +55,6 @@ header {
     position: relative;
 }
 
-#carrito-icono {}
-
-#emenu {}
-
 #tabla-carrito {
     width: 50%;
 }
@@ -56,8 +64,6 @@ header {
     height: 50%;
     width: 50%;
 }
-
-#fecha-nose-carrito {}
 
 .p-carrito {
     display: inline;
@@ -72,6 +78,8 @@ header {
 
 #piesito {
     margin-left: 30px;
+<<<<<<< HEAD
+=======
 }
 #footer {
     background-color: green;
@@ -86,5 +94,10 @@ header {
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
+<<<<<<< HEAD
+}
+>>>>>>> main
+=======
+>>>>>>> main
 }
 >>>>>>> main
