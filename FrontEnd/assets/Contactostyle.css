@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px ;
+}
+.nav-link{
+    display: inline;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media(max-width:700px){
+    header {
+        flex-direction: column;
+    }
+    nav{
+        padding:10px 0px;
+    }
+}
+
+body {
+    background-color: #92ddea;
+    margin: 0%;
+
+}
+
+.container {
+    border-radius: 10px;
+    background-color: aqua;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    background-color: plum;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.formulario{
+    background-color: skyblue;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    min-width: 200px;
+    margin-bottom: 40px;
+    padding-top: 10px
+}
+.escribenos{
+    background-color: blue;
+    margin-top: 5px;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+
+}
+.colocar_nombre{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
+}
+#imput-apellido{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.colocar_email{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.colocar_telefono{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.colocar_asunto{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#enviar{
+width: fit-content;
+text-align: justify;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+.aviso{
+    width: fit-content;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.bannerubi{
+    width: fit-content;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.direccion{
+    width: fit-content;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.mapa{
+    width: fit-content;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.vermas{
+    width: fit-content;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.accesos{
+    vertical-align: top;
+    width: 300px;
+    background-color: palevioletred;
+    height: 100px;
+
+}
+
+footer {
+    background-color: green;
+}
+
+img {
+    width: 50%;
+}
