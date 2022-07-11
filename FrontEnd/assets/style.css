@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px ;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media(max-width:700px){
+    header {
+        flex-direction: column;
+    }
+    nav{
+        padding:10px 0px;
+    }
+}
+
+body {
+    background-color: #92ddea;
+    margin: 0%;
+    font-family: adley pro;
+
+}
+
+.container {
+    border-radius: 10px;
+    background-color: aqua;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+header {
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+
+/*.contactoh{
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 200px;
+    background-color: pink;
+    vertical-align: top;
+    display: inline-block;
+    
+}
+.index{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 600px;
+
+}
+.carrito{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.productos{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-top: 20px;
+}
+.faq{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.contacto{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-top: 20px;
+}*/
+
+.formulario{
+    background-color: skyblue;
+    margin-top: 40px;
+    margin-left: 150px;
+    border-radius: 10px;
+    margin-right: 150px;
+    
+}
+.escribenos{
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+.accesos{
+    vertical-align: top;
+    width: 300px;
+    background-color: palevioletred;
+    height: 100px;
+
+}
+
+footer {
+    background-color: green;
+}
+
+img {
+    width: 50%;
+}
