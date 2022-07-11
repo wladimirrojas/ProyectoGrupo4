@@ -1,0 +1,14 @@
+.bordeGEN {
+    padding: 12px;
+    border-radius: 40px;
+    background-color: #FFA5D8;
+    border: 1px solid #133240;
+    height: max-content;
+}
+
+.colorLetra{
+    color: 133240;
+    font-family: sans-serif;
+    font-weight: 400;
+    src: "https://fonts.google.com/specimen/Rubik#standard-styles";
+}
