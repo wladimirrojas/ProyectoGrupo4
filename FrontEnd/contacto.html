@@ -36,17 +36,17 @@
                                         <h3 class="escribenos">Escríbenos!</h3>
                                         <form action="submeter-formulario.php" method="post">       
                                         <p>
-                                        <label for="nombre" class="colocar_nombre">Nombre
+                                        <div class="introNombre"><label for="nombre" class="colocar_nombre">Nombre
                                         <span class="obligatorio">*</span>
                                         </label>
                                         <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                                        </p>
+                                        </p></div>
                                         <p>
-                                        <label for="email" class="colocar_email">Email
+                                        <div class="introEmail"><label for="email" class="colocar_email">Email
                                         <span class="obligatorio">*</span>
                                         </label>
                                                     <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                                                </p>
+                                                </p></div>
                                                 <p>
                                                 <label for="telefone" class="colocar_telefono">Teléfono
                                                 </label>
@@ -71,8 +71,8 @@
                                                 </p>          
                                             
                                         </form>
-                                    </div>  
-                                </div>
+
+                                
             <div class="bannerubi">
                 <p>Estamos ubicados en:</p>
             </div>
@@ -85,23 +85,63 @@
             <div class="bannerb">
             </div>
             <div class="vermas">
-                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-info">Ver Más</button>
             </div>
-            
+        </div>
 
-        <footer>
+        <!-- Footer -->
+            <footer class="piePag">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase text-center">Maricakes</h5>
 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-primary">Links</h5>
 
+                                <ul class="list-unstyled mb-0">
+                                    <li><a class="text" href="index.html">Inicio</a></li>
+                                    <li><a class="text" href="carrito.html">Carrito</a></li>
+                                    <li><a class="text" href="productos.html">Productos</a>
+                                    </li>
+                                    <li><a class="text" href="faq.html">FAQ</a></li>
+                                    <li><a class="text" href="contacto.html">Contacto</a></li>
 
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Grid column-->
 
-        </footer>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <br>
+
+                            <ul class="list-unstyled mb-0">
+                                <h5 class="text-primary">Contacto</h5>
+                                <li class="text-primary">Peñalolen</li>
+                                <li class="text-primary">Av. Consistorial 5778</li>
+                                <li class="text-primary">Santiago, Peñalolen</li>
+                                <li class="text-primary">Lun-Sáb 9:00 - 18:00</li>
+                                <li class="text-primary">Sólo con visita agendada</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    © 2022 Copyright:
+                    <a class="text" href="index.html">Marikeiks.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
 
     </div>
 
