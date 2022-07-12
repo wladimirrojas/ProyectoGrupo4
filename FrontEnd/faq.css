@@ -6,9 +6,29 @@
     height: max-content;
 }
 
+.alLadin{
+    display: inline-block;
+}
+
 .colorLetra{
     color: 133240;
     font-family: sans-serif;
     font-weight: 400;
     src: "https://fonts.google.com/specimen/Rubik#standard-styles";
+}
+
+.img-fluid{ 
+    max-width: 30%; 
+    height: auto;
+}
+
+#bg-carrito {
+    background: linear-gradient(180deg, #7EB8DA 0%, rgba(247, 119, 185, 0) 50.52%, #7EB8DA 100%);
+    border-radius: 30px;
+    position: relative;
+}
+
+.piePag{
+    padding: 10px;
+    padding-top: 10%;
 }
