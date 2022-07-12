@@ -11,12 +11,7 @@
     border-radius: 10px;
 }
 
-<<<<<<< HEAD
-
-/* header {
-=======
 header {
->>>>>>> main
     height: 50px;
     width: 100%;
     background-color: orange;
@@ -28,13 +23,10 @@ header {
     width: 50%;
 }
 
-<<<<<<< HEAD
 .imagenTorta {
     width: 50%;
 }
 
-=======
->>>>>>> main
 .Emenu-movil {
     position: fixed;
     top: 0;
@@ -74,8 +66,6 @@ header {
 
 #piesito {
     margin-left: 30px;
-<<<<<<< HEAD
-=======
 }
 #footer {
     background-color: green;
@@ -85,5 +75,4 @@ header {
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
->>>>>>> main
 }
