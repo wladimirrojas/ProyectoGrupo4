@@ -1,3 +1,4 @@
+
 * {
     margin: 0px;
     padding: 0px;
@@ -60,6 +61,9 @@ header {
     display: inline;
 }
 
+<<<<<<< HEAD
+
+=======
 .list-unstyled {
     color: darkgoldenrod !important;
 }
@@ -69,10 +73,25 @@ header {
 }
 #footer {
     background-color: green;
+<<<<<<< HEAD
+>>>>>>> df1bf7754707bcdfb386ee454e129c77e655a4e9
+}
+>>>>>>> main
+=======
 }
 
 /* Carrito */
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+>>>>>>> main
+=======
+>>>>>>> main
+}
+>>>>>>> main
+>>>>>>> 5f32cdad5f737798416120ef0c96475801415bb4
