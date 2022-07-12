@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*carrito*/
+#carrito{
+    position: fixed;
+    width: 15%;
+    top: 4%;
+    right: 3%;
+    vertical-align: top;
+}
+
+/*Logo*/
+#logo {
+width: 150px; 
+height: 200px; 
+object-fit: cover;
+position: fixed;
+top: 0%;
+left: 2%;
+vertical-align: top;
+}
+
+/*Fondo de la pagina (gradient)*/
+.fondo0 {
+    background-color: #7EB8DA;
+    padding-bottom: 100px;
+    padding: 20px;
+}
+
+/*Fondo de la pagina (gradient)*/
+.fondo1 {
+    background: linear-gradient(to bottom, #7EB8DA,#92DDEA, #92DDEA, #7EB8DA, #7EB8DA);
+    padding-bottom: 100px;
+    padding: 10px;
+    border: 10px solid #92DDEA;
+    border-radius: 40px;
+}
+
+/*Fondo superior (imagen)*/
+.fondo-top{
+    /*background con imagen, sin repeticion, ocupando el 100% del espacio*/
+    background-image: url("assets/img/fondo_top.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30px;
+    padding: 30%;
+}
+
+/*Imagenes de presentacion*/
+.img-thumbnail{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/*Textos de presentacion imagen 1,2,3,4*/
+.text-seccion { 
+    color: #4C1159;
+    vertical-align: top;
+    font-style: italic; 
+    font-size: 20px;
+    vertical-align: top;
+    display: flex;
+    width: 100%;
+}
+
+
+/*Botones pagina index*/
+.button{
+    display: inline-block;
+    color:#4C1159;
+    text-align: center;
+    text-decoration: none;
+    background-color:bisque;
+    border: 1px solid #4c1159;
+    border-radius: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Seccion de preguntas y respuestas*/
+.FAQ1{
+    text-align: center;
+    background-color: #7EB8DA;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*Footer universal*/
+footer {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+
+#copyright{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
