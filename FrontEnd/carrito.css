@@ -3,38 +3,23 @@
     padding: 0px;
 }
 
-#divTortas {
-    width: 50%;
-}
+body {}
 
 .container {
     border-radius: 10px;
+    width: 100%;
 }
 
-<<<<<<< HEAD
-
-/* header {
-=======
 header {
->>>>>>> main
     height: 50px;
     width: 100%;
-    background-color: orange;
 }
 
 .contenido {
-    background-color: red;
     height: 1000px;
-    width: 50%;
+    width: 100%;
 }
 
-<<<<<<< HEAD
-.imagenTorta {
-    width: 50%;
-}
-
-=======
->>>>>>> main
 .Emenu-movil {
     position: fixed;
     top: 0;
@@ -48,12 +33,6 @@ header {
     width: 20%;
 }
 
-#bg-carrito {
-    background: linear-gradient(180deg, #BE9DDF 0%, rgba(247, 119, 185, 0) 50.52%, #BE9DDF 100%);
-    border-radius: 30px;
-    position: relative;
-}
-
 #tabla-carrito {
     width: 50%;
 }
@@ -63,6 +42,8 @@ header {
     height: 50%;
     width: 50%;
 }
+
+#fecha-nose-carrito {}
 
 .p-carrito {
     display: inline;
@@ -74,16 +55,24 @@ header {
 
 #piesito {
     margin-left: 30px;
-<<<<<<< HEAD
-=======
 }
 #footer {
     background-color: green;
 }
 
-/* Carrito */
+/* Carrito unico para el header deslizante */
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
->>>>>>> main
+}
+
+#bg-carrito {
+    background: linear-gradient(180deg, #BE9DDF 0%, rgba(247, 119, 185, 0) 50.52%, #BE9DDF 100%);
+    border-radius: 30px;
+    position: relative;
+}
+
+.piePag{
+    padding: 10px;
+    padding-top: 10%;
 }
