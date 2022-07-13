@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/Contactostyle.css">
+
     <title>Contacto</title>
 </head>
 
@@ -15,25 +16,23 @@
     <div class="container">
 
         <header>
-            <a href="index.html" class="logo">
-                <img src="assets/marikeiks logo.png" alt="">
-                <h2 class="nombre-empresa">Marikeiks</h2>
+            <a href="index.html">
+                <img  class="logo" src="assets/marikeiks logo.png" alt="">
             </a>
             <div class ="contactoh">
                 <h1>Contacto</h1>
             </div>
             <nav>
-                <a href="" class="nav-link">Inicio</a>
-                <a href="" class="nav-link">Carrito</a>
-                <a href="" class="nav-link">Productos</a>
-                <a href="" class="nav-link">FAQ</a>
-                <a href="" class="nav-link">Contacto</a>
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="carrito.html" class="nav-link">Carrito</a>
+                <a href="productos.html" class="nav-link">Productos</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
-
-
                         </header>
                                     <div class="formulario">
                                         <h3 class="escribenos">Escríbenos!</h3>
+                                        <hr class="separacion1">
                                         <form action="submeter-formulario.php" method="post">       
                                         <p>
                                         <div class="introNombre"><label for="nombre" class="colocar_nombre">Nombre
@@ -64,13 +63,13 @@
                                                 </label>                     
                                                                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                                                                 </p>            
-                                                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                                                                <button type="button" class="btn btn-info" id="enviar">enviar</button>
                                 
                                                 <p class="aviso">
                                                   <span class="obligatorio"> * </span>los campos son obligatorios.
                                                 </p>          
-                                            
-                                        </form>
+                                            </form>
+                                            <hr class="separacion2">
 
                                 
             <div class="bannerubi">
