@@ -35,19 +35,17 @@
     top: 50%;
     left: -50%;
     text-transform: uppercase;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 70px;
+    font-family: 'Fredoka One', cursive;
     color:#5f1470;
 }
-
 
 .textoSpan {
     vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
-    color: #4C1159;
-    font-size: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:midnightblue;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
 }
 
 /*Fondo de la pagina (gradient)*/
@@ -82,16 +80,19 @@
     vertical-align: top;
 }
 
+h2 {
+    font-family: 'Fredoka One', cursive;
+}
 
 /*Textos de presentacion imagen 1,2,3,4*/
 .text-seccion { 
     color: #4C1159;
     vertical-align: top;
-    font-style: italic; 
     font-size: 20px;
     vertical-align: top;
     display: flex;
     width: 100%;
+    font-family: 'Fredoka One', cursive;
 }
 
 
@@ -106,11 +107,13 @@
     border-radius: 30px;
     padding: 15px;
     text-transform: uppercase;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Marcellus', serif;
 }
 
 /*Seccion de preguntas y respuestas*/
 .FAQ1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 17px;
     text-align: center;
     background-color: #7EB8DA;
     width: 100%;
@@ -120,16 +123,19 @@
 
 /*Footer universal*/
 footer {
+    font-family: 'Marcellus', serif;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     
 }
 
 #copyright{
+    font-family: 'Marcellus', serif;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
 .text-white {
+    font-family: 'Marcellus', serif;
     text-decoration: none;
 }
