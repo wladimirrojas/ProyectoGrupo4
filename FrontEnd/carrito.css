@@ -69,7 +69,6 @@ header {
 }
 
 .piePag{
-    padding: 10px;
     padding-top: 10%;
 }
 
@@ -97,3 +96,11 @@ header {
 .text{
     text-decoration: none;
 }
+.text-white{
+    text-decoration: none;
+    }
+    
+    #copyright{
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
