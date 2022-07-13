@@ -1,3 +1,4 @@
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,12 +12,7 @@
     border-radius: 10px;
 }
 
-<<<<<<< HEAD
-
-/* header {
-=======
 header {
->>>>>>> main
     height: 50px;
     width: 100%;
     background-color: orange;
@@ -28,13 +24,10 @@ header {
     width: 50%;
 }
 
-<<<<<<< HEAD
 .imagenTorta {
     width: 50%;
 }
 
-=======
->>>>>>> main
 .Emenu-movil {
     position: fixed;
     top: 0;
@@ -68,22 +61,37 @@ header {
     display: inline;
 }
 
+<<<<<<< HEAD
+
+=======
 .list-unstyled {
     color: darkgoldenrod !important;
 }
 
 #piesito {
     margin-left: 30px;
-<<<<<<< HEAD
-=======
 }
 #footer {
     background-color: green;
+<<<<<<< HEAD
+>>>>>>> df1bf7754707bcdfb386ee454e129c77e655a4e9
+}
+>>>>>>> main
+=======
 }
 
 /* Carrito */
 .img-fluid{ 
     max-width: 30%; 
     height: auto;
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+>>>>>>> main
+=======
 >>>>>>> main
 }
+>>>>>>> main
+>>>>>>> 5f32cdad5f737798416120ef0c96475801415bb4

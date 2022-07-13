@@ -1,0 +1,27 @@
+.fondoFaq{
+    background-color: #7EB8DA;
+}
+
+.colorLetra{
+    color: 133240;
+    font-family: sans-serif;
+    font-weight: 400;
+    src: "https://fonts.google.com/specimen/Rubik#standard-styles";
+}
+
+.img-fluid{ 
+    max-width: 30%; 
+    height: auto;
+}
+
+#bg-faq {
+    background: linear-gradient(180deg, #7EB8DA 0%, rgba(247, 119, 185, 0) 50.52%, #7EB8DA 100%);
+    padding-bottom: 100px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.piePag{
+    padding: 10px;
+    padding-top: 10%;
+}
