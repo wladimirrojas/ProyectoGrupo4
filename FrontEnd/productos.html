@@ -12,16 +12,13 @@
     <script>
       $(document).ready(function(){
 
-        $('.imagenProducto').mouseover(function(){
-          $('.imagenProducto .subrayar').attr('style', 'text-decoration: underline;');
+        $('.subrayar').mouseover(function(){
+          $(this).attr('style', 'text-decoration: underline;');
         });
 
-        $('div.imagenProducto').mouseout(function(){
-          $('.subrayar').attr('style', 'text-decoration: none;');
+        $('.subrayar').mouseout(function(){
+          $(this).attr('style', 'text-decoration: none;');
         });
-
-
-
 
       });
 
@@ -178,21 +175,21 @@
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://img.freepik.com/foto-gratis/vista-frontal-pastel-chocolate-decorado-cerezas-redondas-deliciosas-dentro-torta-cumpleanos-color-marron-pasteleria-dulce-sobre-fondo-marron_140725-15913.jpg?w=826&t=st=1657670534~exp=1657671134~hmac=1b30057ac64cb203f6555ac2b61be7fb2a59d3838fb51d4453cf15d481883721" alt=""></img>
                 <label class="subrayar"><b>Torta Chocolate</b></label><br><label>$35.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/images/zanahoria.webp?u=1627793068" alt=""></img>
-                <label><b>Torta Nuez</b></label><br><label>$35.000</label></div>                
+                <label  class="subrayar"><b>Torta Nuez</b></label><br><label>$35.000</label></div>                
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
-                <label><b>Torta Frutas</b></label><br><label>$32.000</label></div>
+                <label  class="subrayar"><b>Torta Frutas</b></label><br><label>$32.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
-                <label><b>Torta Cocoa</b></label><br><label>$25.000</label></div>
+                <label  class="subrayar"><b>Torta Cocoa</b></label><br><label>$25.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://img.freepik.com/foto-gratis/vista-frontal-pastel-chocolate-decorado-cerezas-redondas-deliciosas-dentro-torta-cumpleanos-color-marron-pasteleria-dulce-sobre-fondo-marron_140725-15913.jpg?w=826&t=st=1657670534~exp=1657671134~hmac=1b30057ac64cb203f6555ac2b61be7fb2a59d3838fb51d4453cf15d481883721" alt=""></img>
-                <label><b>Torta Mokka</b></label><br><label>$50.000</label></div>
+                <label class="subrayar"><b>Torta Mokka</b></label><br><label>$50.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/images/zanahoria.webp?u=1627793068" alt=""></img>
-                <label><b>Torta Crema</b></label><br><label>$50.000</label></div>
+                <label class="subrayar"><b>Torta Crema</b></label><br><label>$50.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
-                <label><b>Torta Frutas</b></label><br><label>$40.000</label></div>
+                <label class="subrayar"><b>Torta Frutas</b></label><br><label>$40.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
-                <label><b>Torta Chocolate Amarga</b></label><br><label>$20.000</label></div>
+                <label class="subrayar"><b>Torta Chocolate Amarga</b></label><br><label>$20.000</label></div>
                 <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/f/ffce1a0d51500d2313677c9d82ab4bfe.image.703x700.webp?u=1629930397" alt=""></img>
-                  <label><b>Torta trozo extra</b></label><br><label>$2.500</label></div>
+                  <label class="subrayar"><b>Torta trozo extra</b></label><br><label>$2.500</label></div>
                 
             </div>
             <br>
@@ -205,11 +202,11 @@
                   <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/images/zanahoria.webp?u=1627793068" alt=""></img>
                     <label class="subrayar"><b>Torta Crema</b></label><br><label>$50.000</label></div>
                     <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
-                    <label><b>Torta Frutas</b></label><br><label>$40.000</label></div>
+                    <label class="subrayar"><b>Torta Frutas</b></label><br><label>$40.000</label></div>
                     <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
-                    <label><b>Torta Chocolate Amarga</b></label><br><label>$20.000</label></div>
+                    <label class="subrayar"><b>Torta Chocolate Amarga</b></label><br><label>$20.000</label></div>
                     <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/f/ffce1a0d51500d2313677c9d82ab4bfe.image.703x700.webp?u=1629930397" alt=""></img>
-                      <label><b>Torta trozo extra</b></label><br><label>$2.500</label></div>
+                      <label class="subrayar"><b>Torta trozo extra</b></label><br><label>$2.500</label></div>
                 </div>          
         </div>
         <hr>
