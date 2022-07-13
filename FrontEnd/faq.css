@@ -1,13 +1,5 @@
-.bordeGEN {
-    padding: 12px;
-    border-radius: 40px;
-    background-color: #FFA5D8;
-    border: 1px solid #133240;
-    height: max-content;
-}
-
-.alLadin{
-    display: inline-block;
+.fondoFaq{
+    background-color: #7EB8DA;
 }
 
 .colorLetra{
@@ -22,10 +14,11 @@
     height: auto;
 }
 
-#bg-carrito {
+#bg-faq {
     background: linear-gradient(180deg, #7EB8DA 0%, rgba(247, 119, 185, 0) 50.52%, #7EB8DA 100%);
-    border-radius: 30px;
-    position: relative;
+    padding-bottom: 100px;
+    padding: 10px;
+    border-radius: 40px;
 }
 
 .piePag{
