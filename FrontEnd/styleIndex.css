@@ -15,13 +15,39 @@
 
 /*Logo*/
 #logo {
-width: 150px; 
-height: 200px; 
-object-fit: cover;
-position: fixed;
-top: 0%;
-left: 2%;
-vertical-align: top;
+    width: 150px; 
+    height: 200px; 
+    object-fit: cover;
+    position: fixed;
+    top: 0%;
+    left: 2%;
+    vertical-align: top;
+}
+
+.logo2{
+    vertical-align: middle;
+    width: 50px; 
+    height: 50px; 
+}
+
+.textoTop{
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    color:#5f1470;
+}
+
+
+.textoSpan {
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4C1159;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Fondo de la pagina (gradient)*/
