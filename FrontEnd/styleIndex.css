@@ -59,7 +59,7 @@
 
 /*Fondo de la pagina (gradient)*/
 .fondo1 {
-    background: linear-gradient(to bottom, #7EB8DA,#92DDEA, #92DDEA, #7EB8DA, #7EB8DA);
+    background: linear-gradient(to bottom, #7EB8DA, #92DDEA, #7EB8DA,#92DDEA, #7EB8DA,#7EB8DA);
     padding-bottom: 100px;
     padding: 10px;
     border: 10px solid #92DDEA;
@@ -128,4 +128,8 @@ footer {
 #copyright{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+
+.text-white {
+    text-decoration: none;
 }
