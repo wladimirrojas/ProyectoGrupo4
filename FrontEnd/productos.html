@@ -15,12 +15,15 @@
 
         #contenedor{
             margin-top: 15px !important;
-            border: 5px solid grey;
+           
+            border: 8px solid grey;
             padding: 20px;
+            border-radius: 30px;
+            background: linear-gradient(#7EB8DA,#bfd1dc,#7EB8DA)
         }
 
         .encabezado{
-            height: 500px;
+            
         }
         h1{
             margin-top: 100px;
@@ -30,6 +33,7 @@
             background-image: url(/assets/img/HD-wallpaper-cakes-cool-food-yummy-entertainment-fun.jpg);
             background-size: 100%;
             background-repeat: no-repeat;
+            margin-bottom: 15%;
          }
          #carroP{
             background-color: pink;
@@ -39,17 +43,43 @@
          }
          #fotoBoda{
             width: 50%;
-            border-radius: 5px solid white;
-            border-width: 5px;
+            border-radius: 10px;
+            border: 2px solid white;
          }
-        
+         .imagenTortas{
+            width: 30%;
+            
+         }
 
+         .tortitas{
+            display: inline-block;
+            width: 50%;
+         }
+
+         #tortasDespliegue{
+            display: inline-block;
+            width: 100%;
+            border-radius: 10px;
+            vertical-align: top;
+            color: black;
+            
+         }
+
+         .imagenProducto{           
+            margin: 2%;            
+            width: 200px;
+            display: inline-block;
+         }
+         .fotoTP{
+            border: 10px solid white;
+            border-radius: 20px;
+         }
 
     </style>
 </head>
 
 <body>
-    <div id="contenedor" class="container bg-danger p-2" style="--bs-bg-opacity: .5; border-radius: 15px;">
+    <div id="contenedor" class="container" style="--bs-bg-opacity: .5; ">
         <div id="headerBack">
             <header id="encabezado" class="encabezado bg-transparent d-flex justify-content-between">
                 <div class="">
@@ -66,8 +96,8 @@
                 </div>
             </header>  
         </div>  
-        <div>
-            <p>
+        <div class="d-flex justify-content-center">
+            <p style="width: 50%;">
                 Para comenzar, elige tu diseño favorito, y luego podrás elegir los colores,
                 podrás agregar comentarios en la siguiente página. La fecha puede ser seleccionada
                 en la pestaña "Carrito". ¿Quieres cambiar algo? Contáctame y podemos hablarlo!
@@ -75,47 +105,74 @@
             </p>
         </div>
         <br>
-        <br>   
+        <br>
+        <hr>
         
-        <div>
-            <div>
-                <h3>Tortas Redondas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-    
+        <div style="text-align: center;">
+            <h3>Tortas Redondas</h3>
+            <div id="tortasDespliegue">
+                
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://img.freepik.com/foto-gratis/vista-frontal-pastel-chocolate-decorado-cerezas-redondas-deliciosas-dentro-torta-cumpleanos-color-marron-pasteleria-dulce-sobre-fondo-marron_140725-15913.jpg?w=826&t=st=1657670534~exp=1657671134~hmac=1b30057ac64cb203f6555ac2b61be7fb2a59d3838fb51d4453cf15d481883721" alt=""></img>
+                <label><b>Torta redonda 1 500$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/images/zanahoria.webp?u=1627793068" alt=""></img>
+                <label><b>Torta redonda 2 200$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/f/ffce1a0d51500d2313677c9d82ab4bfe.image.703x700.webp?u=1629930397" alt=""></img>
+                <label><b>Torta redonda 3 100$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
+                <label><b>Torta redonda 4 350$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
+                <label><b>Torta redonda 5 420$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://img.freepik.com/foto-gratis/vista-frontal-pastel-chocolate-decorado-cerezas-redondas-deliciosas-dentro-torta-cumpleanos-color-marron-pasteleria-dulce-sobre-fondo-marron_140725-15913.jpg?w=826&t=st=1657670534~exp=1657671134~hmac=1b30057ac64cb203f6555ac2b61be7fb2a59d3838fb51d4453cf15d481883721" alt=""></img>
+                <label><b>Torta redonda 6 500$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/images/zanahoria.webp?u=1627793068" alt=""></img>
+                <label><b>Torta redonda 7 200$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/f/ffce1a0d51500d2313677c9d82ab4bfe.image.703x700.webp?u=1629930397" alt=""></img>
+                <label><b>Torta redonda 8 100$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
+                <label><b>Torta redonda 9 350$</b></label></div>
+                <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
+                <label><b>Torta redonda 10 420$</b></label></div>
+                
             </div>
             <br>
+            <hr>
             <br>
-            <div>
-                <h3>Tortas Cuadradas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore modi dolore dignissimos, at nulla maxime ex recusandae eum enim id illo qui maiores eligendi quod perspiciatis nihil consequatur nobis.</p>
-    
-            </div>           
+            <div style="text-align: center;">
+                <h3>Tortas Redondas 2</h3>
+                <div id="tortasDespliegue">
+                    
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
+                    <label><b>Torta redonda 9 350$</b></label></div>
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
+                    <label><b>Torta redonda 10 420$</b></label></div>
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://img.freepik.com/foto-gratis/vista-frontal-pastel-chocolate-decorado-cerezas-redondas-deliciosas-dentro-torta-cumpleanos-color-marron-pasteleria-dulce-sobre-fondo-marron_140725-15913.jpg?w=826&t=st=1657670534~exp=1657671134~hmac=1b30057ac64cb203f6555ac2b61be7fb2a59d3838fb51d4453cf15d481883721" alt=""></img>
+                    <label><b>Torta redonda 11 500$</b></label></div>
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/images/zanahoria.webp?u=1627793068" alt=""></img>
+                    <label><b>Torta redonda 12 200$</b></label></div>
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/f/ffce1a0d51500d2313677c9d82ab4bfe.image.703x700.webp?u=1629930397" alt=""></img>
+                    <label><b>Torta redonda 13 100$</b></label></div>
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/a/a0cc3d76c69a67d4dac31f18dde9ef4c.image.700x700.webp?u=1618518578" alt=""></img>
+                    <label><b>Torta redonda 14 350$</b></label></div>
+                    <div class="imagenProducto" ><img class="fotoTP" style="width: 100%;" src="https://cdn1htt.azureedge.net/panyolic/bmz_cache/b/b56ae6aebc864f0fbcbfb30ee830e5be.image.489x489.webp?u=1654043813" alt=""></img>
+                    <label><b>Torta redonda 15 420$</b></label></div>
+                </div>          
         </div>
+        <hr>
 
         <div>
-            <h2>¿Boda?</h2>
-            <div style="display: inline-block; width: 50%; vertical-align: top;">
-                <p>
+            <h2>¿Boda o evento?</h2>
+            <br>
+            <div style="display: inline-block; width: 50%; vertical-align: top; text-align: end;">
+                <p style="width: 50%;text-align: center; display: inline-block; ">
                     ¿Buscando algo incluso más personalizado? Si estás celebrando una boda,
                      un gran cumpleaños o el lanzamiento de un negocio, contáctanos para 
                      que hagamos tu día más especial aún!
                 </p>
-                <a class="btn btn-secondary" href="contacto.html">Contacto</a>
+                <br>
+                <a class="btn" style="background-color: white; border-radius: 25px;" href="contacto.html">Contacto</a>
             </div>
             <div style="display: inline-block; width: 49%; vertical-align: top;">
-                <img id="fotoBoda" src="/assets/img/HD-wallpaper-cakes-cool-food-yummy-entertainment-fun.jpg" alt="noImage">
+                <div><img id="fotoBoda" src="/assets/img/HD-wallpaper-cakes-cool-food-yummy-entertainment-fun.jpg" alt="noImage">
 
             </div>
         </div>
