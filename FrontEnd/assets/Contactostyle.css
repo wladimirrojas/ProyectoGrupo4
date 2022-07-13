@@ -97,7 +97,7 @@ header {
     color: #4C1159;
 
 }
-.colocar_nombre{
+.form-label{
     width: fit-content;
     text-align: justify;
     margin-left: auto;
@@ -134,6 +134,7 @@ margin-left: auto;
 margin-right: auto;
 display: block;
 height: 40px;
+margin-bottom: 10px;
 }
 .aviso{
     width: fit-content;
@@ -156,6 +157,10 @@ height: 40px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background-color: #92DDEA;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 10px;
 }
 .mapa{
     width: fit-content;
@@ -184,7 +189,7 @@ footer {
 }
 
 .introNombre{
-    display: inline-block;
+    display: inline;
     width: fit-content;
     text-align: justify;
     margin-left: auto;
@@ -200,17 +205,62 @@ footer {
 }
 .separacion1{
     color:#4C1159;
-    width: 80%;
-    margin-left: 120px;
+    width: 75%;;
     height: 5px;
     background-color: #4C1159;
     border-radius: 5px;
+    margin: auto;
 }
 .separacion2{
     color:#4C1159;
-    width: 80%;
-    margin-left: 120px;
+    width: 75%;
+    margin:auto;
     height: 5px;
     background-color: #4C1159;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+#nombre{
+    border: 10px;
+    border-radius: 5px;
+    border-color: #92DDEA;
+    background-color: #92DDEA;
+    width: fit-content;
+    display: inline;
+}
+#email{
+    border: 10px;
+    border-radius: 5px;
+    border-color: #92DDEA;
+    background-color: #92DDEA;
+    width: fit-content;
+    display: inline;
+    margin-left: 20px;
+}
+#telefono{
+    border: 10px;
+    border-radius: 5px;
+    border-color: #92DDEA;
+    background-color: #92DDEA;
+    width: fit-content;
+    display: inline;
+    margin-left: 10px;
+}
+#asunto{
+    border: 10px;
+    border-radius: 5px;
+    border-color: #92DDEA;
+    background-color: #92DDEA;
+    width: fit-content;
+    display: inline;
+    margin-left: 10px;
+}
+#mensaje{
+    border: 10px;
+    border-radius: 5px;
+    border-color: #92DDEA;
+    background-color: #92DDEA;
+    width: fit-content;
+    display: inline;
+
 }
