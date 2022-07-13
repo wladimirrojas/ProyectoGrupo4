@@ -89,3 +89,11 @@ header {
     border: 10px solid #92DDEA;
     border-radius: 40px;
 }
+
+.colorContraste{
+    color: #133240;
+}
+
+.text{
+    text-decoration: none;
+}
