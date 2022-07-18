@@ -1,8 +1,39 @@
+element.style {
+
+}
+
+#img-logo-bottom {
+    width: 40%;
+    display: block;
+}
+
+.homepage-carousel .related-item:first-child:nth-last-child(2) {
+    margin-right: 0.75rem;
+}
+
+.homepage-carousel .slide li:not(.related-item--youtube) {
+    background-position: 8% center;
+    background-repeat: no-repeat;
+    background-size: 4.5rem;
+    box-sizing: border-box;
+    min-height: 7.5rem;
+    padding: 0.625rem 0.625rem 0.625rem 7.5rem;
+    width: 23.75rem;
+}
+
 .text-white{
 text-decoration: none;
 }
 
+.homepage-carousel .slide li {
+    border: 0.0625rem solid #a9acaa;
+    border-radius: 0.5rem;
+    white-space: normal;
+}
+
+
 #copyright{
+    padding: 20px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
