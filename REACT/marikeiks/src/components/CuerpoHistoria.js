@@ -1,8 +1,8 @@
 import React from 'react';
-import foto1 from './img/torta1.png';
-import foto2 from './img/torta2.png';
-import foto3 from './img/torta3.png';
-import './styles/Historia.css'
+import foto1 from '../img/torta1.png';
+import foto2 from '../img/torta2.png';
+import foto3 from '../img/torta3.png';
+import '../styles/Historia.css'
 
 const CuerpoHistoria = () => {
     return (
