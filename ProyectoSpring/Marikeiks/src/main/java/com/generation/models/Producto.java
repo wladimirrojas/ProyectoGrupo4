@@ -44,6 +44,16 @@ public class Producto {
 	@JoinColumn(name = "decoracion_id")
 	private Decoracion decoracion;
 
+	// Recibe la foranea de sabores
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "sabores_id")
+	private Sabor sabor;
+
+	// Recibe la foranea de cantidades
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "cantidades_id")
+	private Cantidad cantidad;
+
 	/* columna extra de creación y actualización */
 	@Column(updatable = false)
 	private Date createdAt;
@@ -54,7 +64,7 @@ public class Producto {
 	}
 
 	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
-			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion) {
+			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion, Sabor sabor) {
 		super();
 		this.id = id;
 		this.descripcion = descripcion;
@@ -128,6 +138,14 @@ public class Producto {
 
 	public void setDecoracion(Decoracion decoracion) {
 		this.decoracion = decoracion;
+	}
+
+	public Sabor getSabor() {
+		return sabor;
+	}
+
+	public void setSabor(Sabor sabor) {
+		this.sabor = sabor;
 	}
 
 	@PrePersist
