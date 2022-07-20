@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/estilosHeader.css'
-import logo1 from './img/logo1';
+import logo1 from '../img/logo1.png';
 
 const HeaderNav = () => {
     return (
