@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/portadaStyle.css";
 
 const PortadaComponent = () => {
+  return(
   <div id="portada">
     <img
       className="img-fluid"
@@ -16,7 +17,7 @@ const PortadaComponent = () => {
         Comprar Online
       </button>
     </div>
-  </div>;
+  </div>)
 };
 
 export default PortadaComponent;
