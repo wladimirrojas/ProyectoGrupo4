@@ -1,8 +1,7 @@
 import React from "react";
 import '../styles/Contacto.css';
 
-<<<<<<< HEAD
-const CotactoComponent = () => {
+const ContactoComponent = () => {
     return (
         <div>
             <div id="uno"></div>
@@ -128,12 +127,5 @@ const CotactoComponent = () => {
             </div>
             </div>
             )}
-=======
-const ContactoComponent = () =>{
-    return(
-''
-    );
-};
->>>>>>> main
 
 export default ContactoComponent;
