@@ -15,9 +15,9 @@ const ContactoComponent = () => {
                         <div className="col-3"><img className="rounded" height="200" width="170" src={require("../img/contacto1.jpg")} alt="contacto1" /></div>
                     </div>
                     <div className="mapa row-col mt-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.7224664369787!2d-70.55837837333792!3d-33.50859714632189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1a3a8c249e1%3A0x54b1c2be80b9fa2d!2sAv.%20Consistorial%205778%2C%20Penalolen%2C%20Pe%C3%B1alol%C3%A9n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1657576944559!5m2!1ses!2scl"
-                            width="700px" height="300px" style="border-radius: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                        <iframe title="madafaka" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.7224664369787!2d-70.55837837333792!3d-33.50859714632189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1a3a8c249e1%3A0x54b1c2be80b9fa2d!2sAv.%20Consistorial%205778%2C%20Penalolen%2C%20Pe%C3%B1alol%C3%A9n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1657576944559!5m2!1ses!2scl"
+                            width="700px" height="300px" style={{borderRadius: '5px'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
                 </div>
 
                 <div className="row tres-2">
@@ -65,7 +65,7 @@ const ContactoComponent = () => {
 
             <div id="seis">
                 <div>
-                    <div className="seis-1" style="position: absolute; top: 150px;">
+                    <div className="seis-1" style={{position: 'absolute', top: '150px'}}>
                         <br></br>
                         <div className="titulos fs-1">Marikeiks</div>
                         <div className="parrafos fs-5"> Nuestro local
@@ -74,8 +74,8 @@ const ContactoComponent = () => {
                                 <li >Av. Consistorial 5778</li>
                                 <li >Santiago, Peñalolén</li>
                                 <li >Lun-Sáb 9:00 - 18:00</li>
-                                <div style="align-content: center;">
-                                    <a href="/index.html"> <img id="img-logo-bottom" style="margin-left:100px;" src="assets/img/marikeiks logo 2.png" alt="logo" title="Ir a inicio" /></a>
+                                <div style={{alignContent: 'center'}}>
+                                    <a href="/index.html"> <img id="img-logo-bottom" style={{marginLeft:'100px'}} src="assets/img/marikeiks logo 2.png" alt="logo" title="Ir a inicio" /></a>
                                 </div>
                                 <li >Retiro sólo con visita agendada</li>
                                 </strong>
@@ -83,7 +83,7 @@ const ContactoComponent = () => {
                         </div>
 
                     </div>
-                    <div className="seis-2 col" style="position: absolute; top: 40px;">
+                    <div className="seis-2 col" style={{position: 'absolute', top: '40px'}}>
                         <div className="titulos fs-1 text-center">¿Cómo podemos ayudarte?</div>
                         <br />
                         <div className="parrafos fs-4">
@@ -125,7 +125,7 @@ const ContactoComponent = () => {
                     </div>
             </div>
             </div>
-            </div>
+        </div>
             )}
 
 export default ContactoComponent;
