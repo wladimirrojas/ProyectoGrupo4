@@ -13,7 +13,6 @@ const Inicio = () => {
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia />
-      {/* <ContactoComponent/> si apreto alt shift A, se comenta*/}
       <FooterComponent />
     </div>
   );
