@@ -2,7 +2,7 @@ import React from 'react';
 import adorno1 from './img/adorno.png';
 import adorno2 from './img/adorno2.png';
 
-const Titulo = () => {
+const TituloHistoria = () => {
     return (
         <div className='d-flex justify-content-around col-12 pt-5'>
             <img className='adorno' src={adorno1} />
@@ -12,4 +12,4 @@ const Titulo = () => {
     );
 };
 
-export default Titulo;
+export default TituloHistoria;
