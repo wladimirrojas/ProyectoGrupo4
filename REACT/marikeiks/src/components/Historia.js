@@ -5,7 +5,7 @@ import SloganHistoria from './SloganHistoria';
 
 const Historia = () => {
     return (
-        <div className="container-fluid">
+        <div className="contenedorHistoria">
             <div className="row">
             <TituloHistoria/>
             <hr/>

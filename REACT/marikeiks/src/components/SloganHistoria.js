@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Historia.css'
+import '../styles/Historia.css'
 
 const Slogan = () => {
     return (
