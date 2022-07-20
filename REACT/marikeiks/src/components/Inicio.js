@@ -7,7 +7,7 @@ import ContactoComponent from "./ContactoComponent";
 
 const Inicio = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0" style={{backgroundColor: "whitesmoke"}}>
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia />
