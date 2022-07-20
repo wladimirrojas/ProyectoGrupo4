@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 #tituloV{
-    background-image: url(/assets/img/white-simple-textured-design-background.jpg);
+    background-image: url('../components/img/white-simple-textured-design-background.jpg');
     background-size: 100%;
     background-position: center;
 
