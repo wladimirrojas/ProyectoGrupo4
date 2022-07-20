@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+#tituloV{
+    background-image: url(/assets/img/white-simple-textured-design-background.jpg);
+    background-size: 100%;
+    background-position: center;
+
+    
+}
+h2{    
+    font-size: 5em;
+    font-family: 'Tangerine', cursive;
+    font-size:calc(12px + 5vw);      
+}
+
+#carruselProductos{
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 700px;   
+}
+
+h6{
+    text-align: center;   
+    font-family: 'Raleway', sans-serif;      
+    font-size:calc(12px + 1vw);        
+}
+
+.imgProducto{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.tarjetaCompleta{
+    height: 500px;
+}
+.tarjetaCarrusel{
+    width: 25%;
+    background-color: white;
+}
+.tarjetaImagen{
+    height: 90%;
+}
+.subtitulo{
+    height: 10%;
+    padding-top: 8px;
+}
