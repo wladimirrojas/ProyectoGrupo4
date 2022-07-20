@@ -5,15 +5,15 @@ import logo1 from '../img/logo1.png';
 const HeaderNav = () => {
     return (
         <header>
-    <a href="#" class="logo">
+    <a href="#" className="logo">
         <img src={logo1} alt="logo de empresa"/>
-        <h2 class="nombre-marikeiks"></h2>
+        <h2 className="nombre-marikeiks"></h2>
     </a>
-    <nav>
-        <a href="" class="nav-link">Inicio</a>
-        <a href="" class="nav-link">Productos</a>
-        <a href="" class="nav-link">Carrito</a>
-        <a href="" class="nav-link">Contacto</a>
+    <nav className='nav'> 
+        <a href="" className="nav-link">Inicio</a>
+        <a href="" className="nav-link">Productos</a>
+        <a href="" className="nav-link">Carrito</a>
+        <a href="" className="nav-link">Contacto</a>
     </nav>
     </header>
 

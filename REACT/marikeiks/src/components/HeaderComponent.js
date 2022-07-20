@@ -3,9 +3,7 @@ import HeaderNav from './HeaderNav';
 
 const HeaderComponent = () => {
     return (
-        <div><HeaderNav/>
-        </div>
-
+        <HeaderNav/>
     );
 };
 

@@ -36,7 +36,6 @@ nav a{
 }
 
 nav a:hover{
-    color: black;
     background-color: wheat;
     border-radius: 30px;
     transition: all 500ms ease;

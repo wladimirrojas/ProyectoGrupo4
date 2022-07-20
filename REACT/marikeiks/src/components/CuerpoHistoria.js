@@ -33,7 +33,7 @@ const CuerpoHistoria = () => {
 const ImagenesHistoria = () => {
     return (
         <div id='carouselExampleControls'
-            className='carousel slide col-xl-4 col-lg-8 col-md-8 col-sm-8 col-8 mb-5 mt-5'
+            className='carousel slide col-xl-4 col-lg-5 col-md-8 col-sm-8 col-8 mb-5 mt-5'
             data-bs-ride='carousel'>
             <div className='carousel-inner'>
                 <div className='carousel-item active' data-bs-interval='2000'>

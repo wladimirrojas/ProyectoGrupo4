@@ -43,6 +43,9 @@ nav a:hover{
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
 }
+.nav-link{
+    color: black;
+}
 
 
 @media (max-width:700px){
