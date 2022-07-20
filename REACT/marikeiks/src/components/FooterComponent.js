@@ -45,10 +45,10 @@ const FooterComponent = () => {
             <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mt-3'>
               <h6 className='text-uppercase mb-4'>Contacto</h6>
               <p>
-                <i className='mr-3'></i> Direccion (nosecual)
+                <i className='mr-3'></i> Direccion (533)
               </p>
               <p>
-                <i className='mr-3'></i> correo@nose.cl
+                <i className='mr-3'></i> correo@alguno.cl
               </p>
               <p>
                 <i className='mr-3'></i> numerotelefono
