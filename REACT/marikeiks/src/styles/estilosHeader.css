@@ -45,7 +45,7 @@ nav a:hover{
 }
 .contenedorimg{
     margin:0px auto;
-    background-image: url(img/404658.jpg);
+    background-image: url(/src/components/img/header1.jpg);
     padding: 10px 15% 30% 30px;
     font-family: 'Raleway', sans-serif;
     background-repeat: no-repeat;
