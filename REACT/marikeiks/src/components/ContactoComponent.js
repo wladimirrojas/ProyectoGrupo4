@@ -1,8 +1,7 @@
 import React from "react";
 import '../styles/Contacto.css';
 
-<<<<<<< HEAD
-const CotactoComponent = () => {
+const ContactoComponent = () => {
     return (
         <div>
             <div id="uno"></div>
@@ -76,7 +75,7 @@ const CotactoComponent = () => {
                                 <li >Santiago, Peñalolén</li>
                                 <li >Lun-Sáb 9:00 - 18:00</li>
                                 <div style="align-content: center;">
-                                    <a href="/index.html"> <HTMLImageElement id="img-logo-bottom" style="margin-left:100px;" src="assets/img/marikeiks logo 2.png" alt="logo" title="Ir a inicio" /></a>
+                                    <a href="/index.html"> <img id="img-logo-bottom" style="margin-left:100px;" src="assets/img/marikeiks logo 2.png" alt="logo" title="Ir a inicio" /></a>
                                 </div>
                                 <li >Retiro sólo con visita agendada</li>
                                 </strong>
@@ -91,22 +90,22 @@ const CotactoComponent = () => {
                             <div className="row">
                                 <div className="mb-3 col">
                                     <label for="exampleFormControlInput1" className="form-label">Nombre</label>
-                                    <HTMLInputElement className="form-control" id="exampleFormControlInput1" placeholder="Nombre" />
+                                    <input className="form-control" id="exampleFormControlInput1" placeholder="Nombre" />
                                 </div>
                                 <div className="mb-3 fs-4 col">
                                     <label label for="exampleFormControlInput1" className="form-label">Apellido</label>
-                                    <HTMLInputElement className="form-control" id="exampleFormControlInput2" placeholder="Apellido" />
+                                    <input className="form-control" id="exampleFormControlInput2" placeholder="Apellido" />
                                 </div>
                             </div>
 
                             <div className="row">
                                 <div className="mb-3 col">
                                     <label for="exampleFormControlInput2" className="form-label">Correo</label>
-                                    <HTMLInputElement type="email" className="form-control" id="exampleFormControlInput3" placeholder="correo@email.com" />
+                                    <input type="email" className="form-control" id="exampleFormControlInput3" placeholder="correo@email.com" />
                                 </div>
                                 <div className="mb-3 col">
                                     <label for="exampleFormControlInput2" className="form-label">Teléfono</label>
-                                    <HTMLInputElement type="tel" className="form-control" id="exampleFormControlInput3" placeholder="(9) 1234 5678" />
+                                    <input type="tel" className="form-control" id="exampleFormControlInput3" placeholder="(9) 1234 5678" />
                                 </div>
                             </div>
 
@@ -128,12 +127,5 @@ const CotactoComponent = () => {
             </div>
             </div>
             )}
-=======
-const ContactoComponent = () =>{
-    return(
-''
-    );
-};
->>>>>>> main
 
 export default ContactoComponent;

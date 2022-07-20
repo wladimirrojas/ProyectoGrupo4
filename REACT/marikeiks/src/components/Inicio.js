@@ -5,18 +5,15 @@ import Historia from "./Historia";
 import PortadaComponent from "./PortadaComponent";
 import ContactoComponent from "./ContactoComponent";
 
-const Inicio = () =>{
-    return(
-        <div className="container-fluid">
-        <PortadaComponent/>
-        <VistaProductoComponent/>
-        <Historia/>
-        <ContactoComponent/>
-        <FooterComponent/>
-        </div>
-
-    )
-
-}
+const Inicio = () => {
+  return (
+    <div className="container-fluid">
+      <PortadaComponent />
+      <VistaProductoComponent />
+      <Historia />
+      <FooterComponent />
+    </div>
+  );
+};
 
 export default Inicio;
