@@ -11,7 +11,6 @@ const Inicio = () => {
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia />
-      <ContactoComponent/>
       <FooterComponent />
     </div>
   );
