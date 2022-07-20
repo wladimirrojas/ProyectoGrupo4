@@ -4,7 +4,7 @@ import foto2 from './img/torta2.png';
 import foto3 from './img/torta3.png';
 import './styles/Historia.css'
 
-const Cuerpo = () => {
+const CuerpoHistoria = () => {
     return (
         <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 mb-5 mt-5'>
             <h4 id='subtitulo_historia'>¿Cómo fue la creación de Marikeiks?</h4>
@@ -30,7 +30,7 @@ const Cuerpo = () => {
     );
 };
 
-const Imagenes = () => {
+const ImagenesHistoria = () => {
     return (
         <div id='carouselExampleControls'
             className='carousel slide col-xl-4 col-lg-8 col-md-8 col-sm-8 col-8 mb-5 mt-5'
@@ -60,4 +60,4 @@ const Imagenes = () => {
             );
 };
 
-export {Cuerpo, Imagenes};
+export {CuerpoHistoria, ImagenesHistoria};

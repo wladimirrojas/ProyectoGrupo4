@@ -1,20 +1,20 @@
 import React from 'react';
-import Titulo from './Titulo';
-import {Cuerpo, Imagenes} from './Cuerpo';
-import Slogan from './Slogan';
+import TituloHistoria from './TituloHistoria';
+import {CuerpoHistoria, ImagenesHistoria} from './CuerpoHistoria';
+import SloganHistoria from './SloganHistoria';
 
 const Historia = () => {
     return (
         <div className="container-fluid">
             <div className="row">
-            <Titulo/>
+            <TituloHistoria/>
             <hr/>
             <div className="row justify-content-center">
-            <Cuerpo/>
-            <Imagenes/>
+            <CuerpoHistoria/>
+            <ImagenesHistoria/>
             </div>
             </div>
-            <Slogan/>
+            <SloganHistoria/>
         </div>    
 
     );  
