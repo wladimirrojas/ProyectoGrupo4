@@ -1,7 +1,12 @@
-import React from "react";
-import FooterComponent from "./components/FooterComponent";
+import React from 'react';
+
 
 const App = () => {
-  return <FooterComponent />;
+  return (
+      ''
+  );
 };
+
+
+
 export default App;
