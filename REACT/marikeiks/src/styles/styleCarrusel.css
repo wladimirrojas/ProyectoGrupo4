@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 #tituloV{
-    background-image: url('../components/img/white-simple-textured-design-background.jpg');
+    background-image: url('../img/white-simple-textured-design-background.jpg');
     background-size: 100%;
     background-position: center;
-
-    
 }
-h2{    
+
+#variedades{    
     font-size: 5em;
     font-family: 'Tangerine', cursive;
-    font-size:calc(12px + 5vw);      
+    font-size:calc(12px + 7vw);      
 }
 
 #carruselProductos{

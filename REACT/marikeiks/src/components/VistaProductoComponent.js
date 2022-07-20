@@ -5,7 +5,7 @@ const VistaProductoComponent = () =>{
     return(
         <div id="tituloV">
                     <div className="d-flex justify-content-center">
-                        <h2>Variedades</h2>
+                        <h2 id="variedades">Variedades</h2>
                     </div>
 
                     <div id="carruselProductos" className="carousel slide
@@ -29,7 +29,7 @@ const VistaProductoComponent = () =>{
                                     <div className="tarjetaCarrusel">
                                         <div className="tarjetaImagen">
                                             <img className="imgProducto"
-                                                src={require("./img/a65a6b0b81bc7645c4ddb272d656c548.webp")}
+                                                src={require("../img/a65a6b0b81bc7645c4ddb272d656c548.webp")}
                                                 alt=""/>
                                         </div>
                                         <div className="subtitulo">
@@ -40,7 +40,7 @@ const VistaProductoComponent = () =>{
                                     <div className="tarjetaCarrusel">
                                         <div className="tarjetaImagen">
                                             <img className="imgProducto"
-                                                src={require("./img/vanilla-vegan-gluten-free-cake-oat-flour_9718.jpg")}
+                                                src={require("../img/vanilla-vegan-gluten-free-cake-oat-flour_9718.jpg")}
                                                 alt=""/>
                                         </div>
                                         <div className="subtitulo">
@@ -51,7 +51,7 @@ const VistaProductoComponent = () =>{
                                     <div className="tarjetaCarrusel">
                                         <div className="tarjetaImagen">
                                             <img className="imgProducto"
-                                                src={require("./img/WeddingCake_1800x1800.webp")}
+                                                src={require("../img/WeddingCake_1800x1800.webp")}
                                                 alt=""/>
                                         </div>
                                         <div className="subtitulo">
@@ -67,7 +67,7 @@ const VistaProductoComponent = () =>{
                                     <div className="tarjetaCarrusel">
                                         <div className="tarjetaImagen">
                                             <img className="imgProducto"
-                                                src={require("./img/mike-meeks-zk-fclJdGas-unsplash-scaled.jpg")}
+                                                src={require("../img/mike-meeks-zk-fclJdGas-unsplash-scaled.jpg")}
                                                 alt=""/>
                                         </div>
                                         <div className="subtitulo">
@@ -78,7 +78,7 @@ const VistaProductoComponent = () =>{
                                     <div className="tarjetaCarrusel">
                                         <div className="tarjetaImagen">
                                             <img className="imgProducto"
-                                                src={require("./img/variado.jpg")}
+                                                src={require("../img/variado.jpg")}
                                                 alt=""/>
                                         </div>
                                         <div className="subtitulo">
@@ -89,7 +89,7 @@ const VistaProductoComponent = () =>{
                                     <div className="tarjetaCarrusel">
                                         <div className="tarjetaImagen">
                                             <img className="imgProducto"
-                                                src={require("./img/pan.jpg")}
+                                                src={require("../img/pan.jpg")}
                                                 alt=""/>
                                         </div>
                                         <div className="subtitulo">
