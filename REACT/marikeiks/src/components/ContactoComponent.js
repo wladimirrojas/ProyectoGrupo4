@@ -70,6 +70,7 @@ const CotactoComponent = () => {
                         <div className="titulos fs-1">Marikeiks</div>
                         <div className="parrafos fs-5"> Nuestro local
                             <ul className="list-unstyled">
+                                <strong>
                                 <li >Av. Consistorial 5778</li>
                                 <li >Santiago, Peñalolén</li>
                                 <li >Lun-Sáb 9:00 - 18:00</li>
@@ -77,6 +78,7 @@ const CotactoComponent = () => {
                                     <a href="/index.html"> <HTMLImageElement id="img-logo-bottom" style="margin-left:100px;" src="assets/img/marikeiks logo 2.png" alt="logo" title="Ir a inicio" /></a>
                                 </div>
                                 <li >Retiro sólo con visita agendada</li>
+                                </strong>
                             </ul>
                         </div>
 
