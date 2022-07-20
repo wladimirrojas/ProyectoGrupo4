@@ -1,5 +1,13 @@
-*{
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Tangerine&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: #eff1f4;
 }
 
 .contenedorIcono{
