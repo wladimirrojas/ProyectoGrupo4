@@ -91,8 +91,8 @@ const FooterComponent = () => {
           backgroundColor: "rgba(0, 0, 0, 0.3)",
         }}
       >
-        © 2022 Copyright:
-        <a class="text-white noLink" href="www.google.cl" rel="noreferrer">
+        <span>© 2022 Copyright: </span>
+        <a class="text-white noLink" href="www.google.cl" rel="noreferrer"> 
           Marikeiks.cl
         </a>
       </div>
