@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/portadaStyle.css";
 
-const FooterComponent = () => {
+const PortadaComponent = () => {
   <div id="portada">
-    <img className="img-fluid" src="/assets/img/portada.jpeg" alt=""></img>
+    <img className="img-fluid" src={require("../images/portada.jpeg")} alt=""></img>
     <div id="titulo">
       <p id="tituloLetra">
         Marikeiks
@@ -16,3 +16,5 @@ const FooterComponent = () => {
     </div>
   </div>;
 };
+
+export default PortadaComponent;
