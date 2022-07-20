@@ -1,0 +1,110 @@
+*{
+    position: relative;
+}
+
+.contenedorIcono{
+    margin: 0px auto;
+    height: 10px;
+}
+
+.titulos{
+    font-family: 'Tangerine', cursive;
+    font-size: 8vh;
+}
+
+.parrafos{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+}
+
+#img-logo-bottom{
+    width: 40%;
+    display: block;
+}
+
+.redes {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+
+#uno{
+    background-image: url("/assets/img/top.png");
+    height: 100px;
+    width: 100%;
+}
+
+#dos{
+    margin: 60px auto;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+
+#tres{
+    margin-left: 5%;
+    height: 520px;
+    width: 1030px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tres-1{
+    height: 500px;
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    
+    
+}
+
+.tres-2{
+    margin-left: 20px;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+#cinco{
+    margin: 100px auto 20px;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+
+#seis{
+    height: 500px;
+    width: 1030px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.seis-1{
+    margin-left: 100px;
+    padding: auto;
+    border: 1px solid #9579D1;
+    height: 350px;
+    width: 330px;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 5px;
+
+}
+
+.seis-2{
+    padding: 4px;
+    margin-left: 400px;
+    background-color: #BE9DDF;
+    height: 416px;
+    width: 600px;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 5px;
+}
