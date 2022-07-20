@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Tangerine&display=swap');
 
-
-/* * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-} */
-
 .contenedorHistoria {
     background-color: #eff1f4;
+    overflow-x: hidden;
 }
 
 .adorno{
-    width: 200px;
-    height: 50px;
+    width: calc(150px + 1vw);
+    height: calc(30px + 1vw);
     display: flex;
 }
 
