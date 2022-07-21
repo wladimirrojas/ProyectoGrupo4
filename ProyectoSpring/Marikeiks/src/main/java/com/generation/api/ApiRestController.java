@@ -25,7 +25,7 @@ import com.generation.services.VentaService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"18.117.217.30:9080", "18.117.217.30:3000", "18.117.217.30:5000"}, methods = { RequestMethod.GET,
+@CrossOrigin(origins = {"http://localhost:9080", "http://localhost:3000", "http://localhost:5000"}, methods = { RequestMethod.GET,
 		RequestMethod.POST })
 public class ApiRestController {
 
