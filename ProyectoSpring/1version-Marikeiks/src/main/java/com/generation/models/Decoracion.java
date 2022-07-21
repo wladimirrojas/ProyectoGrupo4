@@ -16,33 +16,37 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tipo_productos")
-
-public class TipoProducto {
-
+@Table(name = "decoraciones")
+public class Decoracion {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
 	private String nombre;
+	private String descripcion;
+	private Integer stock;
+	private Integer precio;
 
-	// private Integer sabores_id;
-
-	// Tipo_producto envía a Producto
-	@OneToMany(mappedBy = "tipoProducto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	// Decoracion envía a Producto
+	@OneToMany(mappedBy = "decoracion", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Producto> productos;
 
 	@Column(updatable = false) // permite no actualizar desde el sistema
 	private Date createdAt;
 	private Date updatedAt;
 
-	public TipoProducto() {
+	public Decoracion() {
+		super();
 	}
 
-	public TipoProducto(Long id, String nombre, List<Producto> productos) {
+	public Decoracion(Long id, String nombre, String descripcion, Integer stock, Integer precio,
+			List<Producto> productos) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.stock = stock;
+		this.precio = precio;
 		this.productos = productos;
 	}
 
@@ -60,6 +64,30 @@ public class TipoProducto {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public Integer getStock() {
+		return stock;
+	}
+
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+
+	public Integer getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(Integer precio) {
+		this.precio = precio;
 	}
 
 	public List<Producto> getProductos() {

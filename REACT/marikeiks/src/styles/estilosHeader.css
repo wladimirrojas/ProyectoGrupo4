@@ -1,0 +1,58 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+.nombre-marikeiks{
+    font-family: 'Tangerine', cursive;
+    font-size: 65px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    font-family: 'Tangerine', cursive;
+    font-size: xx-large;
+}
+
+nav a:hover{
+    color: black;
+    background-color: wheat;
+    border-radius: 30px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+.nav-link{
+    color: black;
+}
+
+
+@media (max-width:700px){
+    header{
+    flex-direction: column;
+}
+nav{
+    padding: 10px 0px 5px;
+}
+}
