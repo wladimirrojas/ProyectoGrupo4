@@ -10,8 +10,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -28,18 +26,11 @@ public class TipoProducto {
 
 	private String nombre;
 
-	private Integer porcion_cantidad;
-
 	// private Integer sabores_id;
 
 	// Tipo_producto envía a Producto
 	@OneToMany(mappedBy = "tipoProducto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Producto> productos;
-
-	// Recibe la foranea de sabores
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "sabores_id")
-	private Sabor sabor;
 
 	@Column(updatable = false) // permite no actualizar desde el sistema
 	private Date createdAt;
@@ -48,12 +39,10 @@ public class TipoProducto {
 	public TipoProducto() {
 	}
 
-	public TipoProducto(Long id, String nombre, Integer porcion_cantidad,
-			List<Producto> productos) {
+	public TipoProducto(Long id, String nombre, List<Producto> productos) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		this.porcion_cantidad = porcion_cantidad;
 		this.productos = productos;
 	}
 
@@ -71,14 +60,6 @@ public class TipoProducto {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public Integer getPorcion_cantidad() {
-		return porcion_cantidad;
-	}
-
-	public void setPorcion_cantidad(Integer porcion_cantidad) {
-		this.porcion_cantidad = porcion_cantidad;
 	}
 
 	public List<Producto> getProductos() {

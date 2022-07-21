@@ -5,7 +5,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+/* sacar todos lo style {} y ponerlo en css */
 .container-fluid {
     background-color: #eff1f4;
 }
@@ -17,9 +17,27 @@
 
 .titulos{
     font-family: 'Tangerine', cursive;
-    font-size: 8vh;
+    text-align: center;    
+    font-size:calc(12px + 8vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    
 }
 
+.subTitulos{
+    font-family: 'Tangerine', cursive;
+    text-align: center;    
+    font-size:calc(12px + 3vw);
+    margin-top: 0;
+    margin-left: 75px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+}
 .parrafos{
     font-family: 'Raleway', sans-serif;
     font-size: 4vh;
@@ -30,27 +48,39 @@
     display: block;
 }
 
-
-#uno{
-    background-image: url("../img/top.png");
-    height: 100px;
-    width: 100%;
+.Post{
+    position: relative;
+    vertical-align: 150px;
 }
 
-#dos{
+
+.mapita{ 
+    border-radius: 5px;
+    align-content: center;
+}
+/* #uno{
+    position: relative;
+    background-image: url("../img/top.png");
+    background-attachment: fixed;
+    background-clip: inherit;
+    height: 100px;
+    width: 95%;
+} */
+
+/* #dos{
     margin: 60px auto;
     height: 50px;
     width: 500px;
     text-align: center;
-}
+} */
 
-#tres{
+/* #tres{
     margin-left: 5%;
     height: 520px;
     width: 1030px;
     display: inline-block;
     vertical-align: top;
-}
+} */
 
 .tres-1{
     height: 500px;
@@ -71,10 +101,11 @@
 
 
 #cinco{
-    margin: 100px auto 20px;
-    height: 50px;
-    width: 500px;
+    margin-top: 5%;
     text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 1%;
 }
 
 #seis{
@@ -82,28 +113,18 @@
     width: 1030px;
     display: inline-block;
     text-align: center;
-    vertical-align: top;
+    top: 10px;
+    margin-bottom: 10%;
 }
 
-.seis-1{
-    margin-left: 100px;
-    padding: auto;
-    border: 1px solid #9579D1;
-    height: 350px;
-    width: 330px;
-    text-align: center;
-    vertical-align: bottom;
-    border-radius: 5px;
-
-}
 
 .seis-2{
-    padding: 4px;
-    margin-left: 400px;
-    background-color: #BE9DDF;
-    height: 416px;
+    padding: 1%;
+    margin-top: 1%;
+    background-image: url(../img/white-simple-textured-design-background.jpg);
+    height: 450px;
     width: 600px;
     text-align: left;
-    vertical-align: top;
-    border-radius: 5px;
+    border-radius: 1%;
+    display: inline-block
 }

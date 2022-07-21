@@ -6,19 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.generation.models.Cliente;
-import com.generation.models.Decoracion;
-import com.generation.models.DespachoRetiro;
-import com.generation.models.EstadoVenta;
 import com.generation.models.Producto;
-import com.generation.models.Sabor;
-import com.generation.models.Venta;
+import com.generation.services.CantidadService;
 import com.generation.services.ClienteService;
 import com.generation.services.DecoracionService;
 import com.generation.services.DespachoRetiroService;
 import com.generation.services.EstadoVentaService;
 import com.generation.services.ProductoService;
 import com.generation.services.SaborService;
+import com.generation.services.TipoProductoService;
+import com.generation.services.VentaProductoService;
 import com.generation.services.VentaService;
 
 @RestController
@@ -26,8 +23,15 @@ import com.generation.services.VentaService;
 public class ApiRestController {
 
 	//por orden de ENDPOINT me perdía hehe
+	
+	@Autowired
+	CantidadService cantidadService;
+	
 	@Autowired
 	ClienteService clienteService;
+	
+	@Autowired
+	DecoracionService decoracionService;
 
 	@Autowired
 	DespachoRetiroService despachoRetiroService;
@@ -42,19 +46,48 @@ public class ApiRestController {
 	SaborService saborService;
 	
 	@Autowired
-	DecoracionService decoracionService;
+	TipoProductoService tipoProductoService;	
 	
 	@Autowired
 	VentaService ventaService;
 	
-
+	@Autowired
+	VentaProductoService ventaProductoService;
+	
+	
+     //Conseguimos Api Productos
 	@RequestMapping("/productos")
 	public List<Producto> obtenerProductos() {
 		List<Producto> listaProductos = productoService.findAll();
 		return listaProductos;
 	}
+	
+	
+	
 
-	@RequestMapping("/sabores")
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * 
+	 * @RequestMapping("/sabores")
 	public List<Sabor> obtenerSabores() {
 
 		return saborService.findAll();
@@ -86,6 +119,6 @@ public class ApiRestController {
 	@RequestMapping("/ventas")
 	public List<Venta> obtenerVenta(){
 		return ventaService.findAll();
-	}
+	}*/
 	
 }

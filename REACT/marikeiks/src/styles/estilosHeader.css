@@ -2,10 +2,6 @@ body{
     font-family: sans-serif;
     margin: 0;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
 
 header{
     display: flex;
@@ -23,20 +19,8 @@ header{
     height: 50px;
     margin-right: 10px;
 }
-.nombre-marikeiks{
-    font-family: 'Tangerine', cursive;
-    font-size: 65px;
-}
-
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-    font-family: 'Tangerine', cursive;
-    font-size: xx-large;
-}
 
 nav a:hover{
-    color: black;
     background-color: wheat;
     border-radius: 30px;
     transition: all 500ms ease;
@@ -44,7 +28,11 @@ nav a:hover{
     -o-transition: all 500ms ease;
 }
 .nav-link{
-    color: black;
+    color: black !important;
+    font-weight: 600;
+    padding-right: 10px;
+    font-family: 'Tangerine', cursive;
+    font-size: xx-large !important;
 }
 
 
