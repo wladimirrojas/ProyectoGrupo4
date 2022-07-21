@@ -25,7 +25,7 @@ public class Producto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	private String nombre;
 	private String descripcion;
 	private Integer stock;
 	private Integer precio;
@@ -63,10 +63,11 @@ public class Producto {
 		super();
 	}
 
-	public Producto(Long id, String descripcion, Integer stock, Integer precio, Integer vegano,
+	public Producto(Long id, String nombre, String descripcion, Integer stock, Integer precio, Integer vegano,
 			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion, Sabor sabor) {
 		super();
 		this.id = id;
+		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.stock = stock;
 		this.precio = precio;
@@ -74,6 +75,14 @@ public class Producto {
 		this.ventas_productos = ventas_productos;
 		this.tipoProducto = tipo_producto;
 		this.decoracion = decoracion;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public Long getId() {
@@ -124,12 +133,20 @@ public class Producto {
 		this.ventas_productos = ventas_productos;
 	}
 
-	public TipoProducto getTipo_producto() {
+	public TipoProducto getTipoProducto() {
 		return tipoProducto;
 	}
 
-	public void setTipo_producto(TipoProducto tipo_producto) {
-		this.tipoProducto = tipo_producto;
+	public void setTipoProducto(TipoProducto tipoProducto) {
+		this.tipoProducto = tipoProducto;
+	}
+
+	public Cantidad getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(Cantidad cantidad) {
+		this.cantidad = cantidad;
 	}
 
 	public Decoracion getDecoracion() {
