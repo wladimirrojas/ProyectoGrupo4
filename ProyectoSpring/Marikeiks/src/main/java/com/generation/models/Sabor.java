@@ -14,7 +14,6 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "sabores")
-
 public class Sabor {
 
     @Id
@@ -29,7 +28,7 @@ public class Sabor {
     private Integer stock;
 
     @OneToMany(mappedBy = "sabor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<TipoProducto> tipoProductos;
+	private List<Producto> productos;
 
     public Sabor() {
     }
