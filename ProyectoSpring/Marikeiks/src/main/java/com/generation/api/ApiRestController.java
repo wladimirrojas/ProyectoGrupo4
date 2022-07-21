@@ -3,29 +3,39 @@ package com.generation.api;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.generation.models.Cliente;
-import com.generation.models.Decoracion;
 import com.generation.models.DespachoRetiro;
-import com.generation.models.EstadoVenta;
 import com.generation.models.Producto;
-import com.generation.models.Sabor;
 import com.generation.models.Venta;
+import com.generation.models.VentaProducto;
 import com.generation.services.ClienteService;
-import com.generation.services.DecoracionService;
 import com.generation.services.DespachoRetiroService;
-import com.generation.services.EstadoVentaService;
 import com.generation.services.ProductoService;
-import com.generation.services.SaborService;
+import com.generation.services.VentaProductoService;
 import com.generation.services.VentaService;
 
 @RestController
-@RequestMapping("/api/obtener")
+@RequestMapping("/api")
+@CrossOrigin(origins = {"http://localhost:9080", "http://localhost:3000", "http://localhost:5000"}, methods = { RequestMethod.GET,
+		RequestMethod.POST })
 public class ApiRestController {
 
-	//por orden de ENDPOINT me perdía hehe
+	// por orden de ENDPOINT me perdía hehe
+
+	// visualización para el cliente
+	@Autowired
+	ProductoService productoService;
+
+	// generado por el cliente las siguientes 4
 	@Autowired
 	ClienteService clienteService;
 
@@ -33,59 +43,67 @@ public class ApiRestController {
 	DespachoRetiroService despachoRetiroService;
 
 	@Autowired
-	EstadoVentaService estadoVentaService;
-
-	@Autowired
-	ProductoService productoService;
-
-	@Autowired
-	SaborService saborService;
-	
-	@Autowired
-	DecoracionService decoracionService;
-	
-	@Autowired
 	VentaService ventaService;
-	
 
-	@RequestMapping("/productos")
+	@Autowired
+	VentaProductoService ventaProductoService;
+
+	// Conseguimos Api Productos, que son los que necesitamos que el cliente
+	// visualice, y que trae consigo todas las tablas relacionadas por ID
+	@RequestMapping("/obtener/productos")
 	public List<Producto> obtenerProductos() {
 		List<Producto> listaProductos = productoService.findAll();
 		return listaProductos;
 	}
 
-	@RequestMapping("/sabores")
-	public List<Sabor> obtenerSabores() {
+	// Cliente nos entrega los siguientes datos importantes
+	@PostMapping("/generar/venta")
+	public ResponseEntity<Venta> generarVenta(@RequestBody Venta venta) {
+		ventaService.saveVenta(venta);
 
-		return saborService.findAll();
-	}
-	//Kathy
-	@RequestMapping("/estadoVenta")
-	public List<EstadoVenta> obtenerEstadoVenta () {
-	List<EstadoVenta> listaEstadosVentas = estadoVentaService.findAll();
-	return listaEstadosVentas;
+		return new ResponseEntity<Venta>(venta, HttpStatus.OK);
 	}
 
-	@RequestMapping("/clientes")
-	public List<Cliente> obtenerClientes () {
-	List<Cliente> listaClientes = clienteService.findAll();
-	return listaClientes;
-	}
-	//Apis a RV Cata 
-
-	@RequestMapping("/despachosRetiros")
-	public List<DespachoRetiro> obtenerDespachoRetiro(){
-		return despachoRetiroService.BuscarId();
+	@PostMapping("/generar/ventaProducto")
+	public ResponseEntity<VentaProducto> generarVentaProducto(@RequestBody VentaProducto ventaProducto) {
+		ventaProductoService.guardarVentaProducto(ventaProducto);
+		return new ResponseEntity<VentaProducto>(ventaProducto, HttpStatus.OK);
 	}
 
-	@RequestMapping("/decoraciones")
-	public List<Decoracion> obtenerDecoracion(){
-		return decoracionService.findAll();
+	@PostMapping("/generar/cliente")
+	public ResponseEntity<Cliente> generarCliente(@RequestBody Cliente cliente) {
+		clienteService.saveCliente(cliente);
+		return new ResponseEntity<Cliente>(cliente, HttpStatus.OK);
 	}
 
-	@RequestMapping("/ventas")
-	public List<Venta> obtenerVenta(){
-		return ventaService.findAll();
+	@PostMapping("/generar/despacho")
+	public ResponseEntity<DespachoRetiro> generarDespachoRetiro(@RequestBody DespachoRetiro despachoRetiro) {
+		despachoRetiroService.registroDespachoRetiro(despachoRetiro);
+
+		return new ResponseEntity<DespachoRetiro>(despachoRetiro, HttpStatus.OK);
 	}
-	
 }
+
+/*
+ * 
+ * @RequestMapping("/sabores") public List<Sabor> obtenerSabores() {
+ * 
+ * return saborService.findAll(); } //Kathy
+ * 
+ * @RequestMapping("/estadoVenta") public List<EstadoVenta> obtenerEstadoVenta
+ * () { List<EstadoVenta> listaEstadosVentas = estadoVentaService.findAll();
+ * return listaEstadosVentas; }
+ * 
+ * @RequestMapping("/clientes") public List<Cliente> obtenerClientes () {
+ * List<Cliente> listaClientes = clienteService.findAll(); return listaClientes;
+ * } //Apis a RV Cata
+ * 
+ * @RequestMapping("/despachosRetiros") public List<DespachoRetiro>
+ * obtenerDespachoRetiro(){ return despachoRetiroService.BuscarId(); }
+ * 
+ * @RequestMapping("/decoraciones") public List<Decoracion> obtenerDecoracion(){
+ * return decoracionService.findAll(); }
+ * 
+ * @RequestMapping("/ventas") public List<Venta> obtenerVenta(){ return
+ * ventaService.findAll(); }
+ */

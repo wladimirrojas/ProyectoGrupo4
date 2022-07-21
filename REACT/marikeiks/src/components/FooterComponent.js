@@ -9,7 +9,7 @@ const FooterComponent = () => {
         backgroundColor: '#929fba',
       }}
     >
-      <div className='container p-4 pb-0'>
+      <div className='text-center container p-4 pb-0'>
         <section className=''>
           <div className='row'>
             <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
