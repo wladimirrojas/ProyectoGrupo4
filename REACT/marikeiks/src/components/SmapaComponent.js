@@ -19,7 +19,7 @@ const SmapaComponent = () => {
                 <div className="row tres-2">
                     <div>
                         <ul className="list-unstyled mb-0">
-                            <h2 className="titulos">Dirección</h2>
+                            <h2 className="subTitulos">Dirección</h2>
                             <div className="fs-6">
                                 <strong>
                                     <li className="parrafos">Av. Consistorial 5778</li>
@@ -43,7 +43,7 @@ const SmapaComponent = () => {
                                 </a>
                             </li>
                         </ul>
-                        <div className="mt-5"><h5>llamanos al momento de llegada</h5></div>
+                        <div className="mt-5"><h5>llámanos al momento de llegada</h5></div>
                         <a href="https://api.whatsapp.com/send?phone=56974898201">
                             <div className="contenedorIcono">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">

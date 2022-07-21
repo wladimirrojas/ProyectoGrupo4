@@ -34,7 +34,7 @@
     margin-top: 0;
     margin-left: 75px;
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2;
     display: flex;
 }
@@ -101,13 +101,11 @@
 
 
 #cinco{
-    margin: 100px auto 20px;
-    height: 50px;
-    width: 500px;
+    margin-top: 5%;
     text-align: center;
     display: block;
     position: relative;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 
 #seis{
@@ -119,25 +117,14 @@
     margin-bottom: 10%;
 }
 
-.seis-1{
-    padding: auto;
-    height: 350px;
-    width: 330px;
-    text-align: center;
-    vertical-align: bottom;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 10%;
-
-}
 
 .seis-2{
     padding: 1%;
-    margin-top: 10%;
+    margin-top: 1%;
     background-image: url(../img/white-simple-textured-design-background.jpg);
-    height: 425px;
+    height: 450px;
     width: 600px;
     text-align: left;
-    border-radius: 5px solid black;
+    border-radius: 1%;
     display: inline-block
 }
