@@ -12,7 +12,9 @@ import React from "react";
 //             cantidad: cantidad,
 //             precioTotal: item.precio * cantidad
 //         };
-//         setCarrito([...shoppingCart, cellphone]);
+//         setCarrito([
+//         ...Carrito, producto
+//         ]);
 //     }
 // };
 
