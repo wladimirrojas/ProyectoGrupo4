@@ -31,7 +31,7 @@
 	<h1> <p class="text-primary">¡Bienvenido/a! Ingrese los datos para ingresar el pedido</p> </h1>
 	<br>
 
-	<form:form action="/cliente/guardarCliente" method="post" modelAttribute="cliente" >
+	<form:form action="/admin/cliente/guardarCliente" method="post" modelAttribute="cliente" >
 			<form:label path="nombre" class="form-label">Ingrese su nombre:</form:label>
 			<form:input type="text" path="nombre" class="form-control"/>
 			<br>	
