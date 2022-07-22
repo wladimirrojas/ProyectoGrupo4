@@ -15,9 +15,14 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table(name = "tipo_productos")
-
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class TipoProducto {
 
 	@Id
@@ -39,11 +44,9 @@ public class TipoProducto {
 	public TipoProducto() {
 	}
 
-	public TipoProducto(Long id, String nombre, List<Producto> productos) {
-		super();
+	public TipoProducto(Long id, String nombre) {
 		this.id = id;
 		this.nombre = nombre;
-		this.productos = productos;
 	}
 
 	public Long getId() {
@@ -60,14 +63,6 @@ public class TipoProducto {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public List<Producto> getProductos() {
-		return productos;
-	}
-
-	public void setProductos(List<Producto> productos) {
-		this.productos = productos;
 	}
 
 	@PrePersist

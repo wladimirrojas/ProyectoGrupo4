@@ -1,18 +1,27 @@
-import React,{useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import TarjetaTorta from './TarjetaTorta';
 import getAll from '../services/ProductoService';
-import '../styles/ProductoTorta.css'
 import FooterComponent from './FooterComponent';
 import HeaderComponent from './HeaderComponent';
+import TituloProducto from './TituloProducto';
+import SloganHistoria from './SloganHistoria';
+import DireccionamientoFAQ from './DireccionamientaFAQ';
+import '../styles/ProductoTorta.css'
+
 
 
 const initialProductos = [
     {
-        id:1,
-        descripcion:'',
-        stock:1,
-        precio:1,
-        vegano:1,
+        id: 0,
+        nombre: '',
+        descripcion: '',
+        stock: 0,
+        precio: 0,
+        vegano: 0,
+        tipoProducto: 0,
+        decoracion: 0, 
+        sabor: 0,
+        cantidad: 0
 
     }
 ]
@@ -21,28 +30,34 @@ const ProductoListado = () => {
 
     const [productos, setProductos] = useState(initialProductos);
 
-    const obtenerProductos = async()=>{
+    const obtenerProductos = async () => {
         setProductos(await getAll());
     };
 
     useEffect(
-        ()=>{obtenerProductos()
-        },[])
+        () => {
+            obtenerProductos()
+        }, [])
 
 
     return (
-        <div className="container-fluid p-0" style={{backgroundColor: "whitesmoke"}}>
-            <HeaderComponent/>
+        <div className="contenedor-productos p-0">
+            <HeaderComponent />
+            <TituloProducto />
             <div className="row">
-                    <h1>Lista de tortas</h1>
+                <div className='col-12 mb-5 mt-5 d-flex'>
                     {
-                        productos.map(producto => 
-                        <TarjetaTorta
-                        id={producto.id} 
-                        producto={producto}/>)
+                        productos.map(producto =>
+                            <TarjetaTorta
+                                id={producto.id}
+                                producto={producto} />)
                     }
+                </div>
             </div>
-            <FooterComponent/>
+            <SloganHistoria />
+            <br />
+            <DireccionamientoFAQ />
+            <FooterComponent />
         </div>
     );
 };

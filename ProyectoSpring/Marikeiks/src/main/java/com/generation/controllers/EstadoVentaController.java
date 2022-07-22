@@ -12,7 +12,7 @@ import com.generation.models.EstadoVenta;
 import com.generation.services.EstadoVentaService;
 
 @Controller
-@RequestMapping("/estadoVenta")
+@RequestMapping("/admin/estadoVenta")
 public class EstadoVentaController {
 
 	@Autowired

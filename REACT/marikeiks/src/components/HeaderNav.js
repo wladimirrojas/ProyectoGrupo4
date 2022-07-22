@@ -5,7 +5,7 @@ import logo1 from '../img/logo1.png';
 const HeaderNav = () => {
     return (
         <header>
-    <a href="#" className="logo">
+    <a href="/" className="logo">
         <img src={logo1} alt="logo de empresa"/>
         <h2 className="nombre-marikeiks"></h2>
     </a>

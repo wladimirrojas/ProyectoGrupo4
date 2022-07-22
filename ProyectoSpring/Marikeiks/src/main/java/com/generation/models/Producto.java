@@ -17,9 +17,13 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 /*Entidad, nombre de tabla, y tipos de atributos*/
 @Entity
 @Table(name = "productos")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Producto {
 
 	@Id
@@ -38,7 +42,7 @@ public class Producto {
 	// recibe desde tipo_producto
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "tipo_producto_id")
-	private TipoProducto tipoProducto;
+	private TipoProducto tipoProducto; // listo
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "decoracion_id")
@@ -64,7 +68,7 @@ public class Producto {
 	}
 
 	public Producto(Long id, String nombre, String descripcion, Integer stock, Integer precio, Integer vegano,
-			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion, Sabor sabor) {
+			TipoProducto tipoProducto, Decoracion decoracion, Sabor sabor, Cantidad cantidad) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -72,17 +76,10 @@ public class Producto {
 		this.stock = stock;
 		this.precio = precio;
 		this.vegano = vegano;
-		this.ventas_productos = ventas_productos;
-		this.tipoProducto = tipo_producto;
+		this.tipoProducto = tipoProducto;
 		this.decoracion = decoracion;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.sabor = sabor;
+		this.cantidad = cantidad;
 	}
 
 	public Long getId() {
@@ -91,6 +88,14 @@ public class Producto {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getDescripcion() {
@@ -125,28 +130,12 @@ public class Producto {
 		this.vegano = vegano;
 	}
 
-	public List<VentaProducto> getVentas_productos() {
-		return ventas_productos;
-	}
-
-	public void setVentas_productos(List<VentaProducto> ventas_productos) {
-		this.ventas_productos = ventas_productos;
-	}
-
 	public TipoProducto getTipoProducto() {
 		return tipoProducto;
 	}
 
 	public void setTipoProducto(TipoProducto tipoProducto) {
 		this.tipoProducto = tipoProducto;
-	}
-
-	public Cantidad getCantidad() {
-		return cantidad;
-	}
-
-	public void setCantidad(Cantidad cantidad) {
-		this.cantidad = cantidad;
 	}
 
 	public Decoracion getDecoracion() {
@@ -163,6 +152,14 @@ public class Producto {
 
 	public void setSabor(Sabor sabor) {
 		this.sabor = sabor;
+	}
+
+	public Cantidad getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(Cantidad cantidad) {
+		this.cantidad = cantidad;
 	}
 
 	@PrePersist
