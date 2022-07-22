@@ -12,7 +12,7 @@ import com.generation.models.Cliente;
 import com.generation.services.ClienteService;
 
 @Controller
-@RequestMapping("/cliente")
+@RequestMapping("/admin/cliente")
 public class ClienteController {
 
 	

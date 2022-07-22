@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.generation.models.Decoracion;
 import com.generation.services.DecoracionService;
 @Controller
-@RequestMapping("/decoracion")
+@RequestMapping("/admin/decoracion")
 public class DecoracionController {
 
 	@Autowired

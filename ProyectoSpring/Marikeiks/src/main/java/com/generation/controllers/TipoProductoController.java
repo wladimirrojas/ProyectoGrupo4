@@ -14,7 +14,7 @@ import com.generation.models.TipoProducto;
 import com.generation.services.TipoProductoService;
 
 @Controller
-@RequestMapping("/tipoProducto")
+@RequestMapping("/admin/tipoProducto")
 public class TipoProductoController {
     
     @Autowired

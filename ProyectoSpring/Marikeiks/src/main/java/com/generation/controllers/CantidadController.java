@@ -13,7 +13,7 @@ import com.generation.models.Cantidad;
 import com.generation.services.CantidadService;
 
 @Controller
-@RequestMapping("/cantidad")
+@RequestMapping("/admin/cantidad")
 public class CantidadController {
 
     @Autowired

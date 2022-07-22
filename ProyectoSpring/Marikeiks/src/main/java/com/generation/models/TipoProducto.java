@@ -39,11 +39,9 @@ public class TipoProducto {
 	public TipoProducto() {
 	}
 
-	public TipoProducto(Long id, String nombre, List<Producto> productos) {
-		super();
+	public TipoProducto(Long id, String nombre) {
 		this.id = id;
 		this.nombre = nombre;
-		this.productos = productos;
 	}
 
 	public Long getId() {
@@ -60,14 +58,6 @@ public class TipoProducto {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public List<Producto> getProductos() {
-		return productos;
-	}
-
-	public void setProductos(List<Producto> productos) {
-		this.productos = productos;
 	}
 
 	@PrePersist

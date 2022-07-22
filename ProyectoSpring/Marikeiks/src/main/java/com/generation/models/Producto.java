@@ -64,25 +64,26 @@ public class Producto {
 	}
 
 	public Producto(Long id, String nombre, String descripcion, Integer stock, Integer precio, Integer vegano,
-			List<VentaProducto> ventas_productos, TipoProducto tipo_producto, Decoracion decoracion, Sabor sabor) {
-		super();
+			TipoProducto tipoProducto, Decoracion decoracion, Sabor sabor,
+			Cantidad cantidad) {
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.stock = stock;
 		this.precio = precio;
 		this.vegano = vegano;
-		this.ventas_productos = ventas_productos;
-		this.tipoProducto = tipo_producto;
+		this.tipoProducto = tipoProducto;
 		this.decoracion = decoracion;
+		this.sabor = sabor;
+		this.cantidad = cantidad;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public TipoProducto getTipoProducto() {
+		return tipoProducto;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setTipoProducto(TipoProducto tipoProducto) {
+		this.tipoProducto = tipoProducto;
 	}
 
 	public Long getId() {
@@ -91,6 +92,14 @@ public class Producto {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getDescripcion() {
@@ -125,30 +134,6 @@ public class Producto {
 		this.vegano = vegano;
 	}
 
-	public List<VentaProducto> getVentas_productos() {
-		return ventas_productos;
-	}
-
-	public void setVentas_productos(List<VentaProducto> ventas_productos) {
-		this.ventas_productos = ventas_productos;
-	}
-
-	public TipoProducto getTipoProducto() {
-		return tipoProducto;
-	}
-
-	public void setTipoProducto(TipoProducto tipoProducto) {
-		this.tipoProducto = tipoProducto;
-	}
-
-	public Cantidad getCantidad() {
-		return cantidad;
-	}
-
-	public void setCantidad(Cantidad cantidad) {
-		this.cantidad = cantidad;
-	}
-
 	public Decoracion getDecoracion() {
 		return decoracion;
 	}
@@ -163,6 +148,14 @@ public class Producto {
 
 	public void setSabor(Sabor sabor) {
 		this.sabor = sabor;
+	}
+
+	public Cantidad getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(Cantidad cantidad) {
+		this.cantidad = cantidad;
 	}
 
 	@PrePersist

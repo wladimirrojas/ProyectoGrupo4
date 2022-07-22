@@ -12,7 +12,7 @@ import com.generation.models.Venta;
 import com.generation.services.VentaService;
 
 @Controller
-@RequestMapping("/venta")
+@RequestMapping("/admin/venta")
 public class VentaController {
 	@Autowired
 	VentaService ventaService;

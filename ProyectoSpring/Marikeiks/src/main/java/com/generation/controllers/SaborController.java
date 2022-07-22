@@ -14,7 +14,7 @@ import com.generation.models.Sabor;
 import com.generation.services.SaborService;
 
 @Controller
-@RequestMapping("/sabor")
+@RequestMapping("/admin/sabor")
 public class SaborController {
     
     @Autowired
