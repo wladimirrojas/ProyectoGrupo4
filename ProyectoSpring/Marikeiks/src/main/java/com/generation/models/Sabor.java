@@ -26,9 +26,7 @@ public class Sabor {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@NotNull()
 	private String nombre;
-
 	private String descripcion;
 	private Boolean disponible;
 	private Integer stock;
