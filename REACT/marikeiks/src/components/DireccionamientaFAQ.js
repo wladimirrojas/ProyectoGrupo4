@@ -12,7 +12,7 @@ const DireccionamientoFAQ = () => {
                 <p>Nuestras pedidos requieren un mínimo de 7 días de anticipación. Para obtener más información, lea nuestras preguntas frecuentes. </p>
                 <br />
                 <div className="col-md-6 offset-md-3 mb-5">
-                    <button type='button' className='btn btn-outline-primary' onClick={handleOnClick}>Ir a preguntas frecuentes</button>
+                    <button type='button' className='btn btn-outline-dark' onClick={handleOnClick}>Ir a preguntas frecuentes</button>
                 </div>
             </div>
         </div>

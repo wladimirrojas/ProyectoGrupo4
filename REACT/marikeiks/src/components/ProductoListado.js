@@ -45,7 +45,7 @@ const ProductoListado = () => {
             <HeaderComponent />
             <TituloProducto />
             <div className="row">
-                <div className='col-12 mb-5 mt-5 d-flex'>
+                <div className='col-12 m-5 d-flex'>
                     {
                         productos.map(producto =>
                             <TarjetaTorta
@@ -54,7 +54,6 @@ const ProductoListado = () => {
                     }
                 </div>
             </div>
-            <SloganHistoria />
             <br />
             <DireccionamientoFAQ />
             <FooterComponent />

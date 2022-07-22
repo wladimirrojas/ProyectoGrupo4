@@ -5,8 +5,6 @@ import Faq from './components/Faq';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
-
-
 const App = () => {
   return (
     <BrowserRouter>
