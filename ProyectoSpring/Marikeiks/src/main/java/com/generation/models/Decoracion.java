@@ -15,10 +15,16 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table(name = "decoraciones")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Decoracion {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -39,15 +45,13 @@ public class Decoracion {
 		super();
 	}
 
-	public Decoracion(Long id, String nombre, String descripcion, Integer stock, Integer precio,
-			List<Producto> productos) {
+	public Decoracion(Long id, String nombre, String descripcion, Integer stock, Integer precio) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.stock = stock;
 		this.precio = precio;
-		this.productos = productos;
 	}
 
 	public Long getId() {
@@ -88,14 +92,6 @@ public class Decoracion {
 
 	public void setPrecio(Integer precio) {
 		this.precio = precio;
-	}
-
-	public List<Producto> getProductos() {
-		return productos;
-	}
-
-	public void setProductos(List<Producto> productos) {
-		this.productos = productos;
 	}
 
 	@PrePersist

@@ -17,9 +17,13 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 /*Entidad, nombre de tabla, y tipos de atributos*/
 @Entity
 @Table(name = "productos")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Producto {
 
 	@Id
@@ -38,7 +42,7 @@ public class Producto {
 	// recibe desde tipo_producto
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "tipo_producto_id")
-	private TipoProducto tipoProducto;
+	private TipoProducto tipoProducto; // listo
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "decoracion_id")
@@ -64,8 +68,8 @@ public class Producto {
 	}
 
 	public Producto(Long id, String nombre, String descripcion, Integer stock, Integer precio, Integer vegano,
-			TipoProducto tipoProducto, Decoracion decoracion, Sabor sabor,
-			Cantidad cantidad) {
+			TipoProducto tipoProducto, Decoracion decoracion, Sabor sabor, Cantidad cantidad) {
+		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
@@ -76,14 +80,6 @@ public class Producto {
 		this.decoracion = decoracion;
 		this.sabor = sabor;
 		this.cantidad = cantidad;
-	}
-
-	public TipoProducto getTipoProducto() {
-		return tipoProducto;
-	}
-
-	public void setTipoProducto(TipoProducto tipoProducto) {
-		this.tipoProducto = tipoProducto;
 	}
 
 	public Long getId() {
@@ -132,6 +128,14 @@ public class Producto {
 
 	public void setVegano(Integer vegano) {
 		this.vegano = vegano;
+	}
+
+	public TipoProducto getTipoProducto() {
+		return tipoProducto;
+	}
+
+	public void setTipoProducto(TipoProducto tipoProducto) {
+		this.tipoProducto = tipoProducto;
 	}
 
 	public Decoracion getDecoracion() {
