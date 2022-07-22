@@ -4,7 +4,7 @@ import '../styles/ProductoTorta.css'
 const TarjetaTorta = ({producto}) => {
     return (
         <div className="card mx-5">
-            <img src='' className="card-img-top" alt={producto.id} />
+            <img src={producto.url} className="card-img-top" alt={producto.id} />
             <div className="card-body">
                 <h5 className="card-title">{producto.nombre}</h5>
                 <p className="card-text">{producto.descripcion}</p>

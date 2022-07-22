@@ -14,7 +14,7 @@ const FooterComponent = () => {
           <div className="row">
             <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 className="text-uppercase mb-4">Marikeiks</h6>
-              <p>Los pasteles te acompañan siempre</p>
+              <p>Los pasteles te acompañan siempre.</p>
             </div>
 
             <hr className="w-100 clearfix d-md-none" />
@@ -23,13 +23,13 @@ const FooterComponent = () => {
               <h6 className="text-uppercase mb-4">Productos</h6>
 
               <p>
-                <a className="text-white noLink" href="www.google.cl">
+                <a className="text-white noLink" href="/productos">
                   Tortas
                 </a>
               </p>
               <p>
                 <a className="text-white noLink" href="www.google.cl">
-                  CandiBar
+                  CandyBar
                 </a>
               </p>
             </div>
@@ -40,7 +40,7 @@ const FooterComponent = () => {
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 className="text-uppercase mb-4">Contacto</h6>
-              <p>Av. Consistorial 5778. Santiago, Peñalolén</p>
+              <p>Av. Consistorial 5778. Santiago, Peñalolén.</p>
               <p>marikeiks@gmail.com</p>
             </div>
 
