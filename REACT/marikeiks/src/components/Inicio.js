@@ -5,6 +5,7 @@ import Historia from "./Historia";
 import PortadaComponent from "./PortadaComponent";
 import ContactoComponent from "./ContactoComponent";
 import HeaderComponent from "./HeaderComponent";
+import DireccionamientoFAQ from "./DireccionamientaFAQ";
 
 const Inicio = () => {
   return (
@@ -14,6 +15,7 @@ const Inicio = () => {
       <VistaProductoComponent />
       <Historia />
       <ContactoComponent/>
+      <DireccionamientoFAQ />
       <FooterComponent />
     </div>
   );
