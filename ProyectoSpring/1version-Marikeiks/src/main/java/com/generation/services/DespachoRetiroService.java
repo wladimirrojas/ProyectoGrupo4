@@ -17,11 +17,11 @@ public class DespachoRetiroService {
     @Autowired
     DespachoRetiroRepository despachoRetiroRepository;
 
-    public void registroDespachoRetiro(@Valid DespachoRetiro despacho_retiro) {
-    despachoRetiroRepository.save(despacho_retiro);
+    public void saveDespachoRetiro(@Valid DespachoRetiro despachoRetiro) {
+    despachoRetiroRepository.save(despachoRetiro);
     }
 
-    public List<DespachoRetiro> BuscarId() {
+    public List<DespachoRetiro> findAll() {
         return despachoRetiroRepository.findAll();
     }
 

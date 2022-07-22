@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.generation.models.Decoracion;
@@ -36,6 +37,15 @@ public class DecoracionController {
 		model.addAttribute("listaDecoracion", listaDecoracion);
 		
 		//devolver a la página de inicio estados de ventas
+		return "redirect:/decoracion";
+	}
+
+	//CAMBIOS CATA
+	@RequestMapping("/eliminarDecoracion/{id}")
+	public String eliminarDecoracion(@PathVariable("id") Long id){
+
+		decoracionService.eliminarDecoracion(id);
+
 		return "redirect:/decoracion";
 	}
 }

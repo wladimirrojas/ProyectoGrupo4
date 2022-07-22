@@ -11,7 +11,7 @@ import com.generation.repositories.DecoracionRepository;
 @Service
 public class DecoracionService {
 	@Autowired
-		DecoracionRepository decoracionRepository;
+	DecoracionRepository decoracionRepository;
 		
 		public void saveDecoracion(Decoracion decoracion) {
 			decoracionRepository.save(decoracion);
@@ -22,6 +22,13 @@ public class DecoracionService {
 			return decoracionRepository.findAll();
 		}
 
-	}
+		//Cambios CATA
+		public void eliminarDecoracion(Long id) {
+			decoracionRepository.deleteById(id);
+		}
+
+
+
+}
 
 

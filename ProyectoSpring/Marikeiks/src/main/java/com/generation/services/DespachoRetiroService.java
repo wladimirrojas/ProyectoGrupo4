@@ -21,7 +21,7 @@ public class DespachoRetiroService {
     despachoRetiroRepository.save(despacho_retiro);
     }
 
-    public List<DespachoRetiro> BuscarId() {
+    public List<DespachoRetiro> findAll() {
         return despachoRetiroRepository.findAll();
     }
 

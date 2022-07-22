@@ -22,6 +22,9 @@ public class DecoracionService {
 			return decoracionRepository.findAll();
 		}
 
+	public void eliminarDecoracion(Long id) {
+			decoracionRepository.deleteById(id);
 	}
+}
 
 
