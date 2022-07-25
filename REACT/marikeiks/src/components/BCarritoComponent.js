@@ -18,7 +18,10 @@ import React from "react";
 //     }
 // };
 
-const BCarritoComponent = (
+const BCarritoComponent = 
+(
+    //{producto}
+
     // ({producto, productoDelete, setCantidadProducto})
 ) => {
     return (
@@ -26,16 +29,32 @@ const BCarritoComponent = (
             <div className="card mb-3 col">
                 <div className="row g-0">
                     <div className="col-md-4">
-                        <img className="rounded" height="200" width="170" src={require("../img/contacto.jpg")} alt="contacto" />
+                        <img className="card-img" width="1%" 
+                        // ver el enlace con imagen
+                        src={require("../img/contacto.jpg")} 
+                        alt="{producto.id}" />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">NOMBRE PRODUCTO</h5>
+                            <h5 className="card-title">
+                                Nombre
+                                {/* {producto.nombre} */}
+                                </h5>
                             <p className="card-text">
                                 <ul className="list-unstyled mb-0">
-                                    <li className="parrafos ">Av. Consistorial 5778</li>
-                                    <li className="parrafos">Santiago, Peñalolén</li>
-                                    <li className="parrafos">Retiro: Lun-Sáb <br></br> 9:00 - 18:00</li>
+                                    <li className="parrafos ">Detalles: 
+                                    {/* {producto.descripcion} */}
+                                    </li>
+                                    <li className="parrafos">ID: 
+                                    {/* {producto.id} */}
+                                    </li>
+                                    <li className="parrafos">Precio: $
+                                    {/* {producto.precio} */}
+                                    <br></br> 
+                                    cantidad: unit.
+                                    {/* {producto.cantidad} */}
+                                    
+                                    </li>
                                 </ul>
                             </p>
                             <p className="card-text"><small className="text-muted">hehe</small></p>
@@ -63,6 +82,8 @@ const BCarritoComponent = (
                         //onClick={() => productoDelete(producto.key)}
                         >Eliminar</button>
                         <i class="bi bi-x-lg"></i>
+
+                        
                     </div>
                 </div>
             </div>

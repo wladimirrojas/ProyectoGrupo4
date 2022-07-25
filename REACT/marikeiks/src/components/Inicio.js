@@ -5,19 +5,18 @@ import Historia from "./Historia";
 import PortadaComponent from "./PortadaComponent";
 import ContactoComponent from "./ContactoComponent";
 import HeaderComponent from "./HeaderComponent";
-<<<<<<< HEAD
-import CarritoComponent from "./CarritoComponent";
-=======
 import DireccionamientoFAQ from "./DireccionamientaFAQ";
->>>>>>> main
+//import CarritoComponent from "./CarritoComponent";
+import CarritoDVS from "../CarritoDIVS/CarrritoDVS";
 
 const Inicio = () => {
   return (
     <div className="container-fluid p-0" style={{backgroundColor: "whitesmoke"}}>
       <HeaderComponent/>
-      <CarritoComponent/>
+      <CarritoDVS/>
       <PortadaComponent />
       <VistaProductoComponent />
+      <Historia />
       <Historia />
       <ContactoComponent/>
       <DireccionamientoFAQ />

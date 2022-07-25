@@ -5,14 +5,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
-/* sacar todos lo style {} y ponerlo en css */
+
 .container-fluid {
     background-color: #eff1f4;
-}
-
-.contenedorIcono{
-    margin: 0px auto;
-    height: 10px;
 }
 
 .titulos{
@@ -38,60 +33,28 @@
     line-height: 1.2;
     display: flex;
 }
+
 .parrafos{
     font-family: 'Raleway', sans-serif;
     font-size: 4vh;
 }
 
-#img-logo-bottom{
-    width: 40%;
-    display: block;
-}
-
-.Post{
-    position: relative;
-    vertical-align: 150px;
-}
-
-
-.mapita{ 
+.foto{ 
     border-radius: 5px;
     align-content: center;
 }
-/* #uno{
-    position: relative;
-    background-image: url("../img/top.png");
-    background-attachment: fixed;
-    background-clip: inherit;
-    height: 100px;
-    width: 95%;
-} */
 
-/* #dos{
-    margin: 60px auto;
-    height: 50px;
-    width: 500px;
-    text-align: center;
-} */
-
-/* #tres{
-    margin-left: 5%;
-    height: 520px;
-    width: 1030px;
-    display: inline-block;
-    vertical-align: top;
-} */
-
-.tres-1{
-    height: 500px;
-    width: 700px;
+/* divs de Título: título y botton*/
+.Tcarrito{
+    height: 300px;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
     
     
 }
 
-.tres-2{
+.Bcompra{
     margin-left: 20px;
     height: 400px;
     width: 300px;
@@ -99,8 +62,33 @@
     display: inline-block;
 }
 
+/* divs de Body */
 
-#uno{
+.nombrePrecio{
+    height: 200px;
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.descripcion{
+    margin-left: 20px;
+    height: 200px;
+    width: 170px;
+    text-align: center;
+    display: inline-block;
+}
+
+.botones{
+    margin-left: 20px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* divs generales */
+#cinco{
     margin-top: 5%;
     text-align: center;
     display: block;
@@ -108,23 +96,11 @@
     margin-bottom: 1%;
 }
 
-#dos{
+#seis{
     height: 500px;
     width: 1030px;
     display: inline-block;
     text-align: center;
     top: 10px;
     margin-bottom: 10%;
-}
-
-/* para añador pago */
-.dos-MercadoLibre{
-    padding: 1%;
-    margin-top: 1%;
-    background-image: url(../img/white-simple-textured-design-background.jpg);
-    height: 450px;
-    width: 600px;
-    text-align: left;
-    border-radius: 1%;
-    display: inline-block
 }
