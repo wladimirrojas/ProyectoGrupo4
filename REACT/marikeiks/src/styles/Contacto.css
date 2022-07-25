@@ -5,15 +5,19 @@
     margin: 0px;
     box-sizing: border-box;
 }
-/* sacar todos lo style {} y ponerlo en css */
-.container-fluid {
-    background-color: #eff1f4; 
+html, body {
+    overflow-x: hidden;
+}
+
+#contenedor-formulario{
+    background-color: #eff1f4;
 }
 
 .contenedorIcono{
     margin: 0px auto;
     height: 10px;
 }
+
 
 .titulos{
     font-family: 'Tangerine', cursive;
@@ -38,14 +42,31 @@
     font-family: 'Raleway', sans-serif;
     font-size:calc(7px + 2vw);
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    vertical-align: top;
     line-height: 1.2;
-    display: block;
+    display: inline-block;
 }
+
+#mapa{
+    width: calc(500px + 1vw);
+    height: calc(200px + 1vw);
+}
+
 .parrafos{
     font-family: 'Raleway', sans-serif;
-    font-size: 4vh;
-    font-size:calc(7px + 1vw);
+    font-size:calc(13px + 1vw);
+}
+
+#imagenes-map {
+    display: inline;
+    height: calc(200px + 1vw); 
+    width: calc(150px + 1vw);
+}
+
+#imagenes-map2 {
+    display: inline;
+    height: calc(200px + 1vw); 
+    width: calc(150px + 1vw);
 }
 
 #img-logo-bottom{
@@ -59,11 +80,7 @@
 }
 
 
-#mapita{ 
-    width: calc(400px + 1vw);
-    height: calc(300px + 1vw);
-    align-content: center;
-}
+
 /* #uno{
     position: relative;
     background-image: url("../img/top.png");
@@ -115,11 +132,3 @@
 
 }
 
-
-.seis-2{
-    padding: 2%;
-    background-color: #eff1f4;
-    text-align: left;
-    border-radius: 1%;
-    display: inline-block
-}

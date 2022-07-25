@@ -7,7 +7,7 @@ const DireccionamientoFAQ = () => {
     const handleOnClick = useCallback(() => navigate('/faq', { replace: true }, [navigate]))
 
     return (
-        <div className='container text-center'>
+        <div className='container-fluid text-center'>
             <div className="col-md-6 mt-5 offset-md-3">
                 <p>Nuestras pedidos requieren un mínimo de 7 días de anticipación. Para obtener más información, lea nuestras preguntas frecuentes. </p>
                 <br />
