@@ -5,11 +5,7 @@ import Historia from "./Historia";
 import PortadaComponent from "./PortadaComponent";
 import ContactoComponent from "./ContactoComponent";
 import HeaderComponent from "./HeaderComponent";
-<<<<<<< HEAD
-import CarritoComponent from "./CarritoComponent";
-=======
 import DireccionamientoFAQ from "./DireccionamientaFAQ";
->>>>>>> main
 
 const Inicio = () => {
   return (

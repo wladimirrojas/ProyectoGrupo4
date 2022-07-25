@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilosEditar.css">
+</head>
+
+<body>
+    <div class="containerP">
+        <img  class="torta"src="img/torta_cafe_late_pasteleria_la_palmera.jpg"/>
+        <section class="section" style="font: size 1vw">
+            <h1 class="Tituloeditar">Elige los detalles de tu torta:</h1>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Tipo Pasteleria</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Elegir...</option>
+                    <option value="1">Vegana</option>
+                    <option value="2">No Vegana</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect02">Tamaño</label>
+                <select class="form-select" id="inputGroupSelect02">
+                    <option selected>Elegir...</option>
+                    <option value="1">10 personas ($23.500)</option>
+                    <option value="2">15 personas ($35.250)</option>
+                    <option value="3">20 personas ($47.000)</option>
+                    <option value="4">25 personas ($58.750)</option>
+                    <option value="5">30 personas ($70.500)</option>
+                    <option value="6">desde 35 personas, 2 pisos: $2.500 por porcion</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect03">Sabor Bizcocho</label>
+                <select class="form-select" id="inputGroupSelect03">
+                    <option selected>Elegir...</option>
+                    <option value="1">Violeta (chocolate,ganache y frambuesas)</option>
+                    <option value="2">Jazmín (bizcocho de limón con chocolate blanco, frambuesas y manjar)</option>
+                    <option value="3">Lotto (bizcocho de chocolate con relleno de cookies and cream)</option>
+                    <option value="4">Peonía (bizcocho de chocolate con relleno de ganache y naranjas confitadas)
+                    </option>
+                    <option value="5">Magnolia (bizcocho de nueces con relleno de manjar y lúcuma)</option>
+                    <option value="6">Amapolas (bizcocho de amapolas con relleno de chocolate blanco, frambuesas, manjar
+                        y nueces)</option>
+                    <option value="7">Manjar,Nuez, Pastelera</option>
+                    <option value="8">Merengue Lúcuma y Manjar (solo decoración simple)</option>
+                    <option value="9">Merengue frambuesas y manjar (solo decoración simple)</option>
+                </select>
+            </div>
+            <span>Tipo DECORACIÓN: debes escribir TODOS LOS DETALLES que quieres que se incluyan en tu cotización. Este
+                valor se suma al valor base de la torta. </span>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Frutas de la estacion: $5.000
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Flores: $5.000
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Unicornio: $8.000
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    Number Cake o Letter Cake: $8.000
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault5">
+                    Sirena: $6.000
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault6">
+                    Decoracion simple
+                </label>
+            </div>
+
+            <span>Comentarios extra:</span>
+            <br>
+            <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+
+
+            <!-- aqui hay que añadir una funcion con react de otros!-->
+
+            <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+                <p>
+                    Aqui puedes subir imagenes de referencia:<br>
+                    <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
+                </p>
+            </form>
+
+            <div class="input-group mb-3">
+                <span>¿Deseas añadir algo mas?</span>
+                <select class="form-select" id="inputGroupSelect04">
+                    <option selected>Elegir...</option>
+                    <option value="1">Cupcakes y mini Cupcakes</option>
+                    <option value="2">Donuts, galletas o popcakes</option>
+                    <option value="3">No</option>
+                </select>
+            </div>
+            <div class="botones">
+                <button type="button" class="btn btn-warning">Cancelar</button>
+                <button type="button" class="btn btn-primary">Atrás</button>
+                <button type="button" class="btn btn-primary">Siguiente</button>
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
