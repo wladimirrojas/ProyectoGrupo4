@@ -4,7 +4,6 @@ import getAll from '../services/ProductoService';
 import FooterComponent from './FooterComponent';
 import HeaderComponent from './HeaderComponent';
 import TituloProducto from './TituloProducto';
-import SloganHistoria from './SloganHistoria';
 import DireccionamientoFAQ from './DireccionamientaFAQ';
 import '../styles/ProductoTorta.css'
 
@@ -45,7 +44,7 @@ const ProductoListado = () => {
             <HeaderComponent />
             <TituloProducto />
             <div className="row">
-                <div className='col-12 m-5 d-flex'>
+                <div className='col-10 m-5 d-flex'>
                     {
                         productos.map(producto =>
                             <TarjetaTorta
