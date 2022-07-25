@@ -82,7 +82,7 @@ const FooterComponent = () => {
         }}
       >
         <span>© 2022 Copyright: </span>
-        <a className="text-white noLink" href="www.google.cl" rel="noreferrer">
+        <a className="text-white noLink" href="https://www.google.cl/" rel="noreferrer">
           Marikeiks.cl
         </a>
       </div>
