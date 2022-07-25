@@ -3,6 +3,7 @@ import Inicio from './components/Inicio';
 import ProductoListado from './components/ProductoListado';
 import Faq from './components/Faq';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import EditarTComponent from './components/EditarTComponent';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Route path='/' element={<Inicio/>}></Route>
       <Route path='/productos' element={<ProductoListado/>}></Route>
       <Route path='/faq' element={<Faq/>}></Route>
+      <Route path='/productos/editarorden' element={<EditarTComponent/>}></Route>
     </Routes>
     </BrowserRouter>
   );
