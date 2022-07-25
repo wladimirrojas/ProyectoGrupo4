@@ -25,10 +25,15 @@ public class ProductoService {
 	}
 	
 	public Producto buscarId(Long id) {
-		return productoRepository.findById(id).get();
+		return productoRepository.findById(id).get();//.get() especifica el tipo de datos que necesitamos
 	}
-
-	public void deleteById(Long id) {
+	
+	public void eliminarPorId(Long id) {
+		
 		productoRepository.deleteById(id);
+	}
+	public List<Producto> buscarMarca(String tipoProducto) {
+		
+		return productoRepository.findAllByTipoProducto(tipoProducto);
 	}
 }

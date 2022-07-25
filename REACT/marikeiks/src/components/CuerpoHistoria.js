@@ -37,7 +37,7 @@ const ImagenesHistoria = () => {
             data-bs-ride='carousel'>
             <div className='carousel-inner'>
                 <div className='carousel-item active' data-bs-interval='2000'>
-                    <img className='rounded' src={foto1} alt='imagen1' />
+                    <img className='rounded' src={foto1} alt='imagen1' style={{objectFit: 'cover'}}/>
                 </div>
                 <div className='carousel-item' data-bs-interval='2000'>
                     <img className='rounded' src={foto2} alt='imagen2' />

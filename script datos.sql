@@ -1,5 +1,7 @@
+use marikeiks;
 INSERT INTO decoraciones (descripcion, nombre, precio, stock) 
 VALUES
+
 ('Decoracion basica','simple', 0, 100),
 ('Frutas de la Estación','Frutas', 5000, 100),
 ('Flores','Flores', 5000, 100),
@@ -56,8 +58,13 @@ VALUES
 ('Relleno de mantequilla de maní', 1, 'Cupcake Bizcocho Limón', 100);
 
 
-INSERT INTO productos (nombre, descripcion, precio, stock, vegano, decoracion_id, tipo_producto_id, cantidades_id, sabores_id)
-VALUES('Torta','con decoracion, 10 personas, sabor amapola', 30000, 10, 0, 1, 1, 2, 3);
+INSERT INTO productos (descripcion, nombre, precio, stock, vegano, cantidades_id, decoracion_id, sabores_id, tipo_producto_id)
+
+VALUES ('10 personas, sabor peonía','Torta', 35250, 100, 1, 3, 2, 2, 2);
+
+
+
+
 
 INSERT INTO estados_ventas (comentario, nombre)
 VALUES('Pedido está en la línea de producción', 'Procesando pedido');

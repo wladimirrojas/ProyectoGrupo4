@@ -11,7 +11,6 @@ const Inicio = () => {
   return (
     <div className="container-fluid p-0" style={{backgroundColor: "whitesmoke"}}>
       <HeaderComponent/>
-      <CarritoComponent/>
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia />

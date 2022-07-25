@@ -4,10 +4,6 @@ import ProductoListado from './components/ProductoListado';
 import Faq from './components/Faq';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import CarritoUsuarioComponent from './testing/CarritoUsuarioComponent';
-
-
-
 const App = () => {
   return (
     <BrowserRouter>

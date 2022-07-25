@@ -15,7 +15,6 @@ const Historia = () => {
             <ImagenesHistoria/>
             </div>
             </div>
-            <SloganHistoria/>
         </div>    
     );  
 };

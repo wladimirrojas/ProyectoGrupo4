@@ -6,9 +6,10 @@ import TContactoComp from "./TContactoComp";
 
 const ContactoComponent = () => {
     return (
-        <div>
+        <div >
             <TContactoComp/>
             <SmapaComponent/>
+            <br/>
             <FormComponent/>
         </div>
             )}

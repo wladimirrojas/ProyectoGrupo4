@@ -5,11 +5,6 @@
     overflow-x: hidden;
 }
 
-#contenedor2 {
-    width: 400px;
-    background-color: aquamarine;
-}
-
 .card {
     width: 18rem;
     display: flex;

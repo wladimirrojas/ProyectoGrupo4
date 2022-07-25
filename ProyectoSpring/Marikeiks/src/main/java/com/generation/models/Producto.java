@@ -41,21 +41,21 @@ public class Producto {
 	private List<VentaProducto> ventas_productos;
 
 	// recibe desde tipo_producto
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "tipo_producto_id")
 	private TipoProducto tipoProducto; // listo
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "decoracion_id")
 	private Decoracion decoracion;
 
 	// Recibe la foranea de sabores
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "sabores_id")
 	private Sabor sabor;
 
 	// Recibe la foranea de cantidades
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "cantidades_id")
 	private Cantidad cantidad;
 
@@ -65,7 +65,6 @@ public class Producto {
 	private Date updatedAt;
 
 	public Producto() {
-		super();
 	}
 
 	public Producto(Long id, String nombre, String descripcion, Integer stock, Integer precio, Integer vegano,
