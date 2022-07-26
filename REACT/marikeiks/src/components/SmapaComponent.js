@@ -5,8 +5,8 @@ const SmapaComponent = () => {
         <div className="container-xl mb-5">
             <div className="row justify-content-center">
                 <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 mt-3">
-                    <img id="imagenes-map" class="rounded ms-3" src={require("../img/contacto3.jpg")} alt="contacto2" />
-                    <img id="imagenes-map" class="rounded ms-3" src={require("../img/contacto.jpg")} alt="contacto" />
+                    <img id="imagenes-map" className="rounded ms-3" src={require("../img/contacto3.jpg")} alt="contacto2" />
+                    <img id="imagenes-map" className="rounded ms-3" src={require("../img/contacto.jpg")} alt="contacto" />
                     <div className="col-xl-5 col-lg-5 col-md-5 col-sm-8 mt-3 me-4">
                     <iframe title="mapa_marikeiks" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.7224664369787!2d-70.55837837333792!3d-33.50859714632189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1a3a8c249e1%3A0x54b1c2be80b9fa2d!2sAv.%20Consistorial%205778%2C%20Penalolen%2C%20Pe%C3%B1alol%C3%A9n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1657576944559!5m2!1ses!2scl"
                         id="mapa" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
