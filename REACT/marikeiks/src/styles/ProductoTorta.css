@@ -11,6 +11,12 @@
     vertical-align: top;
 }
 
+#imagen-torta {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 #titulo_productos {
     font-family: 'Tangerine';
     font-size:calc(12px + 4vw);

@@ -40,10 +40,10 @@ const ImagenesHistoria = () => {
                     <img className='rounded' src={foto1} alt='imagen1' style={{objectFit: 'cover'}}/>
                 </div>
                 <div className='carousel-item' data-bs-interval='2000'>
-                    <img className='rounded' src={foto2} alt='imagen2' />
+                    <img className='rounded' src={foto2} alt='imagen2' style={{objectFit: 'cover'}} />
                 </div>
-                <div className='carousel-item'>
-                    <img className='rounded' src={foto3} alt='imgen3' />
+                <div className='carousel-item' data-bs-interval='2000'>
+                    <img className='rounded' src={foto3} alt='imgen3'  style={{objectFit: 'cover'}} />
                 </div>
             </div>
             <button className='carousel-control-prev' type='button' data-bs-target='#carouselExampleControls'

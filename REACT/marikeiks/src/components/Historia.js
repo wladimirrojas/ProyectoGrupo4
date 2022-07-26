@@ -9,7 +9,6 @@ const Historia = () => {
         <div className="contenedorHistoria">
             <div className="row justify-content-center">
             <TituloHistoria/>
-            <hr/>
             <div className="row justify-content-center">
             <CuerpoHistoria/>
             <ImagenesHistoria/>

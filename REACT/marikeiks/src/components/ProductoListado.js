@@ -41,7 +41,6 @@ const ProductoListado = () => {
 
     return (
         <div className="contenedor-productos p-0">
-            <HeaderComponent />
             <TituloProducto />
             <div className="row">
                 <div className='col-10 m-5 d-flex'>
@@ -55,7 +54,6 @@ const ProductoListado = () => {
             </div>
             <br />
             <DireccionamientoFAQ />
-            <FooterComponent />
         </div>
     );
 };

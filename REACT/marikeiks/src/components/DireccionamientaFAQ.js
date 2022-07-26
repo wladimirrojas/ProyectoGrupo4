@@ -7,11 +7,11 @@ const DireccionamientoFAQ = () => {
     const handleOnClick = useCallback(() => navigate('/faq', { replace: true }, [navigate]))
 
     return (
-        <div className='container-fluid text-center'>
-            <div className="col-md-6 mt-5 offset-md-3">
+        <div id="contenedor-FAQ" className='container-fluid text-center'>
+            <div className="col">
                 <p>Nuestras pedidos requieren un mínimo de 7 días de anticipación. Para obtener más información, lea nuestras preguntas frecuentes. </p>
                 <br />
-                <div className="col-md-6 offset-md-3 mb-5">
+                <div className="col">
                     <button type='button' className='btn btn-outline-dark' onClick={handleOnClick}>Ir a preguntas frecuentes</button>
                 </div>
             </div>
