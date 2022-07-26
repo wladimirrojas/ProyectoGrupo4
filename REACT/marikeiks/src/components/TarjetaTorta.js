@@ -6,19 +6,18 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const TarjetaTorta = ({producto}) => {
-        const navigate = useNavigate();
+const TarjetaTorta = ({ producto }) => {
+    const navigate = useNavigate();
         const handleOnClick = useCallback(() => navigate('/productos/editarorden', { replace: true }, [navigate]));
     return (
-        <div className="card mx-5">
-            <img src={producto.url} className="card-img-top" alt={producto.id} />
-            <div className="card-body">
-                <h5 className="card-title">{producto.nombre}</h5>
-                <p className="card-text">{producto.descripcion}</p>
-                {/* <p className="card-text">{producto.cantidad.porcion}</p>
-                <p className="card-text">{producto.sabor.descripcion}</p> */}
-                <p className="card-text">${producto.precio}</p>
-                <button className="btn btn-sm btn-outline-primary me-2"onClick = {handleOnClick}>Añadir al carro</button>
+        <div id="contenedor-card" className="col">
+            <div className="card p-1 border bg-light mx-5">
+                <img id="imagen-torta" src={producto.url} className="card-img-top" alt={producto.id} />
+                <div id="card-model" className="card-body">
+                    <h5 className="card-title">{producto.descripcion}</h5>
+                    <p className="card-text">${producto.precio}</p>
+                    <button className="btn btn-sm btn-outline-primary me-2"onClick = {handleOnClick}>Comprar</button>
+                </div>
             </div>
         </div>
     );

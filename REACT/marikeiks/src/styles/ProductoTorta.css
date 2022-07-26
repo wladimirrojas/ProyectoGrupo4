@@ -2,13 +2,22 @@
 
 .contenedor-productos {
     background-color: whitesmoke;
-    overflow-x: hidden;
 }
 
-.card {
-    width: 18rem;
-    display: flex;
-    vertical-align: top;
+#card-model {
+    font-size: calc(12px + 1vw);
+}
+
+#contenedor-card {
+    min-width: 200px;
+    min-height: 300px;
+
+}
+
+#imagen-torta {
+    object-fit: cover;
+    width: calc(248px + 1vw);
+    height: calc(400px + 1vw);
 }
 
 #titulo_productos {

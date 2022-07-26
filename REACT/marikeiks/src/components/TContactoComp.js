@@ -6,8 +6,8 @@ const TContactoComp = () => {
             <div className="col position-relative">
                 <img src={require('../img/top.png')} width="100%">
                 </img>
-            </div >
-            <div className="d-flex justify-content-center titulos col ">
+            </div>
+            <div className="d-flex justify-content-center titulos col">
                 Contacto
             </div>
         </div>

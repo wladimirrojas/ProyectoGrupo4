@@ -7,10 +7,20 @@
 }
 html, body {
     overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#contenedor-contacto {
+    background-image: url('../img/white-simple-textured-design-background.jpg');
+    background-size: 100%;
+    background-position: center;
 }
 
 #contenedor-formulario{
     background-color: #eff1f4;
+    background-image: url('../img/white-simple-textured-design-background.jpg');
+    background-size: 100%;
+    background-position: center;
 }
 
 .contenedorIcono{
@@ -48,7 +58,7 @@ html, body {
 }
 
 #mapa{
-    width: calc(500px + 1vw);
+    width: calc(360px + 1vw);
     height: calc(200px + 1vw);
 }
 

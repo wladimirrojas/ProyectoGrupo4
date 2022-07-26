@@ -10,13 +10,11 @@ import DireccionamientoFAQ from "./DireccionamientaFAQ";
 const Inicio = () => {
   return (
     <div className="container-fluid p-0" style={{backgroundColor: "whitesmoke"}}>
-      <HeaderComponent/>
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia />
       <ContactoComponent/>
       <DireccionamientoFAQ />
-      <FooterComponent />
     </div>
   );
 };

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Tangerine&display=swap');
 
 .contenedorHistoria {
-    background-color: #eff1f4;
-    overflow-x: hidden;
+    background-image: url('../img/white-simple-textured-design-background.jpg');
+    background-size: 100%;
+    background-position: center;
 }
 
 .adorno{
     width: calc(150px + 1vw);
     height: calc(30px + 1vw);
     display: flex;
+    opacity: 0.4;
 }
 
 #titulo_historia{
@@ -32,4 +34,29 @@
     
 }
 
+#contenedor-FAQ {
+    color:black;
+    background-color:white-smoke;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border: 1px solid lightgray;
+}
+
+#imagen1c {
+    object-fit: cover;
+    width: 100%;
+    height: calc(600px + 1vw);
+}
+
+#imagen2c {
+    object-fit: cover;
+    width: 100%;
+    height: calc(600px + 1vw);
+}
+
+#imagen3c {
+    object-fit: cover;
+    width: 100%;
+    height: calc(600px + 1vw);
+}
 

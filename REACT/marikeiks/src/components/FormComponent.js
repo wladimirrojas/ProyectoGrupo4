@@ -32,7 +32,7 @@ const FormComponent = () => {
                             <textarea placeholder="¿Cómo te ayudamos?" className="form-control" id="exampleFormControlTextarea1" rows="4" required>
                             </textarea>
                         </div>
-                        <div className="d-grid gap-2 justify-content-md-end">
+                        <div className="d-grid gap-2 justify-content-md-end mb-5">
                             <button type="submit" className="btn btn-outline-dark">Enviar</button>
                         </div>
                     </form>
