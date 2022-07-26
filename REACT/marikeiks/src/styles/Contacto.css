@@ -5,10 +5,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
-html, body {
+/* html, body {
     overflow-x: hidden;
     overflow-y: scroll;
-}
+} */
 
 /* #contenedor-contacto {
     background-image: url('../img/white-simple-textured-design-background.jpg');

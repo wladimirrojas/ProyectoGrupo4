@@ -49,25 +49,23 @@ const FooterComponent = () => {
 
               <p>
                 <a
-                  className="noLink"
+                  className="noLink bi-facebook"
                   target="_blank"
                   rel="noreferrer"
                   href="https://es-la.facebook.com/MariKeiks/"
                 >
-                  <img src="/assets/svg/facebook.svg" alt=""></img>
-                  Facebook
+                  <span> </span>Facebook
                 </a>
               </p>
 
               <p>
                 <a
-                  className="noLink"
+                  className="noLink bi-instagram"
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.instagram.com/marikeiks/"
                 >
-                  <img src="/assets/svg/instagram.svg" alt=""></img>
-                  Instagram
+                  <span> </span> Instagram
                 </a>
               </p>
             </div>
