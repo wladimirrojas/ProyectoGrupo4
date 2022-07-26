@@ -1,7 +1,14 @@
 import React from "react";
 import '../styles/ProductoTorta.css'
+import { useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 const TarjetaTorta = ({ producto }) => {
+    const navigate = useNavigate();
+        const handleOnClick = useCallback(() => navigate('/productos/editarorden', { replace: true }, [navigate]));
     return (
         <div id="contenedor-card" className="col">
             <div className="card p-1 border bg-light mx-5">
@@ -9,7 +16,7 @@ const TarjetaTorta = ({ producto }) => {
                 <div id="card-model" className="card-body">
                     <h5 className="card-title">{producto.descripcion}</h5>
                     <p className="card-text">${producto.precio}</p>
-                    <button className="btn btn-sm btn-outline-primary me-2">Comprar</button>
+                    <button className="btn btn-sm btn-outline-primary me-2"onClick = {handleOnClick}>Comprar</button>
                 </div>
             </div>
         </div>
