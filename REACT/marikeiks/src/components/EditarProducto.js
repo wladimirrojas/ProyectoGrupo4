@@ -8,6 +8,7 @@ const EditarProducto = () => {
             <img src={Imgprueba1} id='torta' alt="logo de empresa" />
             <section className="section" style={{ "font": "size 0.5vw" }}>
                 <h1 id="Tituloeditar">Elige los detalles de tu torta:</h1>
+                <br></br>
                 <div className="input-group mb-3">
                     <label className="input-group-text" htmlfor="inputGroupSelect01">Tipo Pasteleria</label>
                     <br></br>
