@@ -10,7 +10,7 @@ html, body {
     overflow-y: scroll;
 }
 
-#contenedor-contacto {
+/* #contenedor-contacto {
     background-image: url('../img/white-simple-textured-design-background.jpg');
     background-size: 100%;
     background-position: center;
@@ -21,7 +21,7 @@ html, body {
     background-image: url('../img/white-simple-textured-design-background.jpg');
     background-size: 100%;
     background-position: center;
-}
+} */
 
 .contenedorIcono{
     margin: 0px auto;
