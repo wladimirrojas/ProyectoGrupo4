@@ -4,7 +4,6 @@
     background-image: url('../img/white-simple-textured-design-background.jpg');
     background-size: 100%;
     background-position: center;
-    overflow-x: hidden;
 }
 
 .adorno{
@@ -43,4 +42,21 @@
     border: 1px solid lightgray;
 }
 
+#imagen1c {
+    object-fit: cover;
+    width: 100%;
+    height: calc(600px + 1vw);
+}
+
+#imagen2c {
+    object-fit: cover;
+    width: 100%;
+    height: calc(600px + 1vw);
+}
+
+#imagen3c {
+    object-fit: cover;
+    width: 100%;
+    height: calc(600px + 1vw);
+}
 

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TarjetaTorta from './TarjetaTorta';
 import getAll from '../services/ProductoService';
-import FooterComponent from './FooterComponent';
-import HeaderComponent from './HeaderComponent';
 import TituloProducto from './TituloProducto';
 import DireccionamientoFAQ from './DireccionamientaFAQ';
 import '../styles/ProductoTorta.css'
@@ -42,8 +40,7 @@ const ProductoListado = () => {
     return (
         <div className="contenedor-productos p-0">
             <TituloProducto />
-            <div className="row">
-                <div className='col-10 m-5 d-flex'>
+            <div className="row row-cols-4 row-cols-lg-4 g-4 g-lg-4">
                     {
                         productos.map(producto =>
                             <TarjetaTorta
@@ -51,7 +48,6 @@ const ProductoListado = () => {
                                 producto={producto} />)
                     }
                 </div>
-            </div>
             <br />
             <DireccionamientoFAQ />
         </div>

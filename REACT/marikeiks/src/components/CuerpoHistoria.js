@@ -37,13 +37,13 @@ const ImagenesHistoria = () => {
             data-bs-ride='carousel'>
             <div className='carousel-inner'>
                 <div className='carousel-item active' data-bs-interval='2000'>
-                    <img className='rounded' src={foto1} alt='imagen1' style={{objectFit: 'cover'}}/>
+                    <img id="imagen1c" className='rounded' src={foto1} alt='imagen1'/>
                 </div>
                 <div className='carousel-item' data-bs-interval='2000'>
-                    <img className='rounded' src={foto2} alt='imagen2' style={{objectFit: 'cover'}} />
+                    <img id="imagen2c" className='rounded' src={foto2} alt='imagen2'/>
                 </div>
                 <div className='carousel-item' data-bs-interval='2000'>
-                    <img className='rounded' src={foto3} alt='imgen3'  style={{objectFit: 'cover'}} />
+                    <img id="imagen3c" className='rounded' src={foto3} alt='imgen3'/>
                 </div>
             </div>
             <button className='carousel-control-prev' type='button' data-bs-target='#carouselExampleControls'

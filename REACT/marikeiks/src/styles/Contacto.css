@@ -58,7 +58,7 @@ html, body {
 }
 
 #mapa{
-    width: calc(500px + 1vw);
+    width: calc(360px + 1vw);
     height: calc(200px + 1vw);
 }
 

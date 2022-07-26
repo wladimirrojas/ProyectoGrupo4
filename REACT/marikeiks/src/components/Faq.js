@@ -3,7 +3,7 @@ import foto3 from '../img/torta3.png';
 
 const Faq = () => {
     return (
-        <div className="contenedor-productos p-0">
+        <div className="contenedor-FAQ p-0">
             <div className="row">
                 <div className="col-3">
                     <img src={foto3} alt="foto ejemplo" />
