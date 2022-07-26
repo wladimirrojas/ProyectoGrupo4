@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bienvenido a Marikeiks</title>
+<title>Demo</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -14,12 +14,12 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<!-- ingreso de datos -->
-	<div class="container-fluid d-flex">
+<!-- ingreso de datos -->
+	<div class="container">
 		<!-- ingreso de datos -->
-		<form:form action="/admin/producto/guardar" method="post"
-			modelAttribute="producto" style="width: 500px;" class="form-control justify-content-center">
-			<h1 class="p-3 mb-2 bg-success text-white text-center text-uppercase" style="border-radius: 15px;">Ingreso
+		<form:form action="/admin/producto/actualizar/${producto.id}" method="post"
+			modelAttribute="producto">
+			<h1 class="p-3 mb-2 bg-success text-white text-center text-uppercase">Ingreso
 				de productos</h1>
 			<form:label path="nombre">Nombre producto: </form:label>
 			<form:input path="nombre" class="form-control" for="nombre" />
@@ -66,59 +66,7 @@
 					<form:option value="${cantidad.id}">${cantidad.porcion} porciones</form:option>
 				</c:forEach>
 			</form:select>
-			<br>
-			<button type="submit" class="btn btn-outline-primary">Guardar
-				Producto</button>
+			<button type="submit" class="btn btn-outline-primary">Editar Producto</button>
 		</form:form>
-		<!-- private Long id;
-	private String descripcion;
-	private Integer stock;
-	private Integer precio;
-	private Integer vegano;
-	private Integer tipo_producto_id;
-	private Integer decoraciones_id; -->
-		<div>
-			<table class="table">
-				<thead>
-					<tr>
-						<th scope="col">ID</th>
-						<th scope="col">Nombre</th>
-						<th scope="col">Descripcion</th>
-						<th scope="col">Stock</th>
-						<th scope="col">Precio</th>
-						<th scope="col">Vegano</th>
-						<th scope="col">Url</th>
-						<th scope="col">Tipo Producto</th>
-						<th scope="col">Decoracion</th>
-						<th scope="col">Sabor</th>
-						<th scope="col">Cantidad</th>
-						<th scope="col">Acciones</th>
-					</tr>
-				</thead>
-				<tbody>
-					<c:forEach var="producto" items="${listaProductos}">
-						<tr>
-							<th scope="row">${producto.id}</th>
-							<td>${producto.nombre}</td>
-							<td>${producto.descripcion}</td>
-							<td>${producto.stock}</td>
-							<td>${producto.precio}</td>
-							<td>${producto.vegano}</td>
-							<td>${producto.url}</td>
-							<td>${producto.tipoProducto.nombre}</td>
-							<td>${producto.decoracion.nombre}</td>
-							<td>${producto.sabor.nombre}</td>
-							<td>${producto.cantidad.porcion}</td>
-							<td><a class="btn btn-warning" href="producto/editar/${producto.id}">Editar</a></td>
-							<td><a class="btn btn-danger" href="producto/eliminar/${producto.id}" >Eliminar</a></td>
-						</tr>
-					</c:forEach>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<!-- muestreo de datos -->
-	
-
 </body>
 </html>

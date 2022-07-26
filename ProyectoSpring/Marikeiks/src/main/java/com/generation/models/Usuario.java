@@ -17,7 +17,7 @@ public class Usuario {
 	private Long id;
 
 	private String nombreUsuario;
-	private String correo;
+	private String email;
 
 	@NotNull
 	private String password;
@@ -29,9 +29,9 @@ public class Usuario {
 
 	}
 
-	public Usuario(Long id, String nombreUsuario, String correo, @NotNull String password) {
+	public Usuario(Long id, String nombreUsuario, String email, @NotNull String password) {
 		this.nombreUsuario = nombreUsuario;
-		this.correo = correo;
+		this.email = email;
 		this.password = password;
 	}
 
@@ -51,12 +51,12 @@ public class Usuario {
 		this.nombreUsuario = nombreUsuario;
 	}
 
-	public String getCorreo() {
-		return correo;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setCorreo(String correo) {
-		this.correo = correo;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {

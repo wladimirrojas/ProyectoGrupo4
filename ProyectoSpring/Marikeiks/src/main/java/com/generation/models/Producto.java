@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 /*Entidad, nombre de tabla, y tipos de atributos*/
 @Entity
 @Table(name = "productos")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Producto {
 
 	@Id
@@ -41,21 +41,21 @@ public class Producto {
 	private List<VentaProducto> ventas_productos;
 
 	// recibe desde tipo_producto
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "tipo_producto_id")
 	private TipoProducto tipoProducto; // listo
 
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "decoracion_id")
 	private Decoracion decoracion;
 
 	// Recibe la foranea de sabores
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "sabores_id")
 	private Sabor sabor;
 
 	// Recibe la foranea de cantidades
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "cantidades_id")
 	private Cantidad cantidad;
 
