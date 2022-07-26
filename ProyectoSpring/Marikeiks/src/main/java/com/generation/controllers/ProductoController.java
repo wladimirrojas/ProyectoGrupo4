@@ -90,5 +90,13 @@ public class ProductoController {
 
 		return "editarProducto.jsp";// redireccionar a otra url o path
 	}
+	
+	@RequestMapping("/eliminar/{id}")
+	public String eliminar(@PathVariable("id") Long id, Model model) {
+		
+		productoService.eliminarPorId(id);
+		
+		return "redirect:/admin/producto";
+	}
 
 }
