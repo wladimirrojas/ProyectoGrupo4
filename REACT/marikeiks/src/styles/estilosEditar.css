@@ -3,25 +3,49 @@ body{
     margin: 0;
 }
 
-.containerP{
+label{
+    font-family: 'Raleway', cursive;
+}
+span{
+    font-family: 'Raleway', cursive;
+}
+#containerP{
     display: flex;
     justify-content: left;
-    font-family: 'Handlee', cursive;
+    font-family: 'Raleway', cursive;
 }
 
-.torta{
+#torta{
     display: flex;
+    max-width: 250px;
+    min-height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 5px;
+    border-color: aquamarine;
+}
+
+#Tituloeditar{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Raleway', cursive;
+}
+#botones{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    min-width: 80px;
-    min-height: 80px;
-    margin: 20px 20px 0 20px;
-}
-
-.botones{
-    display: flex;
+    padding: 10px;
 }
 
 .section{
     width: 100%;
 
 }
+
+@media (max-width:700px){
+    .containerP{
+    flex-direction: column !important;
+    }}

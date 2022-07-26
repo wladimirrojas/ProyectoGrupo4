@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const TarjetaTorta = ({producto}) => {
         const navigate = useNavigate();
-        const handleOnClick = useCallback(() => navigate('/producto/editarorden', { replace: true }, [navigate]));
+        const handleOnClick = useCallback(() => navigate('/productos/editarorden', { replace: true }, [navigate]));
     return (
         <div className="card mx-5">
             <img src={producto.url} className="card-img-top" alt={producto.id} />
