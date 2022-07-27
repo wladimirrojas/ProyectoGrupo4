@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../styles/Cart.css';
 
 const DireccionamientoProductos = () => {
 
@@ -7,9 +8,9 @@ const DireccionamientoProductos = () => {
     const handleOnClick = useCallback(() => navigate('/productos', { replace: true }, [navigate]))
     
     return (
-        <div className='botonComprar'>
-            <div className="col-md-6 mt-5 offset-md-3">
-                <div className="col-md-6 offset-md-3 mb-5">
+        <div>
+            <div>
+                <div className="d-grid gap-2 justify-content-md-end mb-3">
                     <button type='button' className='btn btn-outline-dark' onClick={handleOnClick}>Seguir Comprando</button>
                 </div>
             </div>

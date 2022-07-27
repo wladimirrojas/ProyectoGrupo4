@@ -5,7 +5,7 @@ import '../styles/Cart.css';
 const TituloCarrito = () => {
     return (
         <div className="separacionBottom">
-            <div className="titulos">Tu carrito
+            <div className="titulos">Carrito
 
             </div>
             <div>
