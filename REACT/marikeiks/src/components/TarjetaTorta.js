@@ -1,9 +1,10 @@
 import React from "react";
-import "../styles/ProductoTorta.css";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 import FormatNumberComponent from "./utils/FormatNumberComponent";
+
+import "../styles/TarjetaTortaStyle.css";
 
 const TarjetaTorta = ({ producto }) => {
   const navigate = useNavigate();
@@ -11,17 +12,16 @@ const TarjetaTorta = ({ producto }) => {
     navigate("/productos/editarorden", { replace: true }, [navigate])
   );
   return (
-    <div id="contenedor-card" className="col">
-      <div className="card p-1 border bg-light mx-5">
+    <div className="col mb-2 colcard">
+      <div className="card">
         <img
-          id="imagen-torta"
           src={producto.url}
-          className="card-img-top"
+          className="card-img-top imagen-torta"
           alt={producto.id}
         />
-        <div id="card-model" className="card-body">
-          <h5 className="card-title">{producto.descripcion}</h5>
-          <p className="card-text">
+        <div className="card-body">
+          <h5 className="card-title titulo">{producto.descripcion}</h5>
+          <p className="card-text contenido">
             <FormatNumberComponent number={producto.precio} />
           </p>
           <button
