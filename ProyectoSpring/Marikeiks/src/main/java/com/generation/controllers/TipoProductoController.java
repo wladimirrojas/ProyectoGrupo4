@@ -16,26 +16,26 @@ import com.generation.services.TipoProductoService;
 @Controller
 @RequestMapping("/admin/tipoProducto")
 public class TipoProductoController {
-    
-    @Autowired
-    TipoProductoService tipoProductoService;
-    
-    @RequestMapping("")
-    public String ingreso(Model model){
-        TipoProducto tipoProducto = new TipoProducto();
-        model.addAttribute("tipoProducto", tipoProducto);
 
-        List<TipoProducto> listaTipoProductos = tipoProductoService.findAll();
-        model.addAttribute("listaTipoProductos", listaTipoProductos);
+	@Autowired
+	TipoProductoService tipoProductoService;
 
-        return "tipoProducto.jsp";
-    }
-    @RequestMapping("/guardar")
-    public String guardarTipo_producto(@Valid @ModelAttribute("tipoProducto") TipoProducto tipoProducto){
+	@RequestMapping("")
+	public String ingreso(Model model) {
+		TipoProducto tipoProducto = new TipoProducto();
+		model.addAttribute("tipoProducto", tipoProducto);
 
-        tipoProductoService.saveTipoProducto(tipoProducto);
-        return "redirect:/tipoProducto";
-    }
+		List<TipoProducto> listaTipoProductos = tipoProductoService.findAll();
+		model.addAttribute("listaTipoProductos", listaTipoProductos);
 
+		return "tipoProducto.jsp";
+	}
+
+	@RequestMapping("/guardar")
+	public String guardarTipo_producto(@Valid @ModelAttribute("tipoProducto") TipoProducto tipoProducto) {
+
+		tipoProductoService.saveTipoProducto(tipoProducto);
+		return "redirect:/tipoProducto";
+	}
 
 }

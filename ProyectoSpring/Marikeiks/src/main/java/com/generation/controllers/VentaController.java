@@ -16,32 +16,29 @@ import com.generation.services.VentaService;
 public class VentaController {
 	@Autowired
 	VentaService ventaService;
-	
-	//Ruta inicio 
+
+	// Ruta inicio
 	@RequestMapping("")
-	public String venta(@ModelAttribute ("Venta") Venta venta) {
-	return "Venta.jsp";
+	public String venta(@ModelAttribute("Venta") Venta venta) {
+		return "Venta.jsp";
 	}
-	
-	//Ruta guardar
+
+	// Ruta guardar
 	@RequestMapping("/guardarVenta")
 	public String guardarVenta(@ModelAttribute("Venta") Venta venta, Model model) {
-		
-		//método para guardar los estados de ventas
+
+		// método para guardar los estados de ventas
 		ventaService.saveVenta(venta);
-		
-		//guardar los estados ingresados en una lista a través del método findAll
+
+		// guardar los estados ingresados en una lista a través del método findAll
 		List<Venta> listaVenta = ventaService.findAll();
-		
-		//enviar los datos al jsp mediante model.addAttribute
+
+		// enviar los datos al jsp mediante model.addAttribute
 		model.addAttribute("listaVentas", listaVenta);
-		
-		//devolver a la página de inicio estados de ventas
+
+		// devolver a la página de inicio estados de ventas
 		return "redirect:/venta";
-		
+
 	}
-	
+
 }
-
-
-

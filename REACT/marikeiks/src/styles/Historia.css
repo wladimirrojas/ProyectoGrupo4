@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Tangerine&display=swap');
 
-/* .contenedorHistoria {
-    background-image: url('../img/white-simple-textured-design-background.jpg');
-    background-size: 100%;
-    background-position: center;
-} */
-
 .adorno{
     width: calc(150px + 1vw);
     height: calc(30px + 1vw);

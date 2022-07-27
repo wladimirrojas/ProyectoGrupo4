@@ -3,10 +3,10 @@ import React from "react";
 const FormComponent = () => {
     return (
         <div id="contenedor-formulario" className="row justify-content-center pb-5">
-                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-4">
+                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10">
                     <div id="tituloFormulario" className="fs-1 text-center">¿Cómo podemos ayudarte?</div>
                     <br/>
-                    <div className="container col-xl-10 col-lg-10 col-md-10 col-sm-4">
+                    <div className="container col-xl-10 col-lg-10 col-md-10 col-sm-10">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="exampleFormControlInput1" className="form-label">Nombre</label>

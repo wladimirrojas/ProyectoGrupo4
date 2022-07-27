@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Demo</title>
+<title>Editar Producto</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -66,7 +66,9 @@
 					<form:option value="${cantidad.id}">${cantidad.porcion} porciones</form:option>
 				</c:forEach>
 			</form:select>
+			<br>
 			<button type="submit" class="btn btn-outline-primary">Editar Producto</button>
 		</form:form>
+		</div>
 </body>
 </html>

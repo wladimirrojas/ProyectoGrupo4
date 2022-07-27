@@ -86,9 +86,19 @@ public class ProductoController {
 		model.addAttribute("listaSabores", listaSabores);
 
 		List<Cantidad> listaCantidades = cantidadService.findAll();
-		model.addAttribute("listaCantidades", listaCantidades);
+		model.addAttribute("listaCantidades", listaCantidades);		
 
 		return "editarProducto.jsp";// redireccionar a otra url o path
+	}
+	
+	@PostMapping("/actualizar/{id}")
+	public String actualizarProducto(@PathVariable("id") Long id, @Valid @ModelAttribute("producto") Producto producto, Model model) {
+		
+		producto.setId(id);
+		productoService.guardarProducto(producto);
+		
+		return "redirect:/admin/producto";
+		
 	}
 	
 	@RequestMapping("/eliminar/{id}")

@@ -38,7 +38,7 @@ const VistaProductoComponent = () => {
                                         alt="" />
                                 </div>
                                 <div className="subtitulo">
-                                    <h6 onClick={handleOnClick}>Tortas</h6>
+                                    <h6>Tortas</h6>
                                 </div>
 
                             </div>

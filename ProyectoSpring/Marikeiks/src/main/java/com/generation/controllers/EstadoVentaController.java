@@ -17,28 +17,27 @@ public class EstadoVentaController {
 
 	@Autowired
 	EstadoVentaService estadoVentaService;
-	
-	//Ruta inicio estado de ventas
+
+	// Ruta inicio estado de ventas
 	@RequestMapping("")
-	public String estadoVenta(@ModelAttribute ("estadoVenta") EstadoVenta estadoVenta) {
-	return "estadoVenta.jsp";
+	public String estadoVenta(@ModelAttribute("estadoVenta") EstadoVenta estadoVenta) {
+		return "estadoVenta.jsp";
 	}
-	
-	
-	//Ruta para guardar los estados de ventas
+
+	// Ruta para guardar los estados de ventas
 	@RequestMapping("/guardarEstado")
 	public String guardarEstado(@ModelAttribute("estadoVenta") EstadoVenta estadoVenta, Model model) {
-		
-		//método para guardar los estados de ventas
+
+		// método para guardar los estados de ventas
 		estadoVentaService.saveEstadoVenta(estadoVenta);
-		//guardar los estados ingresados en una lista a través del método findAll
+		// guardar los estados ingresados en una lista a través del método findAll
 		List<EstadoVenta> listaEstados = estadoVentaService.findAll();
-		//enviar los datos al jsp mediante model.addAttribute
+		// enviar los datos al jsp mediante model.addAttribute
 		model.addAttribute("listaEstados", listaEstados);
-		
-		//devolver a la página de inicio estados de ventas
+
+		// devolver a la página de inicio estados de ventas
 		return "redirect:/estadoVenta";
-		
+
 	}
-	
+
 }

@@ -12,20 +12,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.generation.models.Cantidad;
 import com.generation.models.Cliente;
+import com.generation.models.Decoracion;
 import com.generation.models.DespachoRetiro;
 import com.generation.models.Producto;
+import com.generation.models.Sabor;
+import com.generation.models.TipoProducto;
 import com.generation.models.Venta;
 import com.generation.models.VentaProducto;
+import com.generation.services.CantidadService;
 import com.generation.services.ClienteService;
+import com.generation.services.DecoracionService;
 import com.generation.services.DespachoRetiroService;
 import com.generation.services.ProductoService;
+import com.generation.services.SaborService;
+import com.generation.services.TipoProductoService;
 import com.generation.services.VentaProductoService;
 import com.generation.services.VentaService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"http://localhost:9080", "http://localhost:3000", "http://localhost:5000","http://localhost:8080"}, methods = { RequestMethod.GET,RequestMethod.POST })
+@CrossOrigin(origins = { "http://localhost:9080", "http://localhost:3000", "http://localhost:5000",
+		"http://localhost:8080" }, methods = { RequestMethod.GET, RequestMethod.POST })
 public class ApiRestController {
 
 	// por orden de ENDPOINT me perdía hehe
@@ -47,12 +56,50 @@ public class ApiRestController {
 	@Autowired
 	VentaProductoService ventaProductoService;
 
+	@Autowired
+	TipoProductoService tipoProductoService;
+
+	@Autowired
+	DecoracionService decoracionService;
+
+	@Autowired
+	SaborService saborService;
+
+	@Autowired
+	CantidadService cantidadService;
+
 	// Conseguimos Api Productos, que son los que necesitamos que el cliente
 	// visualice, y que trae consigo todas las tablas relacionadas por ID
 	@RequestMapping("/obtener/productos")
 	public List<Producto> obtenerProductos() {
 		List<Producto> listaProductos = productoService.findAll();
 		return listaProductos;
+	}
+
+	// solo productos veganos
+	@RequestMapping("/obtener/veganos")
+	public List<Producto> obtenerVegano() {
+		return productoService.buscarVegano(1);
+	}
+
+	@RequestMapping("/obtener/tipoproductos")
+	public List<TipoProducto> tipoProducto() {
+		return tipoProductoService.findAll();
+	}
+
+	@RequestMapping("/obtener/decoraciones")
+	public List<Decoracion> obtenerDecoracion() {
+		return decoracionService.findAll();
+	}
+
+	@RequestMapping("/obtener/sabores")
+	public List<Sabor> obtenerSabor() {
+		return saborService.findAll();
+	}
+
+	@RequestMapping("/obtener/cantidades")
+	public List<Cantidad> obtenerCantidad() {
+		return cantidadService.findAll();
 	}
 
 	// Cliente nos entrega los siguientes datos importantes
@@ -81,28 +128,5 @@ public class ApiRestController {
 
 		return new ResponseEntity<DespachoRetiro>(despachoRetiro, HttpStatus.OK);
 	}
-}
 
-/*
- * 
- * @RequestMapping("/sabores") public List<Sabor> obtenerSabores() {
- * 
- * return saborService.findAll(); } //Kathy
- * 
- * @RequestMapping("/estadoVenta") public List<EstadoVenta> obtenerEstadoVenta
- * () { List<EstadoVenta> listaEstadosVentas = estadoVentaService.findAll();
- * return listaEstadosVentas; }
- * 
- * @RequestMapping("/clientes") public List<Cliente> obtenerClientes () {
- * List<Cliente> listaClientes = clienteService.findAll(); return listaClientes;
- * } //Apis a RV Cata
- * 
- * @RequestMapping("/despachosRetiros") public List<DespachoRetiro>
- * obtenerDespachoRetiro(){ return despachoRetiroService.BuscarId(); }
- * 
- * @RequestMapping("/decoraciones") public List<Decoracion> obtenerDecoracion(){
- * return decoracionService.findAll(); }
- * 
- * @RequestMapping("/ventas") public List<Venta> obtenerVenta(){ return
- * ventaService.findAll(); }
- */
+}
