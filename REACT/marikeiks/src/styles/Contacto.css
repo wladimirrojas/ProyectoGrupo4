@@ -12,7 +12,7 @@
 } */
 
 .contenedorIcono {
-    margin: 0px auto;
+    margin-left: 30%;
     height: 10px;
 }
 
@@ -34,23 +34,24 @@
     margin-bottom: 1%;
 }
 
-.subTitulos {
-    font-family: 'Raleway', sans-serif;
-    font-size: calc(7px + 2vw);
+.subTitulo-contacto {
+    font-family: 'tangerine', cursive;
+    font-size: calc(13px + 3vw);
     margin-bottom: 0.5rem;
     vertical-align: top;
     line-height: 1.2;
     display: inline-block;
 }
 
+
 #mapa {
     width: calc(360px + 1vw);
     height: calc(200px + 1vw);
 }
 
-.parrafos {
+.parrafos-contacto {
     font-family: 'Raleway', sans-serif;
-    font-size: calc(13px + 1vw);
+    font-size: calc(10px + 1vw);
     
 }
 
