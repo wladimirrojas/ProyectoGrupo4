@@ -34,7 +34,7 @@
     margin-bottom: 1%;
 }
 
-.subTitulos {
+.subTitulo-contacto {
     font-family: 'Raleway', sans-serif;
     font-size: calc(7px + 2vw);
     margin-bottom: 0.5rem;
@@ -48,7 +48,7 @@
     height: calc(200px + 1vw);
 }
 
-.parrafos {
+.parrafos-contacto {
     font-family: 'Raleway', sans-serif;
     font-size: calc(13px + 1vw);
     
