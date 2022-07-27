@@ -3,10 +3,9 @@ import '../styles/estilosEditar.css';
 import Imgprueba1 from '../img/vanilla-vegan-gluten-free-cake-oat-flour_9718.jpg';
 import { useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
-import React, { useState, useEffect } from "react";
 
 
-const EditarProducto = ({producto}) => {
+const EditarProducto = () => {
     const navigate = useNavigate();
     const handleOnClick = useCallback(() => navigate('/productos/editarorden/carrito', { replace: true }, [navigate]));
 
