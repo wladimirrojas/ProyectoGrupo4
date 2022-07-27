@@ -133,11 +133,7 @@
 }
 
 
-<<<<<<< HEAD
-#uno{
-=======
 #cinco-1{
->>>>>>> main
     margin-top: 5%;
     text-align: center;
     display: block;
@@ -146,26 +142,3 @@
 
 }
 
-<<<<<<< HEAD
-#dos{
-    height: 500px;
-    width: 1030px;
-    display: inline-block;
-    text-align: center;
-    top: 10px;
-    margin-bottom: 10%;
-}
-
-/* para añador pago */
-.dos-MercadoLibre{
-    padding: 1%;
-    margin-top: 1%;
-    background-image: url(../img/white-simple-textured-design-background.jpg);
-    height: 450px;
-    width: 600px;
-    text-align: left;
-    border-radius: 1%;
-    display: inline-block
-}
-=======
->>>>>>> main

@@ -4,7 +4,7 @@ import TituloCarrito from "./TituloCarrito";
 
 const CarritoDVS = () =>{
     return (
-        <div className="paginaCarrito p-0">
+        <div>
         <TituloCarrito/>
         <BodyCarrito/>
         </div>

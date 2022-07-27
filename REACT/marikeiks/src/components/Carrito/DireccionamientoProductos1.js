@@ -1,8 +1,7 @@
 import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Cart from '../styles/Cart.css'
 
-const DireccionamientoProductos = () => {
+const DireccionamientoProductos1 = () => {
 
     const navigate = useNavigate();
     const handleOnClick = useCallback(() => navigate('/productos', { replace: true }, [navigate]))
@@ -18,4 +17,4 @@ const DireccionamientoProductos = () => {
     );
 };
 
-export default DireccionamientoProductos;
+export default DireccionamientoProductos1;

@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/Cart.css';
 
 const BodyCarrito = () => {
     return (
@@ -9,7 +10,7 @@ const BodyCarrito = () => {
                 <div className="col-2">Total</div>
             </div>
             <div className="parrafosT row">
-                <div className="col-8 card mb-3 p-1">
+            <div className="col-8 card mb-3 p-1">
                         <div className="row g-0">
                             <div className="col-md-4">
                                 <img src={require("../img/contacto.jpg")} 
@@ -27,7 +28,6 @@ const BodyCarrito = () => {
                             </div>
                         </div>
                     </div>
-                
                 <div className="col-2">Cantidad</div>
                 <div className="col-2">Total</div>
             </div>

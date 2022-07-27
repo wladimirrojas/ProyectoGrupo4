@@ -1,6 +1,6 @@
 import React from "react";
-import Cart from '../styles/Cart.css'
 import DireccionamientoProductos from "./DireccionamientoProductos";
+import '../styles/Cart.css';
 
 const TituloCarrito = () => {
     return (

@@ -7,7 +7,7 @@ import EditarTComponent from './components/EditarTComponent';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import ContactoPagina from './components/ContactoPagina';
-import CarritoDVS from './components/CarritoDVS';
+import CarritoDVS from './components/CarrritoDVS';
 
 const App = () => {
   return (
