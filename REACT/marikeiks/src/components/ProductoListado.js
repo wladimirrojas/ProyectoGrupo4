@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TarjetaTorta from "./TarjetaTorta";
 import getAll from "../services/ProductoService";
-import TituloProducto from "./TituloProducto";
 import DireccionamientoFAQ from "./DireccionamientaFAQ";
 import "../styles/ProductoTorta.css";
 
@@ -33,13 +32,17 @@ const ProductoListado = () => {
 
   return (
     <div className="contenedor-productos p-0">
-      <TituloProducto />
-      <div className="row row-cols-4 row-cols-lg-4 g-4 g-lg-4">
+      <div className="pt-3 titulo_productos">
+        <h1>Nuestros productos</h1>
+        <p className="texto1">Para comenzar, elija su producto favorito.</p>
+      </div>
+      <div className="row row-cols-4 row-cols-lg-6 g-6 g-lg-6 px-3">
         {productos.map((producto) => (
-          <TarjetaTorta id={producto.id} producto={producto} />
+          <TarjetaTorta key={producto.id} producto={producto} />
         ))}
       </div>
       <br />
+      <p className="texto1">¿Buscas algo diferente? Póngase en contacto con nosotros aquí para un pedido a medida.</p>
       <DireccionamientoFAQ />
     </div>
   );

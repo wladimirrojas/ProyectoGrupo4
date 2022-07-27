@@ -5,7 +5,6 @@ const baseUrl = 'http://3.143.243.216/api'
 
 const getAll = async()=>{
     const res = await axios.get(baseUrl + "/obtener/productos")
-    console.log(res.data)
     return res.data; 
 };
 
