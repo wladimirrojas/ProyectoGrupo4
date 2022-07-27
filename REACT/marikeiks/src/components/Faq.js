@@ -5,8 +5,8 @@ const Faq = () => {
     return (
         <div className="contenedor-FAQ p-0">
             <div className="row">
-                <div className="col-3">
-                    <img src={foto3} alt="foto ejemplo" />
+                <div className="col-3" style={{height:'600px'}}>
+                    {/* <img alt="foto ejemplo" /> */}
                 </div>
                 <div className="accordion accordion-flush col-7 me-5 mt-5" id="accordionFlushExample" >
                     <div className="accordion-item bg-transparent border border-info rounded-3">

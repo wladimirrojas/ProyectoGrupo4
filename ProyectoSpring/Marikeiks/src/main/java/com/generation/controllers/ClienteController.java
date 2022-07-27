@@ -15,29 +15,28 @@ import com.generation.services.ClienteService;
 @RequestMapping("/admin/cliente")
 public class ClienteController {
 
-	
 	@Autowired
 	ClienteService clienteService;
-	
-	//Ruta inicio cliente
+
+	// Ruta inicio cliente
 	@RequestMapping("")
-	public String cliente(@ModelAttribute ("cliente") Cliente cliente) {
+	public String cliente(@ModelAttribute("cliente") Cliente cliente) {
 		return "cliente.jsp";
 	}
-	
-	//Ruta guardar cliente
+
+	// Ruta guardar cliente
 	@RequestMapping("/guardarCliente")
-	public String guardarCliente(@ModelAttribute ("cliente") Cliente cliente, Model model){
-	
-		//método para guardar los datos del cliente
+	public String guardarCliente(@ModelAttribute("cliente") Cliente cliente, Model model) {
+
+		// método para guardar los datos del cliente
 		clienteService.saveCliente(cliente);
-		//guardar los datos en una lista a través del método findAll
-		List<Cliente> listaClientes= clienteService.findAll();
-		//enviar los datos al jsp mediante model.addAttribute
+		// guardar los datos en una lista a través del método findAll
+		List<Cliente> listaClientes = clienteService.findAll();
+		// enviar los datos al jsp mediante model.addAttribute
 		model.addAttribute("listaClientes", listaClientes);
-		
-		//devolver a la pagina de inicio cliente
+
+		// devolver a la pagina de inicio cliente
 		return "redirect:/cliente";
-	
+
 	}
 }

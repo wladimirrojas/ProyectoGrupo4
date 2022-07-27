@@ -16,23 +16,23 @@ import com.generation.services.CantidadService;
 @RequestMapping("/admin/cantidad")
 public class CantidadController {
 
-    @Autowired
-    CantidadService cantidadService;
+	@Autowired
+	CantidadService cantidadService;
 
-    @RequestMapping("")
-    public String despliegue(Model model) {
-        Cantidad cantidad = new Cantidad();
-        model.addAttribute("cantidad", cantidad);
+	@RequestMapping("")
+	public String despliegue(Model model) {
+		Cantidad cantidad = new Cantidad();
+		model.addAttribute("cantidad", cantidad);
 
-        List<Cantidad> listaCantidades = cantidadService.findAll();
-        model.addAttribute("listaCantidades", listaCantidades);
+		List<Cantidad> listaCantidades = cantidadService.findAll();
+		model.addAttribute("listaCantidades", listaCantidades);
 
-        return "";
-    }
+		return "";
+	}
 
-    @PostMapping("/guardar")
-    public String guardarCantidad(@ModelAttribute("cantidad") Cantidad cantidad) {
-        cantidadService.guardarCantidad(cantidad);
-        return "";
-    }
+	@PostMapping("/guardar")
+	public String guardarCantidad(@ModelAttribute("cantidad") Cantidad cantidad) {
+		cantidadService.guardarCantidad(cantidad);
+		return "";
+	}
 }
