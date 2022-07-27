@@ -1,4 +1,9 @@
 .text-faq {
     text-align:start;
-    text-overflow: clip;
+}
+
+#titulofaq {
+    font-family: 'Tangerine';
+    font-size:calc(12px + 7vw); 
+    text-align: center;
 }

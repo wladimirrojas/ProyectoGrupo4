@@ -7,7 +7,7 @@ const Faq = () => {
         <div className="container-fluid justify-content-center inicio">
             <div className="row">
             <div className='col-12 pt-5'>
-            <h1 id='titulo_productos'>Preguntas frecuentes</h1>
+            <h1 id='titulofaq'>Preguntas frecuentes</h1>
                 </div>
                 <div className="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-5 mb-5 mt-5 mx-5">
                     <img src={foto3} className="img-thumbnail" alt="foto ejemplo" />
