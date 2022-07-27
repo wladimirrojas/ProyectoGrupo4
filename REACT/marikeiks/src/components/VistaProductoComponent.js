@@ -120,7 +120,7 @@ const VistaProductoComponent = () => {
             </div>
             <div className="text-center">
                 <div className="col-md-6 offset-md-3">
-                    <button type='button' className='btn btn-outline-primary me-2' onClick={handleOnClick}>Ir a tortas</button>
+                    <button type='button' className='btn btn-outline-dark me-2' onClick={handleOnClick}>Ir a tortas</button>
                 </div>
             </div>
         </div>

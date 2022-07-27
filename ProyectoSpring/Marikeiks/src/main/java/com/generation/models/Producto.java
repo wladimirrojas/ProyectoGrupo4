@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 /*Entidad, nombre de tabla, y tipos de atributos*/
 @Entity
 @Table(name = "productos")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Producto {
 
 	@Id
@@ -34,6 +34,7 @@ public class Producto {
 	private Integer stock;
 	private Integer precio;
 	private Integer vegano;
+	private String url;
 
 	// Producto envia a Ventas_producto
 	@OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -64,11 +65,10 @@ public class Producto {
 	private Date updatedAt;
 
 	public Producto() {
-		super();
 	}
 
 	public Producto(Long id, String nombre, String descripcion, Integer stock, Integer precio, Integer vegano,
-			TipoProducto tipoProducto, Decoracion decoracion, Sabor sabor, Cantidad cantidad) {
+			String url, TipoProducto tipoProducto, Decoracion decoracion, Sabor sabor, Cantidad cantidad) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -76,6 +76,7 @@ public class Producto {
 		this.stock = stock;
 		this.precio = precio;
 		this.vegano = vegano;
+		this.url = url;
 		this.tipoProducto = tipoProducto;
 		this.decoracion = decoracion;
 		this.sabor = sabor;
@@ -128,6 +129,14 @@ public class Producto {
 
 	public void setVegano(Integer vegano) {
 		this.vegano = vegano;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 	public TipoProducto getTipoProducto() {

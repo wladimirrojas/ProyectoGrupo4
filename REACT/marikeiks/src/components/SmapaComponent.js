@@ -1,22 +1,19 @@
 import React from "react";
 
 const SmapaComponent = () => {
-    return(
-        <>
-        <div className="d-flex justify-content-center position-relative">
-                <div className="row-col-2 tres-1">
-                    <div className="row mx-5 ">
-                        <div className="col-3 "><img className="rounded" height="200" width="170" src={require("../img/contacto3.jpg")} alt="contacto2" /></div>
-                        <div className="col-3 mx-5"><img className="rounded" height="200" width="170" src={require("../img/contacto.jpg")} alt="contacto" /></div>
-                        <div className="col-3"><img className="rounded" height="200" width="170" src={require("../img/contacto1.jpg")} alt="contacto1" /></div>
-                    </div>
-                    <div className="mapa row-col mt-3 d-flex justify-content-center position-relative">
-                        <iframe title="porDioh" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.7224664369787!2d-70.55837837333792!3d-33.50859714632189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1a3a8c249e1%3A0x54b1c2be80b9fa2d!2sAv.%20Consistorial%205778%2C%20Penalolen%2C%20Pe%C3%B1alol%C3%A9n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1657576944559!5m2!1ses!2scl"
-                            className="mapita" width="400px" height="300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+    return (
+        <div className="container-xl mb-5">
+            <div className="row justify-content-center">
+                <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 mt-3">
+                    <img id="imagenes-map" className="rounded ms-3" src={require("../img/contacto3.jpg")} alt="contacto2" />
+                    <img id="imagenes-map" className="rounded ms-3" src={require("../img/contacto.jpg")} alt="contacto" />
+                    <div className="col-xl-5 col-lg-5 col-md-5 col-sm-8 mt-3 me-4">
+                    <iframe title="mapa_marikeiks" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.7224664369787!2d-70.55837837333792!3d-33.50859714632189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1a3a8c249e1%3A0x54b1c2be80b9fa2d!2sAv.%20Consistorial%205778%2C%20Penalolen%2C%20Pe%C3%B1alol%C3%A9n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1657576944559!5m2!1ses!2scl"
+                        id="mapa" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 </div>
 
-                <div className="row tres-2">
+                <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 mt-3 justify-content-center">
                     <div>
                         <ul className="list-unstyled mb-0">
                             <h2 className="subTitulos">Dirección</h2>
@@ -29,21 +26,18 @@ const SmapaComponent = () => {
                             </div>
                         </ul>
                     </div>
-                    <div className="parrafos">
-                        <ul className="list-unstyled">
-                            <li>
-                                <br></br>
-                                <strong><h5>Retiros con cita previa, agenda con nosotros</h5></strong>
-                                <a href="mailto:marikeiks@gmail.com">
-                                    <div className="contenedorIcono">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
-                                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div className="mt-5"><h5>llámanos al momento de llegada</h5></div>
+                    <div className="parrafos mt-5">
+                        <h5>Retiros con cita previa, agenda con nosotros</h5>
+                        <a href="mailto:marikeiks@gmail.com">
+                            <div className="contenedorIcono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="parrafos mt-5">
+                        <h5>Llámanos al momento de llegada</h5>
                         <a href="https://api.whatsapp.com/send?phone=56974898201">
                             <div className="contenedorIcono">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -52,11 +46,11 @@ const SmapaComponent = () => {
                             </div>
                         </a>
                     </div>
-                    <br></br>
-
                 </div>
+                <br />
+            
             </div>
-        </>
+        </div>
     );
 };
 

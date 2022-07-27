@@ -5,21 +5,35 @@
     margin: 0px;
     box-sizing: border-box;
 }
-/* sacar todos lo style {} y ponerlo en css */
-.container-fluid {
-    background-color: #eff1f4;
+/* html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+} */
+
+/* #contenedor-contacto {
+    background-image: url('../img/white-simple-textured-design-background.jpg');
+    background-size: 100%;
+    background-position: center;
 }
+
+#contenedor-formulario{
+    background-color: #eff1f4;
+    background-image: url('../img/white-simple-textured-design-background.jpg');
+    background-size: 100%;
+    background-position: center;
+} */
 
 .contenedorIcono{
     margin: 0px auto;
     height: 10px;
 }
 
+
 .titulos{
     font-family: 'Tangerine', cursive;
     text-align: center;    
-    font-size:calc(12px + 8vw);
-    margin-top: 0;
+    font-size:calc(12px + 7vw);
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
@@ -27,20 +41,42 @@
     
 }
 
-.subTitulos{
-    font-family: 'Tangerine', cursive;
-    text-align: center;    
-    font-size:calc(12px + 3vw);
-    margin-top: 0;
-    margin-left: 75px;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    display: flex;
+#tituloFormulario {
+    font-family: 'Raleway';
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 1%;
 }
+
+.subTitulos{
+    font-family: 'Raleway', sans-serif;
+    font-size:calc(7px + 2vw);
+    margin-bottom: 0.5rem;
+    vertical-align: top;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+#mapa{
+    width: calc(360px + 1vw);
+    height: calc(200px + 1vw);
+}
+
 .parrafos{
     font-family: 'Raleway', sans-serif;
-    font-size: 4vh;
+    font-size:calc(13px + 1vw);
+}
+
+#imagenes-map {
+    display: inline;
+    height: calc(200px + 1vw); 
+    width: calc(150px + 1vw);
+}
+
+#imagenes-map2 {
+    display: inline;
+    height: calc(200px + 1vw); 
+    width: calc(150px + 1vw);
 }
 
 #img-logo-bottom{
@@ -54,10 +90,7 @@
 }
 
 
-.mapita{ 
-    border-radius: 5px;
-    align-content: center;
-}
+
 /* #uno{
     position: relative;
     background-image: url("../img/top.png");
@@ -100,14 +133,20 @@
 }
 
 
+<<<<<<< HEAD
 #uno{
+=======
+#cinco-1{
+>>>>>>> main
     margin-top: 5%;
     text-align: center;
     display: block;
     position: relative;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+
 }
 
+<<<<<<< HEAD
 #dos{
     height: 500px;
     width: 1030px;
@@ -128,3 +167,5 @@
     border-radius: 1%;
     display: inline-block
 }
+=======
+>>>>>>> main

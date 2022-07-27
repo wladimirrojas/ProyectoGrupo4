@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond;
+    margin: 0;
+}
+
+.containerP{
+    display: flex;
+    justify-content: left;
+    font-family: 'Handlee', cursive;
+}
+
+.torta{
+    display: flex;
+    align-items: center;
+    min-width: 80px;
+    min-height: 80px;
+    margin: 20px 20px 0 20px;
+}
+
+.botones{
+    display: flex;
+}
+
+.section{
+    width: 100%;
+
+}

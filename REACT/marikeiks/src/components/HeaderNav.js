@@ -10,10 +10,11 @@ const HeaderNav = () => {
         <h2 className="nombre-marikeiks"></h2>
     </a>
     <nav className='nav'> 
-        <a href="" className="nav-link">Inicio</a>
-        <a href="" className="nav-link">Productos</a>
-        <a href="" className="nav-link">Carrito</a>
-        <a href="" className="nav-link">Contacto</a>
+        <a href="/" className="nav-link">Inicio</a>
+        <a href="/productos" className="nav-link">Productos</a>
+        <a href="/carrito" className="nav-link">Carrito</a>
+        <a href="/faq" className="nav-link">Faq</a>
+        <a href="/contacto" className="nav-link">Contacto</a>
     </nav>
     </header>
 

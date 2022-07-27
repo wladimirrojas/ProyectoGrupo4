@@ -81,9 +81,13 @@ const BCarritoComponent =
                         <button className="btn btn-sm btn-outline-danger col"
                         //onClick={() => productoDelete(producto.key)}
                         >Eliminar</button>
+<<<<<<< HEAD
                         <i class="bi bi-x-lg"></i>
 
                         
+=======
+                        <i className="bi bi-x-lg"></i>
+>>>>>>> main
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 package com.generation.controllers;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import javax.validation.Valid;
@@ -13,10 +14,14 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+=======
+import org.springframework.stereotype.Controller;
+>>>>>>> main
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
+<<<<<<< HEAD
 @RequestMapping("/despachoRetiro")
 public class DespachoRetiroController {
     @Autowired
@@ -74,5 +79,10 @@ public class DespachoRetiroController {
         despachoRetiroService.eliminarDespachoRetiro(id);
         return "redirect:/despachoRetiro/mostrar";
     }
+=======
+@RequestMapping("/admin/despachoRetiro")
+public class DespachoRetiroController {
+
+>>>>>>> main
 
 }

@@ -17,20 +17,20 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table(name = "cantidades")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 public class Cantidad {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    private Integer porcion;
-    
-    @OneToMany(mappedBy = "cantidad", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Integer porcion;
+
+	@OneToMany(mappedBy = "cantidad", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Producto> productos;
 
-    public Cantidad() {
-    }
+	public Cantidad() {
+	}
 
 	public Cantidad(Long id, Integer porcion) {
 		super();
@@ -54,5 +54,4 @@ public class Cantidad {
 		this.porcion = porcion;
 	}
 
-       
 }

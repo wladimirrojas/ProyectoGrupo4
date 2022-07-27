@@ -21,8 +21,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table(name = "tipo_productos")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 public class TipoProducto {
 
 	@Id
@@ -45,6 +45,7 @@ public class TipoProducto {
 	}
 
 	public TipoProducto(Long id, String nombre) {
+		super();
 		this.id = id;
 		this.nombre = nombre;
 	}
