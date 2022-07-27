@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/Contacto.css'
 
 const SmapaComponent = () => {
     return (
@@ -13,21 +14,21 @@ const SmapaComponent = () => {
                 </div>
                 </div>
 
-                <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 mt-3 justify-content-center">
+                <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5">
                     <div>
                         <ul className="list-unstyled mb-0">
-                            <h2 className="subTitulos">Dirección</h2>
+                            <h2 className="subTitulo-contacto">Dirección</h2>
                             <div className="fs-6">
                                 <strong>
-                                    <li className="parrafos">Av. Consistorial 5778</li>
-                                    <li className="parrafos">Santiago, Peñalolén</li>
-                                    <li className="parrafos">Retiro: Lun-Sáb <br></br> 9:00 - 18:00</li>
+                                    <li className="parrafos-contacto">Av. Consistorial 5778,</li>
+                                    <li className="parrafos-contacto">Peñalolén, RM.</li>
+                                    <li className="parrafos-contacto">Retiro: Lun-Sáb. <br></br> 9:00 - 18:00 hrs.</li>
                                 </strong>
                             </div>
                         </ul>
                     </div>
-                    <div className="parrafos mt-5">
-                        <h5>Retiros con cita previa, agenda con nosotros</h5>
+                    <div className="parrafos-contacto mt-5">
+                        <h5>Retiros con cita previa, agenda con nosotros.</h5>
                         <a href="mailto:marikeiks@gmail.com">
                             <div className="contenedorIcono">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -36,8 +37,8 @@ const SmapaComponent = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="parrafos mt-5">
-                        <h5>Llámanos al momento de llegada</h5>
+                    <div className="parrafos-contacto mt-5">
+                        <h5>Llámanos al momento de llegada.</h5>
                         <a href="https://api.whatsapp.com/send?phone=56974898201">
                             <div className="contenedorIcono">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -48,7 +49,7 @@ const SmapaComponent = () => {
                     </div>
                 </div>
                 <br />
-            
+
             </div>
         </div>
     );

@@ -9,11 +9,10 @@ import "../styles/InicioStyle.css"
 
 const Inicio = () => {
   return (
-    <div id="inicio" className="container-fluid p-0">
+    <div className="container-fluid p-0 inicio">
       <PortadaComponent />
       <VistaProductoComponent />
-      <Historia />
-      <Historia />
+      <Historia/>
       <ContactoComponent/>
       <DireccionamientoFAQ />
     </div>

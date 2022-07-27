@@ -16,25 +16,26 @@ import com.generation.services.SaborService;
 @Controller
 @RequestMapping("/admin/sabor")
 public class SaborController {
-    
-    @Autowired
-    SaborService saborService;
 
-    @RequestMapping("")
-    public String ingreso(Model model){
-        Sabor sabor = new Sabor();
-        model.addAttribute("sabor", sabor);
+	@Autowired
+	SaborService saborService;
 
-        List<Sabor> listaSabores = saborService.findAll();
-        model.addAttribute("listaSabores", listaSabores);
+	@RequestMapping("")
+	public String ingreso(Model model) {
+		Sabor sabor = new Sabor();
+		model.addAttribute("sabor", sabor);
 
-        return "sabor.jsp";
-    }
-    @RequestMapping("/guardar")
-    public String guardarSabor(@Valid @ModelAttribute("sabor") Sabor sabor){
+		List<Sabor> listaSabores = saborService.findAll();
+		model.addAttribute("listaSabores", listaSabores);
 
-        saborService.saveSabor(sabor);
-        return "redirect:/sabor";
-    }
+		return "sabor.jsp";
+	}
+
+	@RequestMapping("/guardar")
+	public String guardarSabor(@Valid @ModelAttribute("sabor") Sabor sabor) {
+
+		saborService.saveSabor(sabor);
+		return "redirect:/sabor";
+	}
 
 }
