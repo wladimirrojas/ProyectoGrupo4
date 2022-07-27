@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import FormatNumberComponent from "./utils/FormatNumberComponent";
 
 
-const TarjetaTorta = ({ producto }, {number}) => {
+const TarjetaTorta = ({ producto }) => {
     const navigate = useNavigate();
         const handleOnClick = useCallback(() => navigate('/productos/editarorden', { replace: true }, [navigate]));
     return (
