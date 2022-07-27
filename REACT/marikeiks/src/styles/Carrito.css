@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Tangerine&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: #eff1f4;
+}
+
+.titulos{
+    font-family: 'Tangerine', cursive;
+    text-align: center;    
+    font-size:calc(12px + 8vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    
+}
+
+.subTitulos{
+    font-family: 'Tangerine', cursive;
+    text-align: center;    
+    font-size:calc(12px + 3vw);
+    margin-top: 0;
+    margin-left: 75px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+}
+
+.parrafos{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+}
+
+.foto{ 
+    border-radius: 5px;
+    align-content: center;
+}
+
+/* divs de Título: título y botton*/
+.Tcarrito{
+    height: 300px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    
+    
+}
+
+.Bcompra{
+    margin-left: 20px;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* divs de Body */
+
+.nombrePrecio{
+    height: 200px;
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.descripcion{
+    margin-left: 20px;
+    height: 200px;
+    width: 170px;
+    text-align: center;
+    display: inline-block;
+}
+
+.botones{
+    margin-left: 20px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* divs generales */
+#cinco{
+    margin-top: 5%;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+#seis{
+    height: 500px;
+    width: 1030px;
+    display: inline-block;
+    text-align: center;
+    top: 10px;
+    margin-bottom: 10%;
+}

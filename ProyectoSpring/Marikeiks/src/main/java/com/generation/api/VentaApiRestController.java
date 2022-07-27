@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,7 @@ import com.generation.services.VentaService;
 
 @RestController
 @RequestMapping("/api/venta")
-// @CrossOrigin(origins = "*", methods= {RequesMethod.GET,RequesMethod.POST})
+//@CrossOrigin(origins = "*", methods= {RequesMethod.GET,RequesMethod.POST})
 
 public class VentaApiRestController{
 
