@@ -1,26 +1,32 @@
 import React from "react";
 import '../styles/estilosEditar.css';
 import Imgprueba1 from '../img/vanilla-vegan-gluten-free-cake-oat-flour_9718.jpg';
+import { useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const EditarProducto = () => {
+    
+    
+    const navigate = useNavigate();
+    const handleOnClick = useCallback(() => navigate('/productos/editarorden/carrito', { replace: true }, [navigate]));
+
     return (
         <div id="containerP" className="containerP">
             <img src={Imgprueba1} id='torta' alt="logo de empresa" />
             <section className="section" style={{ "font": "size 0.5vw" }}>
                 <h1 id="Tituloeditar">Elige los detalles de tu torta:</h1>
                 <br></br>
+                <p className="new-line">Tipo de Pastelería</p>
                 <div className="input-group mb-3">
-                    <label className="input-group-text" htmlfor="inputGroupSelect01">Tipo Pasteleria</label>
                     <br></br>
                     <select class="form-select" id="inputGroupSelect01">
                     <option value>Elegir...</option>
                     <option value={1}>Vegana</option>
                     <option value={2}>No Vegana</option>
                     </select>
-                    
                 </div>
+                <p className="new-line">Tamaño</p>
                 <div className="input-group mb-3">
-                    <label className="input-group-text" htmlfor="inputGroupSelect02">Tamaño</label>
                     <br></br>
                     <select class="form-select" id="inputGroupSelect02">
                         <option selected>Elegir...</option>
@@ -32,8 +38,8 @@ const EditarProducto = () => {
                         <option value={6}>desde 35 personas, 2 pisos: $2.500 por porcion</option>
                     </select>
                 </div>
+                <p className="new-line">Sabor de Bizcocho</p>
                 <div className="input-group mb-3">
-                    <label className="input-group-text" htmlfor="inputGroupSelect03">Sabor Bizcocho</label>
                     <br></br>
                     <select class="form-select" id="inputGroupSelect03">
                         <option selected>Elegir...</option>
@@ -98,13 +104,14 @@ const EditarProducto = () => {
                 <form action="../../form-result.php" method="post" encType="multipart/form-data" target="_blank">
                 <br></br>
                     <p>
-                        Aqui puedes subir imagenes de referencia:<br></br>
+                        Aqui puedes subir imagenes de referencia:
+                        <br/>
+                        <br/>
                         <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif" />
                     </p>
                 </form>
+                <p className="new-line">¿Deseas añadir algo mas?</p>
                 <div className="input-group mb-3">
-                    <span>¿Deseas añadir algo mas?</span>
-                    <br></br>
                     <select class="form-select" id="inputGroupSelect04">
                         <option selected>Elegir...</option>
                         <option value={1}>Cupcakes y mini Cupcakes</option>
@@ -114,9 +121,9 @@ const EditarProducto = () => {
                 </div>
                 <br></br>
                 <div id="botones">
-                    <button type="button" class="btn btn-danger">Cancelar</button>
+                    <button type="button" class="btn btn-outline-danger">Cancelar</button>
                     <button type="button" class="btn btn-outline-dark">Atrás</button>
-                    <button type="button" class="btn btn-outline-dark">Siguiente</button>
+                    <button type="button" class="btn btn-outline-dark"onClick = {handleOnClick}>Siguiente</button>
                 </div>
             </section>
         </div>
