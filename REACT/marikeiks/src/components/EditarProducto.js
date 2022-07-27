@@ -4,7 +4,8 @@ import Imgprueba1 from '../img/vanilla-vegan-gluten-free-cake-oat-flour_9718.jpg
 import { useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
 
-const EditarProducto = () => {
+
+const EditarProducto = ({producto}) => {
     
     
     const navigate = useNavigate();

@@ -13,6 +13,7 @@ const Inicio = () => {
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia />
+      <Historia />
       <ContactoComponent/>
       <DireccionamientoFAQ />
     </div>

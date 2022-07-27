@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "localhost:8080/api/venta";
+const baseUrl = "http://localhost:8080/api/venta";
 
 //obtener datos de Ventas
 const getAllVentas=async()=>{
