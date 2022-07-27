@@ -17,7 +17,7 @@ import com.generation.services.DespachoRetiroService;
 
 
 @RestController
-@RequestMapping("/despachoRetiroes")
+@RequestMapping("/despachoRetiros")
 // @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 public class DespachoRetiroApiRestController{
     
