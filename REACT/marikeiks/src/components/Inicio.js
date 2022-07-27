@@ -6,7 +6,6 @@ import PortadaComponent from "./PortadaComponent";
 import ContactoComponent from "./ContactoComponent";
 import HeaderComponent from "./HeaderComponent";
 import DireccionamientoFAQ from "./DireccionamientaFAQ";
-//import CarritoComponent from "./CarritoComponent";
 import CarritoDVS from "../CarritoDIVS/CarrritoDVS";
 
 const Inicio = () => {
