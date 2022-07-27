@@ -25,7 +25,6 @@ const Faq = () => {
                                 <ul>
                                 <li>Valores dentro de santiago por la empresa externa:
                                 RAINAW delivery, desde los $5.000 a $7.000</li>
-                                
                                 <li>Valores de despacho de matrimonios, desde los $15.000
                                 (El valor depende del tamaño de la torta y la complejidad del delivery).</li>
                                 <li>Existe despacho y retiro en la comuna de peñalolen, desde el taller de Marikeiks.</li>
@@ -118,5 +117,4 @@ const Faq = () => {
     );
     ;
 }
-
 export default Faq;
