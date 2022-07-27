@@ -32,8 +32,8 @@ const ProductoListado = () => {
 
   return (
     <div className="contenedor-productos p-0">
-      <div className="pt-3 titulo_productos">
-        <h1>Nuestros productos</h1>
+      <div className="pt-3">
+        <h1 className="titulo_productos">Nuestros productos</h1>
         <p className="texto1">Para comenzar, elija su producto favorito.</p>
       </div>
       <div className="row row-cols-4 row-cols-lg-6 g-6 g-lg-6 px-3">
