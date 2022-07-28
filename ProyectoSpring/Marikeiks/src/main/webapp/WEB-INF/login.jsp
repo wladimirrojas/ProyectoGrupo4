@@ -266,7 +266,7 @@ hr {
                 </div>
                 <div id="derecho">
                     <div class="titulo">
-                        Marikeiks LogIn
+                        Marikeiks Login
                     </div>
              
                 </div>
