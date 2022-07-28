@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const EditarProducto = () => {
     const navigate = useNavigate();
-    const handleOnClick = useCallback(() => navigate('/productos/editarorden/carrito', { replace: true }, [navigate]));
+    const handleOnClick = useCallback(() => navigate('/carrito', { replace: true }, [navigate]));
 
     return (
         <div id="containerP" className="containerP">
