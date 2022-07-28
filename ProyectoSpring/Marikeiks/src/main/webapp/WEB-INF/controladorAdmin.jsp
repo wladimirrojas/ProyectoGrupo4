@@ -19,104 +19,116 @@ body {
 	background-color: #353F53;
 }
 
-#principal{
-padding-top: 60px;
-padding-left: 200px;
-
+#principal {
+	padding-top: 60px;
+	padding-left: 200px;
 }
-h1{
-color: white;
-text-align: center;
+
+h1 {
+	color: white;
+	text-align: center;
 }
 </style>
 <body class="container-fluid">
-<h1>Administración de datos Marikeiks</h1>
+	<h1>Administración de datos Marikeiks</h1>
 	<hr>
 
 	<div id="principal">
-	
+
 		<div>
 			<div class="card mb-3" style="max-width: 540px;">
-			<a href="http://localhost:8080/admin/producto" alt="" style="text-decoration: none; color: black;">
-				<div class="row g-0" >
-				
-					<div class="col-md-4">
-					
-						<img src="/img/admin.jpg" class="img-fluid rounded-start" alt="...">
-						
-					</div>
-					<div class="col-md-8">
-						<div class="card-body" >
-							<h5 class="card-title">Productos</h5>
-							<p class="card-text">Esta sección te permitirá ver tus productos actuales,
-							eliminar productos existentes, actualizar y agregar nuevos.</p>
-							<p class="card-text">
-								<small class="text-muted">Actualizado hace 18 hrs atrás</small>
-							</p>
+				<a href="/admin/producto" alt=""
+					style="text-decoration: none; color: black;">
+					<div class="row g-0">
+
+						<div class="col-md-4">
+
+							<img src="/img/admin.jpg" class="img-fluid rounded-start"
+								alt="...">
+
 						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">Productos</h5>
+								<p class="card-text">Esta sección te permitirá ver tus
+									productos actuales, eliminar productos existentes, actualizar y
+									agregar nuevos.</p>
+								<p class="card-text">
+									<small class="text-muted">Actualizado hace 18 hrs atrás</small>
+								</p>
+							</div>
+						</div>
+
 					</div>
-					
-				</div>
-				
+
 				</a>
 			</div>
 			<div class="card mb-3" style="max-width: 540px;">
-			<a href="http://localhost:8080/admin/tipoProducto" alt="" style="text-decoration: none; color: black;">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="/img/admin2.png" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Tipo de productos</h5>
-							<p class="card-text">Esta sección te permitirá ver tus tipos de producto actuales,
-							eliminar productos existentes, actualizar y agregar nuevos.</p>
-							<p class="card-text">
-								<small class="text-muted">Actualizado hace 22 hrs atrás</small>
-							</p>
+				<a href="/admin/tipoProducto" alt=""
+					style="text-decoration: none; color: black;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/admin2.png" class="img-fluid rounded-start"
+								alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">Tipo de productos</h5>
+								<p class="card-text">Esta sección te permitirá ver tus tipos
+									de producto actuales, eliminar productos existentes, actualizar
+									y agregar nuevos.</p>
+								<p class="card-text">
+									<small class="text-muted">Actualizado hace 22 hrs atrás</small>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
 				</a>
 			</div>
 			<div class="card mb-3" style="max-width: 540px;">
-			<a href="http://localhost:8080/admin/producto" alt="" style="text-decoration: none; color: black;">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="/img/admin3.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Decoraciones</h5>
-							<p class="card-text">Esta sección te permitirá ver tus decoraciones actuales,
-							eliminar productos existentes, actualizar y agregar nuevos.</p>
-							<p class="card-text">
-								<small class="text-muted">Actualizado hace 19 hrs atrás</small>
-							</p>
+				<a href="/admin/producto" alt=""
+					style="text-decoration: none; color: black;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/admin3.jpg" class="img-fluid rounded-start"
+								alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">Decoraciones</h5>
+								<p class="card-text">Esta sección te permitirá ver tus
+									decoraciones actuales, eliminar productos existentes,
+									actualizar y agregar nuevos.</p>
+								<p class="card-text">
+									<small class="text-muted">Actualizado hace 19 hrs atrás</small>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
 				</a>
 			</div>
 			<div class="card mb-3" style="max-width: 540px;">
-			<a href="http://localhost:8080/admin/producto" alt="" style="text-decoration: none; color: black;">
-				<div class="row g-0">
-					<div class="col-md-4">
-						<img src="/img/admin4.jpg" class="img-fluid rounded-start" alt="...">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">Sabores</h5>
-							<p class="card-text">Esta sección te permitirá ver tus sabores actuales,
-							eliminar productos existentes, actualizar y agregar nuevos.</p>
-							<p class="card-text">
-								<small class="text-muted">Actualizado hace 15 hrs atrás</small>
-							</p>
+				<a href="/admin/producto" alt=""
+					style="text-decoration: none; color: black;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/admin4.jpg" class="img-fluid rounded-start"
+								alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">Sabores</h5>
+								<p class="card-text">Esta sección te permitirá ver tus
+									sabores actuales, eliminar productos existentes, actualizar y
+									agregar nuevos.</p>
+								<p class="card-text">
+									<small class="text-muted">Actualizado hace 15 hrs atrás</small>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
 				</a>
-			</div>			
+			</div>
 		</div>
 	</div>
 
