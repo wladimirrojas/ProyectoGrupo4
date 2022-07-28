@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import TarjetaTorta from "./TarjetaTorta";
 import getAll from "../services/ProductoService";
 import DireccionamientoFAQ from "./DireccionamientaFAQ";
 import "../styles/ProductoTorta.css";
-import "../styles/InicioStyle.css"
+import "../styles/InicioStyle.css";
+import { useNavigate } from "react-router-dom";
+
 
 const initialProductos = [
   {
@@ -31,6 +33,9 @@ const ProductoListado = () => {
     obtenerProductos();
   }, []);
 
+  const navigate = useNavigate();
+  const handleOnClick = useCallback(() => navigate('/contacto', { replace: true }, [navigate]))
+
   return (
     <div className="p-0 fondo">
       <div className="pt-3">
@@ -43,7 +48,11 @@ const ProductoListado = () => {
         ))}
       </div>
       <br />
-      <p className="texto1">¿Buscas algo diferente? Póngase en contacto con nosotros aquí para un pedido a medida.</p>
+      <div className="text1">
+        <p>¿Buscas algo diferente? Póngase en contacto con nosotros <a className="hoverbtn" onClick={handleOnClick}>aquí</a> para un pedido a medida.</p>
+      </div>
+      <br/>
+      <br/>
       <DireccionamientoFAQ />
     </div>
   );

@@ -16,6 +16,28 @@
     line-height: 0.8cm;
 }
 
+.text1 {
+    width: 100%;
+    height: auto;
+    background-color: palevioletred;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size:calc(5px + 1vw);
+    text-align: center;
+    line-height: 0.8cm;
+    padding: 10px;
+}
+
+.hoverbtn{
+    color: whiteSmoke;
+    text-decoration: underline;
+    font-size: calc(5px + 1vw);
+}
+
+.hoverbtn:hover {
+    color:blue;
+}
+
 .titulo_productos {
     font-family: 'Tangerine';
     font-size:calc(12px + 4vw);

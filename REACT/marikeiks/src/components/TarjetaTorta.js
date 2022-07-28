@@ -11,6 +11,7 @@ const TarjetaTorta = ({ producto }) => {
   const handleOnClick = useCallback(() =>
     navigate("/productos/editarorden", { replace: true }, [navigate])
   );
+
   return (
     <div className="col mb-2 colcard">
       <div className="card efecto">
@@ -20,7 +21,7 @@ const TarjetaTorta = ({ producto }) => {
           alt={producto.id}
         />
         <div className="card-body">
-          <h5 className="card-title titulo">{producto.descripcion}</h5>
+          <h5 className="card-title titulo">{producto.sabor.nombre}</h5>
           <p className="card-text contenido">
             <FormatNumberComponent number={producto.precio} />
           </p>
