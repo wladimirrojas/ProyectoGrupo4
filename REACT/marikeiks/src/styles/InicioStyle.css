@@ -1,5 +1,5 @@
-.inicio{
-  background-image: url('../img/Fondo.webp');
-  background-size: 100%;
-  background-position: top;
+.fondo{
+  background-image: url('../img/Fondo.webp') !important;
+  background-size: 100% !important;
+  background-position: top !important;
 }

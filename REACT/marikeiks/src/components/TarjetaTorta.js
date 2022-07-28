@@ -13,7 +13,7 @@ const TarjetaTorta = ({ producto }) => {
   );
   return (
     <div className="col mb-2 colcard">
-      <div className="card">
+      <div className="card efecto">
         <img
           src={producto.url}
           className="card-img-top imagen-torta"
@@ -25,10 +25,10 @@ const TarjetaTorta = ({ producto }) => {
             <FormatNumberComponent number={producto.precio} />
           </p>
           <button
-            className="btn btn-sm btn-outline-primary me-2"
+            className="btn btn-sm btn-outline-dark me-2"
             onClick={handleOnClick}
           >
-            Comprar
+            Añadir
           </button>
         </div>
       </div>

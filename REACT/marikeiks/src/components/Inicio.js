@@ -9,7 +9,7 @@ import "../styles/InicioStyle.css"
 
 const Inicio = () => {
   return (
-    <div className="container-fluid p-0 inicio">
+    <div className="container-fluid p-0 fondo">
       <PortadaComponent />
       <VistaProductoComponent />
       <Historia/>

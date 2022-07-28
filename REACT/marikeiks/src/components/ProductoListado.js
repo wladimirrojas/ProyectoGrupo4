@@ -3,6 +3,7 @@ import TarjetaTorta from "./TarjetaTorta";
 import getAll from "../services/ProductoService";
 import DireccionamientoFAQ from "./DireccionamientaFAQ";
 import "../styles/ProductoTorta.css";
+import "../styles/InicioStyle.css"
 
 const initialProductos = [
   {
@@ -31,7 +32,7 @@ const ProductoListado = () => {
   }, []);
 
   return (
-    <div className="contenedor-productos p-0">
+    <div className="p-0 fondo">
       <div className="pt-3">
         <h1 className="titulo_productos">Nuestros productos</h1>
         <p className="texto1">Para comenzar, elija su producto favorito.</p>
