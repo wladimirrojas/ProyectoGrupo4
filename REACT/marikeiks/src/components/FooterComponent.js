@@ -23,12 +23,12 @@ const FooterComponent = () => {
               <h6 className="text-uppercase mb-4">Productos</h6>
 
               <p>
-                <a className="text-white noLink" href="/productos">
+                <a className="noLink" href="/productos">
                   Tortas
                 </a>
               </p>
               <p>
-                <a className="text-white noLink" href="www.google.cl">
+                <a className="noLink" href="www.google.cl">
                   CandyBar
                 </a>
               </p>

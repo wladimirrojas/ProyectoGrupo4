@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/estilosEditar.css';
-import Imgprueba1 from '../img/vanilla-vegan-gluten-free-cake-oat-flour_9718.jpg';
+import Imgprueba1 from '../img/contacto0.jpg';
 import { useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const EditarProducto = () => {
     const handleOnClick = useCallback(() => navigate('/carrito', { replace: true }, [navigate]));
 
     return (
-        <div id="containerP" className="containerP">
+        <div id="containerP" className="containerP fondo">
             <img src={Imgprueba1} id='torta' alt="logo de empresa" />
             <section className="section" style={{ "font": "size 0.5vw" }}>
                 <h1 id="Tituloeditar">Elige los detalles de tu torta:</h1>
@@ -41,7 +41,9 @@ const EditarProducto = () => {
                 <div className="input-group mb-3">
                     <br></br>
                     <select class="form-select" id="inputGroupSelect03">
-                        <option selected>Elegir...</option>
+                        {/* <option selected>Elegir...</option> */}
+                        <option selected>Amapolas (bizcocho de amapolas con relleno de chocolate blanco, frambuesas, manjar
+                            y nueces)</option>
                         <option value={1}>Violeta (chocolate,ganache y frambuesas)</option>
                         <option value={2}>Jazmín (bizcocho de limón con chocolate blanco, frambuesas y manjar)</option>
                         <option value={3}>Lotto (bizcocho de chocolate con relleno de cookies and cream)</option>
