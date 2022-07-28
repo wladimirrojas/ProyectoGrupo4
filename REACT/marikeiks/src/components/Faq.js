@@ -1,10 +1,11 @@
 import React from "react";
 import foto3 from '../img/faq.jpg';
 import '../styles/FAQ.css';
+import "../styles/InicioStyle.css"
 
 const Faq = () => {
     return (
-        <div className="container-fluid justify-content-center inicio">
+        <div className="container-fluid justify-content-center fondo">
             <div className="row">
             <div className='col-12 pt-5'>
             <h1 id='titulofaq'>Preguntas frecuentes</h1>
